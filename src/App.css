@@ -1,4 +1,30 @@
-*{
-  margin: 0;
+/* Global Reset */
+* {
+  margin: 0 ;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  /* background:  radial-gradient(circle,rgba(255,246,229,0.4)0%,rgba(220,223,245,0.4) 50%, rgba(243,220,241,0.4) 60%,rgba(220,223,245,0.4) 75%); */
+
+  background:  radial-gradient(circle,rgba(255,246,229,0.4)   0%,rgba(220,223,245,0.4) 50%, rgba(243,220,241,0.4) 100%,rgba(220,223,245,0.4) 75%); 
+  /* background: linear-gradient(0deg, rgba(220,223,245,0.4) 0%, rgba(243,220,241,0.4) 35%, rgba(255,246,227,0.4) 100%); */
+  background-attachment: fixed; /* Makes sure the background scrolls with the page */
+  background-size: cover; /* Ensures the gradient covers the entire page */
+}
+
+.content-wrapper {
+  min-height: 100vh;
+}
+
+/* Footer */
+footer {
+  background-color: #f1f1f1; /* Footer background */
+  padding: 20px;
+  text-align: center;
 }

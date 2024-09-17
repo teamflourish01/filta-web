@@ -7,6 +7,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 import { TfiEmail } from "react-icons/tfi";
 import { FaInstagram } from "react-icons/fa";
 import { SlSocialLinkedin } from "react-icons/sl";
+import { NavLink } from "react-router-dom";
 
 function Footer() {
   return (
@@ -66,23 +67,78 @@ function Footer() {
             </div>
             <hr className="hr-rotate"></hr>
             <div className="footer-section-two">
-              {/* <div className="page-link"> */}
               <p className="page-name padding-company">Company</p>
-              <p className="page-name hover-color">Home</p>
-              <p className="page-name hover-color">Features</p>
-              <p className="page-name hover-color">Pricing</p>
-              <p className="page-name hover-color">About us</p>
-              <p className="page-name hover-color">Resources</p>
 
-              {/* </div> */}
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? "page-name active-link" : "page-name hover-color"
+                }
+              >
+                Home
+              </NavLink>
+              <NavLink
+                to="/features"
+                className={({ isActive }) =>
+                  isActive ? "page-name active-link" : "page-name hover-color"
+                }
+              >
+                Features
+              </NavLink>
+              <NavLink
+                to="/pricing"
+                className={({ isActive }) =>
+                  isActive ? "page-name active-link" : "page-name hover-color"
+                }
+              >
+                Pricing
+              </NavLink>
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  isActive ? "page-name active-link" : "page-name hover-color"
+                }
+              >
+                About Us
+              </NavLink>
+              <NavLink
+                to="/resources"
+                className={({ isActive }) =>
+                  isActive ? "page-name active-link" : "page-name hover-color"
+                }
+              >
+                Resources
+              </NavLink>
             </div>
             <hr className="hr-rotate"></hr>
 
             <div className="footer-section-three">
               <p className="page-name padding-company">Help & information</p>
-              <p className="page-name hover-color">FAQ’s</p>
-              <p className="page-name hover-color">Privacy Policy</p>
-              <p className="page-name hover-color">Terms & Conditions</p>
+              <NavLink
+                to="/faqs"
+                className={({ isActive }) =>
+                  isActive ? "page-name active-link" : "page-name hover-color"
+                }
+              >
+               FAQ’s
+              </NavLink>
+              
+              <NavLink
+                to="/privacy"
+                className={({ isActive }) =>
+                  isActive ? "page-name active-link" : "page-name hover-color"
+                }
+              >
+               Privacy Policy
+              </NavLink>
+              <NavLink
+                to="/terms"
+                className={({ isActive }) =>
+                  isActive ? "page-name active-link" : "page-name hover-color"
+                }
+              >
+               Terms & Conditions
+              </NavLink>
             </div>
             <hr className="hr-rotate"></hr>
 

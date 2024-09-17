@@ -154,156 +154,159 @@
 }
  */
 
+/* Footer Container */
+.footer-container {
+  background-color: #303030;
+}
 
- /* Footer Container */
- .footer-container {
-    background-color: #303030;
-  }
-  
-  /* Footer Content Layout */
-  .footer-filta {
-    display: flex;
-    max-width: 1320px;
-    min-width: 200px;
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  /* Section One Styling */
-  .footer-section-one {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 355px;
-    padding: 60px 0 38px;
-  }
-  
-  .footer-logo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .footer-desc {
-    font-family: Poppins-Regular;
-    font-size: 18px;
-    line-height: 27px;
-    text-align: left;
-    color: white;
-  }
-  
-  /* Section Two Styling */
-  .footer-section-two {
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-    padding: 67px 0 38px;
-  }
-  
-  .page-name {
-    font-family: Poppins-SemiBold;
-    font-size: 18px;
-    line-height: 27px;
-    text-align: left;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .hover-color:hover {
-    color: rgba(90, 186, 71, 1);
-    transition: color 0.6s ease-in-out;
-  }
-  
-  .padding-company {
-    padding-bottom: 5px;
-  }
-  
-  /* Section Three Styling */
-  .footer-section-three {
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-    padding: 67px 0 38px;
-  }
-  
-  /* Section Four Styling */
-  .footer-section-four {
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-    padding: 67px 0 38px;
-  }
-  
-  /* Social Icons Footer */
-  .social-icon-footer {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-  }
-  
-  /* General Icon Styling */
-  .icons-f {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    outline: 1.7px solid #FFFFFF;
-    color: #FFFFFF; 
-    font-size: 20px; 
-    transition: color 0.3s ease, outline-color 0.3s ease;
-  }
-  
-  .icons-f:hover {
-    color: #5ABA47; 
-    outline-color: #5ABA47; 
-  }
-  
-  /* Specific SVG Styling */
-  .icons-f svg path {
-    stroke: white; /* Default stroke color */
-    transition: stroke 0.3s ease;
-  }
-  
-  .icons-f:hover svg path {
-    stroke: #5ABA47; /* Green stroke on hover */
-  }
-  
-  /* Horizontal Rules Styling */
-  .hr-color {
-    border: 1px solid rgba(255, 255, 255, 0.2);
-  }
-  
-  .hr-rotate {
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    margin: 0 54px;
-  }
-  
-  /* Footer Copyright */
-  .footer-copyright {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1320px;
-    min-width: 200px;
-    width: 100%;
-    margin: 0 auto;
-    color: #fff;
-    padding: 22px 0;
-  }
-  
-  .copyright {
-    font-family: Poppins-SemiBold;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 24px;
-    text-align: left;
-  }
-  
-  /* Facebook Icon Specific Styling */
-  .in-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+/* Footer Content Layout */
+.footer-filta {
+  display: flex;
+  max-width: 1320px;
+  min-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Section One Styling */
+.footer-section-one {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 355px;
+  padding: 60px 0 38px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer-desc {
+  font-family: Poppins-Regular;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: left;
+  color: white;
+}
+
+/* Section Two Styling */
+.footer-section-two {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding: 67px 0 38px;
+}
+
+.page-name {
+  font-family: Poppins-SemiBold;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: left;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.hover-color:hover {
+  color: rgba(90, 186, 71, 1);
+  transition: color 0.6s ease-in-out;
+}
+
+.active-link {
+  color: rgba(90, 186, 71, 1);
+}
+
+.padding-company {
+  padding-bottom: 5px;
+}
+
+/* Section Three Styling */
+.footer-section-three {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding: 67px 0 38px;
+}
+
+/* Section Four Styling */
+.footer-section-four {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding: 67px 0 38px;
+}
+
+/* Social Icons Footer */
+.social-icon-footer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* General Icon Styling */
+.icons-f {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  outline: 1.7px solid #ffffff;
+  color: #ffffff;
+  font-size: 20px;
+  transition: color 0.3s ease, outline-color 0.3s ease;
+}
+
+.icons-f:hover {
+  color: #5aba47;
+  outline-color: #5aba47;
+}
+
+/* Specific SVG Styling */
+.icons-f svg path {
+  stroke: white; /* Default stroke color */
+  transition: stroke 0.3s ease;
+}
+
+.icons-f:hover svg path {
+  stroke: #5aba47; /* Green stroke on hover */
+}
+
+/* Horizontal Rules Styling */
+.hr-color {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hr-rotate {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 0 54px;
+}
+
+/* Footer Copyright */
+.footer-copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1320px;
+  min-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+  color: #fff;
+  padding: 22px 0;
+}
+
+.copyright {
+  font-family: Poppins-SemiBold;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+}
+
+/* Facebook Icon Specific Styling */
+.in-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

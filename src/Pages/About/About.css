@@ -1,4 +1,37 @@
-.background{
-    height: 2000px;
-    background: linear-gradient(0deg, rgba(220,223,245,0.5) 0%, rgba(243,220,241,0.5) 35%, rgba(255,246,227,0.5) 100%);
+.About-cotainer {
+  max-width: 1380px;
+  min-width: 200px;
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+.about-desc {
+  max-width: 1320px;
+  min-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.empowering-desc {
+  font-family: Poppins-Regular;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: justify;
+}
+.padding-empo {
+  padding: 10px 0 0;
+}
+.empowering-title {
+  font-family: Poppins-Bold;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+
+  padding: 100px 0 30px;
+}
+.mission-title {
+  font-family: Poppins-Bold;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  padding: 60px 0 30px;
 }
