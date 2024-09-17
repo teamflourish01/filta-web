@@ -1,0 +1,29 @@
+.ChooseUs-main {
+  max-width: 1320px;
+  min-width: 200px;
+  width: 100%;
+  display: contents;
+  overflow-x: hidden !important;
+}
+.why-choose-us {
+  font-family: Poppins-Bold;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  padding: 60px 0 0;
+}
+.why-choose-us-cards {
+  padding: 30px 0 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.choose-cards-right {
+  display: flex;
+  gap: 16px;
+}
+.choose-cards-left {
+  display: flex;
+  gap: 16px;
+}
