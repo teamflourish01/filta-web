@@ -5,6 +5,7 @@ import Footer from './Component/Footer/Footer';
 import About from './Pages/About/About';
 import Faq from './Pages/Faq/Faq';
 import Banner from './Component/banner/Banner';
+import Contact from './Component/Contactus/Contact';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Banner/>
       {/* <About/> */}
       <Faq/>
+      <Contact/>
       <Footer/>
     </div>
   );
