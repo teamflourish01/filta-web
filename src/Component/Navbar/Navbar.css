@@ -1,5 +1,4 @@
 @font-face {
-
   font-family: Poppins-Light;
   src: url("../../font-family/Poppins-Light.ttf");
   /* 300 */
@@ -413,23 +412,6 @@ button:hover .star-6 {
 @media (max-width: 1024px) {
   .navbar {
     height: 70px;
-    /* 300 */
-  }
-  
- 
-  
-  /* .navbar {
-    max-width: 1380px;
-    min-width: 200px;
-    width: 100%;
-    margin: 0 auto !important;
-  }
-  .navbar-container {
-    max-width: 1320px;
-    min-width: 200px;
-    width: 100%;
-    background-color: #fff;
-
   }
   .hamburger {
     display: flex;
