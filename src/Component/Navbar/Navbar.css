@@ -410,9 +410,11 @@ button:hover .star-6 {
 }
 
 @media (max-width: 1024px) {
+
   .navbar {
     height: 70px;
   }
+ 
   .hamburger {
     display: flex;
     align-items: center;
