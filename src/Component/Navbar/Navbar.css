@@ -1,547 +1,559 @@
 @font-face {
-    font-family: Poppins-Light;
-    src: url("../../font-family/Poppins-Light.ttf");
-    /* 300 */
-  }
-  
-  @font-face {
-    font-family: Poppins-Regular;
-    src: url("../../font-family/Poppins-Regular.ttf");
-    /* 400 */
-  }
-  @font-face {
-    font-family: Poppins-Medium;
-    src: url("../../font-family/Poppins-Medium.ttf");
-    /* 500 */
-  }
-  @font-face {
-    font-family: Poppins-SemiBold;
-    src: url("../../font-family/Poppins-SemiBold.ttf");
-    /* 600 */
-  }
-  @font-face {
-    font-family: Poppins-Bold;
-    src: url("../../font-family/Poppins-Bold.ttf");
-    /* 700 */
-  }
-  
-  /* .navbar {
-    max-width: 1380px;
-    min-width: 200px;
-    width: 100%;
-    margin: 0 auto !important;
-  }
-  .navbar-container {
-    max-width: 1320px;
-    min-width: 200px;
-    width: 100%;
-    background-color: #fff;
-  }
-  .logo-container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 23px 0;
-    gap: 166px;
-  }
-  .navbar-tabs {
-    display: flex;
-    gap: 51px;
-  }
-  .tab-name {
-    font-family: Poppins-SemiBold;
-    font-size: 18px;
-    line-height: 27px;
-    cursor: pointer;
-  }
-  .tab-name:hover {
-    color: rgba(90, 186, 71, 1);
-    transition: color 0.5s ease-in-out;
-  }
-  
-  
-  .navbar-login {
-    border-radius: 32px;
-    border: 1px solid black;
-    background-color: #fff;
-    height: 37px;
-  }
-  .login-text {
-    padding: 5px 25.5px;
-    font-family: Poppins-SemiBold;
-    font-size: 18px;
-    line-height: 27px;
-  }
-  .navbar-buttons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .navbar-create-new-card {
-    background-color: #5aba47;
-    border: 1px solid #5aba47;
-    border-radius: 32px;
-    height: 37px;
-  }
-  .create-new-card {
-    font-family: Poppins-SemiBold;
-    font-size: 18px;
-    line-height: 27px;
-    color: #fff;
-    padding: 5px 13px;
-  }  */
-  
-  /* Animation 
-  
-  
+  font-family: Poppins-Light;
+  src: url("../../font-family/Poppins-Light.ttf");
+  /* 300 */
+}
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("../../font-family/Poppins-Regular.ttf");
+  /* 400 */
+}
+@font-face {
+  font-family: Poppins-Medium;
+  src: url("../../font-family/Poppins-Medium.ttf");
+  /* 500 */
+}
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url("../../font-family/Poppins-SemiBold.ttf");
+  /* 600 */
+}
+@font-face {
+  font-family: Poppins-Bold;
+  src: url("../../font-family/Poppins-Bold.ttf");
+  /* 700 */
+}
+.navbar {
+  background-color: #fff;
+  height: 95px;
+  transition: height 0.5s ease-out, opacity 0.5s ease-out;
+  position: sticky;
+  top: 0;
+  z-index: 1010;
+  box-shadow: 0px 0px 4px 0px #00000033;
+
+}
+
+.navbar-container {
+  max-width: 1380px;
+  min-width: 200px;
+  width: 100%;
+  margin: 0 auto !important;
+}
+
+.navbar.expanded {
+  height: 265px;
+}
+
+.filta-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1380px;
+  min-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 23px 30px;
+}
+.navbar-tabs {
+  display: flex;
+  gap: 51px;
+}
+.hide-nav {
+  display: flex;
+}
+.tab-name {
+  text-decoration: none;
+  font-family: Poppins-SemiBold;
+  font-size: 18px;
+  line-height: 27px;
+  cursor: pointer;
+  color: #000;
+}
+.tab-name.active {
+  color: rgba(90, 186, 71, 1);
+  font-weight: bold;
+}
+.tab-name:hover {
+  color: rgba(90, 186, 71, 1);
+  transition: color 0.5s ease-in-out;
+}
+
+.navbar-login {
+  border-radius: 32px;
+  border: 1px solid black;
+  background-color: #fff;
+  height: 37px;
+}
+.login-text-nav {
+  padding: 5px 25.5px;
+  font-family: Poppins-SemiBold;
+  font-size: 18px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-login {
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 32px;
+  height: 37px;
+  font-family: Poppins-SemiBold;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000;
+  font-size: 15px;
+  color: #131313;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s;
+  background-color: #fff;
+  width: 100px;
+}
+
+.navbar-login:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 120%;
+  background-color: #5aba47;
+  top: 50%;
+  right: -50px;
+  transform: skewx(18deg) translate(-980%, -50%);
+  transition: all 0.7s ease-in-out;
+}
+
+.navbar-login:hover {
+  background-color: #5aba47;
+  border: 1px solid #5aba47;
+  color: #fff;
+  transition-delay: 0.5s;
+}
+
+.navbar-login:hover::before {
+  transform: skewX(30deg) translate(250%, -50%);
+  transition-delay: 0.2s;
+}
+
+.login-text-nav:active {
+  transform: scale(0.9);
+}
+.login-star-2 {
+  position: absolute;
+  fill: black;
+  top: 0%;
+  left: 50%;
+  width: 10px;
+  height: auto;
+  z-index: -5;
+  transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
+  transition-delay: 0.6s;
+}
+
+.login-star-3 {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  width: 5px;
+  height: auto;
+  z-index: -5;
+  transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
+  transition-delay: 0.6s;
+}
+
+.login-star-4 {
+  position: absolute;
+  top: 0%;
+  right: 50%;
+  width: 2px;
+  height: auto;
+  z-index: -5;
+  transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
+  transition-delay: 0.6s;
+}
+
+.login-star-6 {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  width: 5px;
+  height: auto;
+  z-index: -5;
+  transition: all 0.8s ease;
+  transition-delay: 0.6s;
+}
+
+button:hover .login-star-2 {
+  position: absolute;
+  top: -25%;
+  left: 30%;
+  width: 5px;
+  height: auto;
+  z-index: 2;
+}
+
+button:hover .login-star-3 {
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  width: 5px;
+  height: auto;
+  z-index: 2;
+}
+
+button:hover .login-star-4 {
+  position: absolute;
+  top: 37%;
+  left: 66%;
+  width: 15px;
+  height: auto;
+  z-index: 2;
+}
+
+button:hover .login-star-6 {
+  position: absolute;
+  top: -45%;
+  left: 70%;
+  width: 5px;
+  height: auto;
+  z-index: 2;
+}
+.stars-login {
+  width: 5px;
+  height: 5px;
+  color: #fff;
+}
+
+.navbar-create-new-card {
+  background-color: #5aba47;
+  border: 1px solid #5aba47;
+  border-radius: 32px;
+  height: 37px;
+  font-family: Poppins-SemiBold;
+  font-size: 18px;
+  line-height: 27px;
+  color: #fff;
+  padding: 5px 13px;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s;
+  background-color: #5aba47;
+  font-weight: bolder;
+}
+
+.navbar-create-new-card:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 120%;
+  background-color: #000;
+  top: 50%;
+  right: -23px;
+  transform: skewX(180deg) translate(290%, -50%);
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar-create-new-card:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.navbar-create-new-card:hover::before {
+  transform: skewX(210deg) translate(-990%, -50%);
+  transition-delay: 0.2s;
+}
+
+.create-new-card:active {
+  transform: scale(0.9);
+}
+
+.star-2 {
+  position: absolute;
+  fill: black;
+  top: 0%;
+  left: 50%;
+  width: 10px;
+  height: auto;
+  z-index: -5;
+  transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
+  transition-delay: 0.2s;
+}
+
+.star-3 {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  width: 5px;
+  height: auto;
+  z-index: -5;
+  transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
+  transition-delay: 0.2s;
+}
+
+.star-4 {
+  position: absolute;
+  top: 0%;
+  right: 50%;
+  width: 2px;
+  height: auto;
+  z-index: -5;
+  transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
+  transition-delay: 0.2s;
+}
+
+.star-6 {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  width: 5px;
+  height: auto;
+  z-index: -5;
+  transition: all 0.8s ease;
+  transition-delay: 0.2s;
+}
+
+button:hover .star-2 {
+  position: absolute;
+  top: -25%;
+  left: 38%;
+  width: 5px;
+  height: auto;
+  z-index: 2;
+}
+
+button:hover .star-3 {
+  position: absolute;
+  top: 38%;
+  left: 30%;
+  width: 5px;
+  height: auto;
+  z-index: 2;
+}
+
+button:hover .star-4 {
+  position: absolute;
+  top: 35%;
+  left: 55%;
+  width: 15px;
+  height: auto;
+  z-index: 2;
+}
+
+button:hover .star-6 {
+  position: absolute;
+  top: -45%;
+  left: 60%;
+  width: 5px;
+  height: auto;
+  z-index: 2;
+}
+.stars-create {
+  width: 5px;
+  height: 5px;
+}
+
+.buttons-both {
+  display: flex;
+  gap: 10px;
+}
+.res-hide {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  width: 26px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  transition: all 0.3s;
+  border-radius: 20px;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+.hide {
+  display: flex;
+}
+
+@media (max-width: 1024px) {
   .navbar {
-    max-width: 1380px;
-    min-width: 200px;
-    width: 100%;
-    margin: 0 auto !important;
+    height: 70px;
   }
-  .navbar-container {
-    max-width: 1320px;
-    min-width: 200px;
-    width: 100%;
-    background-color: #fff;
-  }
-  .logo-container {
+  .hamburger {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
-    padding: 23px 0;
-    gap: 166px;
   }
-  .navbar-tabs {
-    display: flex;
-    gap: 51px;
-  }
-  .tab-name {
-    font-family: Poppins-SemiBold;
-    font-size: 18px;
-    line-height: 27px;
-    cursor: pointer;
-  }
-  .tab-name:hover {
-    color: rgba(90, 186, 71, 1);
-    transition: color 0.5s ease-in-out;
-  }
-  
-  
-  .navbar-login {
-    border-radius: 32px;
-    border: 1px solid black;
-    background-color: #fff;
-    height: 37px;
-  }
-  .login-text {
-    padding: 5px 25.5px;
-    font-family: Poppins-SemiBold;
-    font-size: 18px;
-    line-height: 27px;
-  }
-  .navbar-buttons {
-    display: flex;
-    justify-content: space-between;
+  .dropdown-menu {
+    background-color: white;
+    display: none;
+    flex-direction: column;
     align-items: center;
     gap: 10px;
-  }
-  
-   .navbar-create-new-card {
-    background-color: #5aba47;
-    border: 1px solid #5aba47;
-    border-radius: 32px;
-    height: 37px;
-    font-family: Poppins-SemiBold;
-    font-size: 18px;
-    line-height: 27px;
-    color: #fff;
-    padding: 5px 13px;
-    font-size: 15px;
-    color: #131313;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.5s;
-    background-color: #5ABA47;
-    font-weight: bolder;
-  }
-  
-  .navbar-create-new-card:before {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 120%;
-    background-color: #000;
-    top: 50%;
-    right: -50px;
-    transform: skewX(180deg) translate(280%, -50%); 
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .navbar-create-new-card:hover {
-    background-color: #fff;
-    color: #000;
-  }
-  
-  .navbar-create-new-card:hover::before {
-    transform: skewX(210deg) translate(-980%, -50%); 
-    transition-delay: 0.2s;
-  }
-  
-  .create-new-card:active {
-    transform: scale(0.9);
-  } */
-  
-  Animation 
-  .navbar {
-    max-width: 1380px;
-    min-width: 200px;
-    width: 100%;
-    margin: 0 auto !important;
-    background-color: #fff;
-  }
-  /* .navbar-container {
-    max-width: 1320px;
-    min-width: 200px;
-    width: 100%;
-    margin: 0 auto;
-  } */
-  .filta-logo{
-    display: flex;
-    align-items: center;
-  }
-  .logo-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 23px 0;
-    gap: 166px;
-    max-width: 1320px;
-    min-width: 200px;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .navbar-tabs {
-    display: flex;
-    gap: 51px;
+    padding: 20px 0 17px;
+    transition: 0.3s ease-in, opacity 0.3s ease-out;
+    border-top: 1px solid #0000001a;
   }
   .tab-name {
-    text-decoration: none;
-    font-family: Poppins-SemiBold;
-    font-size: 18px;
-    line-height: 27px;
-    cursor: pointer;
-    color: #000;
+    font-size: 16px;
+    line-height: 24px;
   }
-  .tab-name.active {
-    color: rgba(90, 186, 71, 1); /* Active tab color */
-    font-weight: bold;
-  }
-  .tab-name:hover {
-    color: rgba(90, 186, 71, 1);
-    transition: color 0.5s ease-in-out;
-  }
-  
-  .navbar-login {
-    border-radius: 32px;
-    border: 1px solid black;
-    background-color: #fff;
-    height: 37px;
-  }
-  .login-text {
-    padding: 5px 25.5px;
-    font-family: Poppins-SemiBold;
-    font-size: 18px;
-    line-height: 27px;
+  .hide {
+    display: flex;
   }
   .navbar-buttons {
+    gap: 25px !important;
+  }
+  .hide-responsive {
+    display: none;
+  }
+  .logo-container {
+    padding: 16px 25px;
+  }
+  .filta-logo-size {
+    width: 72px;
+    height: 31px;
+  }
+  .hide-nav {
+    display: none;
+  }
+
+  .res-hide {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     gap: 10px;
-  }
-  
-  .navbar-login {
-    background-color: #fff;
-    border: 1px solid #000;
-    border-radius: 32px;
-    height: 37px;
-    font-family: Poppins-SemiBold;
-    font-size: 18px;
-    line-height: 27px;
-    color: #000;
-    font-size: 15px;
-    color: #131313;
-    cursor: pointer;
-    position: relative;
+    text-align: center;
+    padding: 0;
+    height: 0;
+    opacity: 0;
     overflow: hidden;
-    transition: all 0.5s;
-    background-color: #fff;
-    font-weight: bolder;
+    align-items: center;
+    border-top: 1px solid #0000001a;
   }
-  
-  .navbar-login:before {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 120%;
-    background-color: #5aba47;
-    top: 50%;
-    right: -50px;
-    transform: skewx(18deg) translate(-980%, -50%);
-    transition: all 0.7s ease-in-out;
+
+  .res-hide.open {
+    animation: expand 0.9s forwards;
+    padding: 20px 0;
+    opacity: 1;
   }
-  
-  .navbar-login:hover {
-    background-color: #5aba47;
-    color: #fff;
-    transition-delay: 0.5s;
-  
+  .res-hide.collapsed {
+    animation: close 0.4s forwards;
   }
-  
-  .navbar-login:hover::before {
-    transform: skewX(30deg) translate(250%, -50%);
-    transition-delay: 0.2s;
+  .visible {
+    animation: show 1s ease-in-out;
   }
-  
-  .login-text:active {
-    transform: scale(0.9);
+  .hidden {
+    animation: hide 2s ease-in-out;
   }
-  .login-star-2 {
-    position: absolute;
-    fill: black;
-    top: 0%;
-    left: 50%;
-    width: 10px;
-    height: auto;
-    z-index: -5;
-    transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
-    transition-delay: 0.6s;
+
+  @keyframes show {
+    from {
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+    to {
+      opacity: 1;
+    }
   }
-  
-  .login-star-3 {
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    width: 5px;
-    height: auto;
-    z-index: -5;
-    transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
-    transition-delay: 0.6s;
-  
+  @keyframes hide {
+    from {
+      opacity: 1;
+      transition: opacity 2s ease-in-out;
+    }
+    to {
+      opacity: 0;
+    }
   }
-  
-  .login-star-4 {
-    position: absolute;
-    top: 0%;
-    right: 50%;
-    width: 2px;
-    height: auto;
-    z-index: -5;
-    transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
-    transition-delay: 0.6s;
-  
+
+  @keyframes expand {
+    from {
+      height: 0;
+    }
+    to {
+      height: 300px;
+      transition: height 0.5s ease-out, opacity 0.5s ease-out;
+    }
   }
-  
-  .login-star-6 {
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    width: 5px;
-    height: auto;
-    z-index: -5;
-    transition: all 0.8s ease;
-    transition-delay: 0.6s;
-  
+
+  @keyframes close {
+    from {
+      height: 300px;
+      opacity: 1;
+    }
+    to {
+      height: 0;
+      opacity: 0;
+    }
   }
-  
-  button:hover .login-star-2 {
-    position: absolute;
-    top: -25%;
-    left: 30%;
-    width: 5px;
-    height: auto;
-    z-index: 2;
+
+  .button-768 {
+    display: none;
   }
-  
-  button:hover .login-star-3 {
-    position: absolute;
-    top: 35%;
-    left:20%;
-    width: 5px;
-    height: auto;
-    z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .res-none {
+    display: none;
   }
-  
-  button:hover .login-star-4 {
-    position: absolute;
-    top: 37%;
-    left: 66%;
-    width: 15px;
-    height: auto;
-    z-index: 2;
+  .buttons-both {
+    flex-direction: column;
   }
-  
-  button:hover .login-star-6 {
-    position: absolute;
-    top: -45%;
-    left: 70%;
-    width: 5px;
-    height: auto;
-    z-index: 2;
+  .hide {
+    display: none;
   }
-  .stars-login{
-    width: 5px;
-    height: 5px;
-    color: #fff;
+  .button-768 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px;
   }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  .navbar-create-new-card {
-    background-color: #5aba47;
-    border: 1px solid #5aba47;
-    border-radius: 32px;
-    height: 37px;
-    font-family: Poppins-SemiBold;
-    font-size: 18px;
-    line-height: 27px;
-    color: #fff;
-    padding: 5px 13px;
-    font-size: 15px;
-    color: #fff;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.5s;
-    background-color: #5aba47;
-    font-weight: bolder;
+  .hide-responsive {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  
-  .navbar-create-new-card:before {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 120%;
-    background-color: #000;
-    top: 50%;
-    right: -50px;
-    transform: skewX(180deg) translate(280%, -50%);
-    transition: all 0.5s ease-in-out;
+  .logo-container {
+    padding: 20px 10px;
   }
-  
-  .navbar-create-new-card:hover {
-    background-color: #fff;
-    color: #000;
+  .navbar.expanded {
+    height: 365px;
   }
-  
-  .navbar-create-new-card:hover::before {
-    transform: skewX(210deg) translate(-990%, -50%);
-    transition-delay: 0.2s;
-  }
-  
-  .create-new-card:active {
-    transform: scale(0.9);
-  }
-  
-  .star-2 {
-    position: absolute;
-    fill: black;
-    top: 0%;
-    left: 50%;
-    width: 10px;
-    height: auto;
-    z-index: -5;
-    transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
-    transition-delay: 0.2s;
-  
-  }
-  
-  .star-3 {
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    width: 5px;
-    height: auto;
-    z-index: -5;
-    transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
-    transition-delay: 0.2s;
-  
-  }
-  
-  .star-4 {
-    position: absolute;
-    top: 0%;
-    right: 50%;
-    width: 2px;
-    height: auto;
-    z-index: -5;
-    transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
-    transition-delay: 0.2s;
-  
-  }
-  
-  .star-6 {
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    width: 5px;
-    height: auto;
-    z-index: -5;
-    transition: all 0.8s ease;
-    transition-delay: 0.2s;
-  
-  }
-  
-  button:hover .star-2 {
-    position: absolute;
-    top: -25%;
-    left: 38%;
-    width: 5px;
-    height: auto;
-    z-index: 2;
-  }
-  
-  button:hover .star-3 {
-    position: absolute;
-    top: 38%;
-    left:30%;
-    width: 5px;
-    height: auto;
-    z-index: 2;
-  }
-  
-  button:hover .star-4 {
-    position: absolute;
-    top: 35%;
-    left: 55%;
-    width: 15px;
-    height: auto;
-    z-index: 2;
-  }
-  
-  button:hover .star-6 {
-    position: absolute;
-    top: -45%;
-    left: 60%;
-    width: 5px;
-    height: auto;
-    z-index: 2;
-  }
-  .stars-create{
-    width: 5px;
-    height: 5px;
-  }
+}
+
+.hamburger svg {
+  display: ruby;
+  transform: scale(1.9);
+}

@@ -74,12 +74,12 @@
     z-index: -1;
     top: 40%;
     right: 30%;
-    background: #5aba47;
+    background: white; 
     height: 22px;
     width: 22px;
     border-radius: 50%;
-    transform: scale(0);
-    transition: transform 0.8s ease-out, height 0.8s ease-out, width 0.8s ease-out;
+    transform: scale(2); 
+    transition: transform 0.8s ease-out, height 0.8s ease-out, width 0.8s ease-out, background-color 0.8s ease-out;
   }
   
   .CardChoose-card:hover .img-title:before {
@@ -89,6 +89,7 @@
     height: 32px;
     width: 32px;
     border-radius: 50%;
+    background-color: #5aba47;
   }
   
   .CardChoose-card:hover .img-title img {

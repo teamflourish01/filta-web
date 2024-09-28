@@ -33,6 +33,10 @@ import Banner from "./Component/banner/Banner";
 import { Route, Routes } from "react-router-dom";
 import About from "./Pages/About/About";
 import { FaQ } from "react-icons/fa6";
+import Resources from "./Pages/Resources/Resources";
+import ResouceDetails from "./Component/ResourceDetails/ResouceDetails";
+import Pricing from "./Pages/Pricing/Pricing";
+import Features from './Pages/Features/Features';
 
 function App() {
   return (
@@ -43,6 +47,11 @@ function App() {
         <Routes>
           <Route path="/about" element={<About />} />
           <Route path="/faqs" element={<Faq />} />
+          <Route path="/resources" element={<Resources />} />
+          <Route path="/resourcedetails" element={<ResouceDetails/>}/>
+          <Route path="/pricing" element={<Pricing/>} />
+          <Route path="/features" element={<Features/>}/>
+
         </Routes>
       </div>
       <Footer />

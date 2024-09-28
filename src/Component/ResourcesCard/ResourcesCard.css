@@ -1,0 +1,115 @@
+.blog-card-container {
+  position: relative;
+  display: inline-block;
+  max-width: 380px;
+  min-width: 200px;
+  width: 100%;
+  border: 1px solid #0000001a;
+  border-radius: 12px;
+  background-color: white;
+}
+
+.read-more-container {
+  position: absolute;
+  bottom: 8px;
+  right: -1px;
+}
+.link-remove {
+  text-decoration: none;
+  color: inherit;
+}
+
+.read-more {
+  text-decoration: none;
+  font-family: Manrope-Regular;
+  font-size: 16px;
+  color: #000000;
+  background-color: transparent;
+  padding: 9px 20px;
+  border: 1px solid #000000;
+  border-top-color: #000000;
+  border-left-color: #000000;
+  border-bottom-style: none;
+  border-right-style: none;
+  /* border-bottom-color: #ffffff; */
+  /* border-right-color: #ffffff; */
+  /* border-radius: 5px; */
+  border-top-left-radius: 15px;
+  transition: background-color 0.3s ease;
+}
+
+/* .read-more:hover {
+      background-color: #f0f0f0;
+  } */
+
+.blog-img-container {
+  padding: 16px 16px 0 16px;
+  display: flex;
+  align-items: center;
+}
+
+.blog-img {
+  max-width: 348px;
+  min-width: 185px;
+  width: 100%;
+}
+
+.date {
+  font-family: Poppins-Regular;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #97989f;
+  padding: 16px 0;
+}
+
+.blog-card-title {
+  font-family: Poppins-SemiBold;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: center;
+  padding: 16px 24px;
+}
+
+.blog-card-text {
+  font-family: Poppins-Regular;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+}
+.blog-img-logo {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+  max-width: 379px;
+  min-width: 200px;
+  width: 100%;
+  height: 290px;
+}
+.dashed-hr-blog {
+  border: none;
+  border-top: 1px dashed #0000001a;
+}
+.view-more-blog {
+  font-family: Poppins-Medium;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+}
+.view-more-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 24px;
+    gap: 5px;
+}
+.view-more-btn-arrow{
+    display: flex;
+}
+
+@media (max-width: 1024px) {
+
+}
