@@ -17,7 +17,7 @@
           <div className="choose-flex">
             <div className="choose-template">
               <div className="choose"></div>
-              <div className="box-text">
+              <div className="box-text-work">
                 <p className="text">01</p>
                 <p className="template">Choose a Template:</p>
               </div>
@@ -29,7 +29,7 @@
             </div>
             <div className="information">
               <div className="choose"></div>
-              <div className="box-text">
+              <div className="box-text-work-work">
                 <p className="text">02</p>
                 <p className="template">Customize Your Information:</p>
               </div>
@@ -41,7 +41,7 @@
             </div>
             <div className="customize">
               <div className="choose"></div>
-              <div className="box-text">
+              <div className="box-text-work">
                 <p className="text">03</p>
                 <p className="template">Customize Your Information:</p>
               </div>
