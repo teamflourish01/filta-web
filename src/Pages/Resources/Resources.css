@@ -1,0 +1,74 @@
+/* .resources-container{
+    max-width: 1380px;
+    min-width: 200px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.resources-content{
+    max-width: 1320px;
+    min-width: 200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+
+}
+
+@media (max-width: 1024px) {
+    .resources-content{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 28px;
+    }
+} */
+
+
+
+.resources-container {
+    max-width: 1380px;
+    min-width: 200px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.resources-content {
+    max-width: 1320px;
+    min-width: 200px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 90px; /* space between grid items */
+    /* padding: 0 30px; */
+}
+
+@media (max-width: 1024px) {
+    .resources-content {
+        grid-template-columns: repeat(2, 1fr); /* 2 equal columns on medium screens */
+        gap: 28px;
+        justify-items: center;
+        padding: 0 25px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .resources-container {
+        padding-top: 50px;
+    }
+    .resources-content {
+        grid-template-columns: 1fr; /* 1 column on small screens */
+        gap: 20px;
+        padding: 0 10px;
+    }
+    .blog-card-title {
+        font-size: 18px !important;
+    }
+    .blog-card-text {
+        font-size: 16px !important;
+    }
+}

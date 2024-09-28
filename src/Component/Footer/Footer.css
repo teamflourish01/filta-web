@@ -1,171 +1,25 @@
-/* .footer-container {
-  background-color: #303030;
 
-}
-.footer-filta {
-  display: flex;
-  max-width: 1320px;
-  min-width: 200px;
-  width: 100%;
-  margin: 0 auto;
-}
-.footer-section-one {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 355px;
-  padding: 60px 0 38px ;
-}
-.footer-logo{
-  display: flex;
-  align-items: center;
-}
-.footer-desc {
-  font-family: Poppins-Regular;
-  font-size: 18px;
-  line-height: 27px;
-  text-align: left;
-  color: white;
-}
-.footer-section-two {
-  display: flex;
-  gap: 10px;
-  flex-direction: column;
-  padding: 67px 0 38px ;
-
-}
-.page-name {
-  font-family: Poppins-SemiBold;
-  font-size: 18px;
-  line-height: 27px;
-  text-align: left;
-  color: white;
-  cursor: pointer;
-}
-.hover-color:hover {
-  color: rgba(90, 186, 71, 1);
-  transition: color 0.6s ease-in-out;
-}
-.padding-company {
-  padding-bottom: 5px;
-}
-.footer-section-three {
-  display: flex;
-  gap: 10px;
-  flex-direction: column;
-  padding: 67px 0 38px ;
-
-}
-.footer-section-four {
-  display: flex;
-  gap: 10px;
-  flex-direction: column;
-  padding: 67px 0 38px ;
-
-}
-.social-icon-footer {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.footer-copyright {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1320px;
-  min-width: 200px;
-  width: 100%;
-  margin: 0 auto;
-  color: #fff;
-  padding: 22px 0;
-}
-.copyright {
-  font-family: Poppins-SemiBold;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 24px;
-  text-align: left;
-}
-.hr-color{
-  border: 1px solid rgba(255, 255, 255, 0.2)
-}
-.hr-rotate{
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  margin: 0 54px;
-}
-
-.icons-f {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%; 
-  outline: 1.7px solid #FFFFFF;
-
-}
-
-.icons-f{
-  color: #FFFFFF; 
-  font-size: 20px; 
-}
-.icons-f:hover {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%; 
-  outline: 1.6px solid #5ABA47; 
-}
-
-.icons-f:hover {
-  color: #5ABA47; 
-  font-size: 20px; 
-}
-
-.icons-f svg path {
-  stroke: white; 
-}
-
-.icons-f svg:hover path {
-  stroke: #5ABA47; 
-}
-
-
-/* .fb-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #303030; 
-  font-size: 21.71px; 
-  stroke: white; 
-  stroke-width: 1.3px; 
-}
-.fb-icon:hover {
-  stroke: #5ABA47;
-} 
-
-.in-icon{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
- */
 
 /* Footer Container */
 .footer-container {
   background-color: #303030;
+  margin-top: 100px;
+ 
 }
-
-/* Footer Content Layout */
-.footer-filta {
-  display: flex;
-  max-width: 1320px;
+.footer-content{
+  max-width: 1380px;
   min-width: 200px;
   width: 100%;
   margin: 0 auto;
+}
+/* Footer Content Layout */
+.footer-filta {
+  display: flex;
+  max-width: 1380px;
+  min-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
 }
 
 /* Section One Styling */
@@ -218,7 +72,7 @@
 }
 
 .padding-company {
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 
 /* Section Three Styling */
@@ -293,7 +147,7 @@
   width: 100%;
   margin: 0 auto;
   color: #fff;
-  padding: 22px 0;
+  padding: 22px 30px;
 }
 
 .copyright {
@@ -309,4 +163,79 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.width-help{
+  max-width: 181px;
+  min-width: 50px;
+  width: 100%;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+  .hr-rotate {
+    margin: 0 13px;
+  }
+  .footer-copyright {
+    flex-direction: column;
+  }
+  .page-name {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .footer-section-one {
+    padding: 50px 0 24.8px 25px;
+    width: unset;
+  }
+  .footer-section-four {
+    padding: 67px 20px 38px 0;
+  }
+  .footer-desc {
+    font-size: 16px;
+    width: 220px;
+  }
+  .social-icon-footer{
+    flex-wrap: wrap;
+  }
+}
+
+
+@media only screen and (max-width:768px){
+  .footer-filta {
+    flex-direction: column;
+    padding: unset;
+  }
+  .footer-section-one {
+    padding: 42px 10px 12px;
+    width: unset;
+}
+  .footer-section-two {
+    padding: 12px 0 12px 10px;
+  }
+  .footer-section-three{
+    padding: 12px 0 12px 10px;
+  }
+  .footer-section-four {
+    padding: 12px 0 12px 10px;
+  }
+  .hr-rotate {
+    margin: unset;
+}
+.footer-copyright {
+  padding: 15px 0 15px 10px;
+  width: 260px;
+  margin: unset;
+}
+.copyright {
+  font-size: 16px;
+}
+.footer-desc {
+  font-size: 16px;
+  line-height: 24px;
+}
+.footer-container {
+  margin-top: 50px;
+}
+
 }
