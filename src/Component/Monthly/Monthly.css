@@ -1,0 +1,88 @@
+.monthly-card-container {
+  max-width: 1380px;
+  min-width: 200px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 38px;
+  padding: 0 30px;
+}
+.monthly-price-card {
+  /* max-width: 415px !important;
+  min-width: 200px;
+  width: 100%; */
+  max-width: 415px;
+  min-width: 200px;
+  width: 100%;
+  background-color: #fff;
+  height: 819px;
+  border-radius: 10px;
+  border-top: 5px solid #5aba47;
+  border-bottom: 5px solid #5aba47;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+.free {
+  border-bottom: 2px solid #0000001a;
+  padding: 56px 0;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 90;
+}
+.box {
+  border-bottom: 2px solid #0000001a;
+}
+.free-text {
+  text-transform: uppercase;
+  color: #5aba47;
+  font-family: Poppins-Bold;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+}
+.rupees {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+}
+.amount {
+  font-family: Poppins-Bold;
+  font-size: 30px;
+  line-height: 45px;
+  text-align: center;
+}
+.box-text {
+  font-family: Poppins-Regular;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+@media (max-width: 1024px) {
+  .monthly-card-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: unset;
+    gap: 28px;
+  }
+}
+@media (max-width: 768px) {
+  .monthly-card-container {
+      grid-template-columns: repeat(1, 1fr);
+      padding: unset;
+      gap: 20px;
+  }
+  .free {
+    padding: 30px 0;
+  }
+  .free-text {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .box-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

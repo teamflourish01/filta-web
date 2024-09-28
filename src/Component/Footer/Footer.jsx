@@ -113,7 +113,7 @@ function Footer() {
             <hr className="hr-rotate"></hr>
 
             <div className="footer-section-three">
-              <p className="page-name padding-company">Help & information</p>
+              <p className="page-name padding-company width-help">Help & Information</p>
               <NavLink
                 to="/faqs"
                 className={({ isActive }) =>
