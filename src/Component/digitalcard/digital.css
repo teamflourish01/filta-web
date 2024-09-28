@@ -1,0 +1,110 @@
+
+.what{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
+    padding: 60px 0 30px 0;
+}
+.under-1320{
+    max-width: 1320px;
+    min-width: 200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.digital-card{
+    max-width: 601px;
+    min-width: 200px;
+    width: 100%;
+    
+}
+.Digital-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.cardcontainer{
+    max-width: 607px;
+    min-width: 200px;
+    width: 100%;
+    
+    background: #E2E2E280;
+height: 471px;
+border-radius: 10px;
+}
+.business{
+    font-family: Poppins;
+font-size: 40px;
+font-weight: 600;
+line-height: 60px;
+text-align: justified;
+color: #5ABA47;
+}
+.business-card{
+    font-weight: 400;
+    line-height: 27px;
+    text-align: justify;
+   
+font-size: 18px;
+font-weight: 400;
+line-height: 27px;
+text-align: justified;
+padding: 10px 0 20px 0;
+font-family: Poppins-Regular;
+
+
+}
+button{
+    padding: 5px 10px;
+    border-radius: 32px;
+    width: 193px;
+    background-color: white;
+    font-family:Poppins-SemiBold ;
+
+}
+.dashed-border {
+    border-top: 1px dashed #0000004D;
+    /* border-bottom: 1px dashed #0000004D; */
+    padding: 10px 0 ; 
+   /* Optional: width of the element */
+     /* Optional: center the text */
+     font-family: Poppins;
+font-size: 40px;
+font-weight: 600;
+line-height: 60px;
+text-align: justified;
+
+  }
+
+  .dashed-border {
+    cursor: pointer;
+    transition: transform 1s ease-in-out;
+    position: relative;
+  }
+  
+  .move-to-title {
+    position: absolute;
+    transform: translateY(-150px); /* Adjust this value to control the movement */
+    opacity: 0;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  }
+  /* General Digital-flex styling */
+.Digital-flex {
+    opacity: 0;
+    transform: translateY(100%); /* Initially hidden below */
+    transition: all 0.6s ease-in-out;
+  }
+  
+  /* When card is active, animate it sliding from bottom to top */
+  .open-card {
+    opacity: 1;
+    transform: translateY(0); /* Move it to the original position */
+  }
+  
+  
+  
+
+
+
+  
+  

@@ -1,0 +1,38 @@
+body {
+   /* Light background color */
+}
+
+.container-word{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Prevents overflow */
+  font-size: 24px;
+  padding: 34px 0 29px 0;
+  text-align: center;
+  color:  rgba(90, 186, 71, 1);
+  font-size: 40px;
+  font-family: Poppins-Bold;
+
+}
+
+.letter {
+  display: inline-block; /* Make each letter a block */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.jump {
+  animation: jump 0.5s ease; /* Animation for jumping */
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* Jump height */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
