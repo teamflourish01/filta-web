@@ -411,14 +411,9 @@ button:hover .star-6 {
 }
 
 @media (max-width: 1024px) {
-  .navbar {
-    height: 70px;
-    /* 300 */
-  }
-  
  
   
-  /* .navbar {
+  .navbar {
     max-width: 1380px;
     min-width: 200px;
     width: 100%;
