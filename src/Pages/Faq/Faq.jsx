@@ -58,8 +58,20 @@ const Faq = () => {
                 },
               ].map(({ question, answer, index }) => (
                 <div className={`notable-card-${index + 1}`} key={index}>
-                  <div className="notable-cards">
-                    <div className="title-cards">
+                <div
+                    className={`notable-cards ${
+                      expandedIndex === index ? "expanded-margin" : ""
+                    }`}
+                  >
+                  <div
+                      className="title-cards"
+                      style={{
+                        margin:
+                          expandedIndex === index
+                            ? "16px 30px 12px 25px"
+                            : "19px 30px 19px 25px",
+                      }}
+                    >
                       <div
                         className={`li-title ${
                           expandedIndex === index ? "expanded" : ""
@@ -121,7 +133,15 @@ const Faq = () => {
               ].map(({ question, answer, index }) => (
                 <div className={`notable-card-${index + 1}`} key={index}>
                   <div className="notable-cards">
-                    <div className="title-cards">
+                  <div
+                      className="title-cards"
+                      style={{
+                        margin:
+                          expandedIndex === index
+                            ? "16px 30px 12px 25px"
+                            : "19px 30px 19px 25px",
+                      }}
+                    >
                       <div
                         className={`li-title ${
                           expandedIndex === index ? "expanded" : ""
@@ -183,7 +203,15 @@ const Faq = () => {
               ].map(({ question, answer, index }) => (
                 <div className={`notable-card-${index + 1}`} key={index}>
                   <div className="notable-cards">
-                    <div className="title-cards">
+                  <div
+                      className="title-cards"
+                      style={{
+                        margin:
+                          expandedIndex === index
+                            ? "16px 30px 12px 25px"
+                            : "19px 30px 19px 25px",
+                      }}
+                    >
                       <div
                         className={`li-title ${
                           expandedIndex === index ? "expanded" : ""
@@ -245,7 +273,15 @@ const Faq = () => {
               ].map(({ question, answer, index }) => (
                 <div className={`notable-card-${index + 1}`} key={index}>
                   <div className="notable-cards">
-                    <div className="title-cards">
+                  <div
+                      className="title-cards"
+                      style={{
+                        margin:
+                          expandedIndex === index
+                            ? "16px 30px 12px 25px"
+                            : "19px 30px 19px 25px",
+                      }}
+                    >
                       <div
                         className={`li-title ${
                           expandedIndex === index ? "expanded" : ""
@@ -307,33 +343,41 @@ const Faq = () => {
                   },
                 ].map(({ question, answer, index }) => (
                   <div className={`notable-card-${index + 1}`} key={index}>
-                    <div className="notable-cards">
-                      <div className="title-cards">
-                        <div
-                          className={`li-title ${
-                            expandedIndex === index ? "expanded green-text" : ""
-                          }`}
-                        >
-                          <div className="li-class">{question}</div>
-                        </div>
-                        <div
-                          className={`icon-down-arrow ${
-                            expandedIndex === index ? "rotated" : ""
-                          }`}
-                          onClick={() => handleToggle(index)}
-                        >
-                          <SlArrowDown />
-                        </div>
-                      </div>
+                  <div className="notable-cards">
+                  <div
+                      className="title-cards"
+                      style={{
+                        margin:
+                          expandedIndex === index
+                            ? "16px 30px 12px 25px"
+                            : "19px 30px 19px 25px",
+                      }}
+                    >
                       <div
-                        className={`notabal-card-content ${
-                          expandedIndex === index ? "show" : ""
+                        className={`li-title ${
+                          expandedIndex === index ? "expanded" : ""
                         }`}
                       >
-                        <p className="ans-padding">{answer}</p>
+                        <div className="li-class">{question}</div>
+                      </div>
+                      <div
+                        className={`icon-down-arrow ${
+                          expandedIndex === index ? "rotated" : ""
+                        }`}
+                        onClick={() => handleToggle(index)}
+                      >
+                        <SlArrowDown />
                       </div>
                     </div>
+                    <div
+                      className={`notabal-card-content ${
+                        expandedIndex === index ? "show" : ""
+                      }`}
+                    >
+                      <p className="ans-padding">{answer}</p>
+                    </div>
                   </div>
+                </div>
                 ))}
               </div>
             </div>
@@ -347,3 +391,4 @@ const Faq = () => {
 };
 
 export default Faq;
+

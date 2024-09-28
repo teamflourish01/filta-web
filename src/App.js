@@ -33,19 +33,27 @@ import Banner from "./Component/banner/Banner";
 import { Route, Routes } from "react-router-dom";
 import About from "./Pages/About/About";
 import { FaQ } from "react-icons/fa6";
+import Contact from "./Component/Contactus/Contact";
+import Home from "./Component/Homebanner/Home";
+import Cursor from "./Component/cursor/Cursor";
+
 
 function App() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
 
       <div className="content-wrapper">
+        <Cursor/>
         <Routes>
           <Route path="/about" element={<About />} />
           <Route path="/faqs" element={<Faq />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/home" element={<Home/>} />
+   
         </Routes>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
 
   );

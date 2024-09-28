@@ -1,0 +1,79 @@
+.feature-container-home {
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  font-family: Poppins-Bold;
+  /* padding-bottom: 80px; */
+}
+
+.feature-image-home {
+  width: 165px; /* Initial width */
+  height: 587px;
+  object-fit: cover;
+  transition: width 0.3s ease-in-out; /* Smooth transition */
+  display: block;
+}
+
+.feature-image-home:hover {
+  width: 420px; /* Width on hover */
+}
+
+.exclusive-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 30px 0 60px 0;
+}
+
+.voice-over {
+  position: relative;
+  /* display: inline-block; */
+  /* width: 100%; */
+}
+
+.overlay-text {
+  position: absolute;
+  top: 59%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  color: #5aba47;
+  font-family: Poppins-SemiBold;
+  font-size: 20px;
+  width: 335px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.voice-over:hover .overlay-text {
+  opacity: 1; /* Show text on hover */
+  transform: translate(-50%) rotate(0deg);
+  color: white;
+}
+
+.voice-over-container {
+  position: relative;
+}
+
+.personalized {
+  position: absolute; 
+  top: 65%; /* Center vertically in the parent container */
+  left: 50%; /* Center horizontally in the parent container */
+  transform: translate(-50%); /* Center it perfectly */
+  color: white;
+  padding: 0 14px;
+  font-family: Poppins-Regular;
+  
+font-size: 18px;
+  border-radius: 5px;
+  display: none; 
+  opacity: 0; 
+  transition: opacity 0.3s ease;
+  width: 420px;
+  text-align: justify;
+ 
+}
+
+.voice-over:hover .personalized {
+  display: block; /* Show the personalized text on hover */
+  opacity: 1; /* Fully visible */
+  text-align: justify;
+}
