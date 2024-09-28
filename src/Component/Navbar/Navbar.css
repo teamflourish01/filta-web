@@ -9,6 +9,7 @@
     src: url("../../font-family/Poppins-Regular.ttf");
     /* 400 */
   }
+  
   @font-face {
     font-family: Poppins-Medium;
     src: url("../../font-family/Poppins-Medium.ttf");

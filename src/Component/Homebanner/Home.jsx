@@ -79,7 +79,7 @@ const Home = () => {
             </div>
       </section>
       <Digitalcard/>
-      {/* <Diffrent/> */}
+      <Diffrent/>
       <Feature/>
       <Work/>
       <Transform/>
