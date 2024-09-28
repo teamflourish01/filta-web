@@ -24,6 +24,10 @@
     src: url("../../font-family/Poppins-Bold.ttf");
     /* 700 */
   }
+  @font-face {
+    font-family: Poppins-ExtraBold;
+    src: url("../../font-family/Poppins-ExtraBold.ttf");
+  }
   
   /* .navbar {
     max-width: 1380px;
