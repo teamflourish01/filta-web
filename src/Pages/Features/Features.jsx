@@ -20,7 +20,7 @@ function Features() {
               <div className="gray-card-left"></div>
 
               <div className="content-01">
-                <div className="text-01">01</div>
+                <p className="text-01">01</p>
                 <p className="useful-for-everyone">Useful for everyone:</p>
                 <p className="feature-card-desc">
                   Unlock the unlimited possibilities of networking with every
