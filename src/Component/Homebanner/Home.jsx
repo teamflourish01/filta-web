@@ -10,6 +10,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 import Work from "../work/Work";
 import Transform from "../Transform/Transform";
+import ChooseUs from '../ChooseUs/ChooseUs';
 
 const Home = () => {
   
@@ -78,6 +79,7 @@ const Home = () => {
                 <p className="all-in">India’s all-in-one platform for seamless digital networking solutions. Whether you are an entrepreneur, individual professional, corporate professional, or small or large enterprise, we provide innovative products like digital business cards, NFC cards, review stickers/cards, and email signatures to help you build stronger connections effortlessly.</p>
             </div>
       </section>
+      <ChooseUs/>
       <Digitalcard/>
       <Diffrent/>
       <Feature/>

@@ -1,11 +1,10 @@
 .notable-container {
-    padding-top: 100px;
-    margin: 0 auto;
-    max-width: 1320px;
-    min-width: 200px;
-    
+  padding-top: 100px;
+  margin: 0 auto;
+  max-width: 1320px;
+  min-width: 200px;
 }
-.under-1380{
+.under-1380 {
   max-width: 1380px;
   min-width: 200px;
   width: 100%;
@@ -20,66 +19,61 @@
 } */
 
 .notable-cards {
-    max-width: 1320px;
-    min-width: 200px;
-    border: 1.5px solid #0000001A;
-    border-radius: 17px;
-    /* padding: 10px; */
-    /* width: 100%; */
-    margin-bottom: 7px;
-    background-color: #fff;
+  max-width: 1320px;
+  min-width: 200px;
+  border: 1.5px solid #0000001a;
+  border-radius: 17px;
+  /* padding: 10px; */
+  /* width: 100%; */
+  margin-bottom: 7px;
+  background-color: #fff;
 }
 
 .title-cards {
-    color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* margin: 20px 40px; */
-    margin: 19px 30px 19px 25px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin: 20px 40px; */
+  /* margin: 19px 30px 19px 25px; */
 }
-
 
 .li-title .li-class {
-    color: black;
-    text-align: left;
-    margin: 0;
-    font-family: Poppins-Medium;
-    font-size: 18px;
-    line-height: 27px;
-    font-family: Poppins-SemiBold;
-    
+  color: black;
+  text-align: left;
+  margin: 0;
+  font-family: Poppins-Medium;
+  font-size: 18px;
+  line-height: 27px;
+  /* font-family: Poppins-SemiBold; */
 }
 .green-text {
- 
-  color: #5ABA47;
-
+  color: #5aba47;
 }
 
 .icon-down-arrow {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
 .notabal-card-content {
-    font-family: Poppins-Regular;
-    font-size: 18px;
-    line-height: 30px;
-    text-align: justify;
-    margin: 0 20px;
+  font-family: Poppins-Regular;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: justify;
+  margin: 0 25px;
 }
-.maintitle{
-    font-size: 25px;
-    line-height: 37.5px;
-    font-family: Poppins-Bold;
-
+.maintitle {
+  font-size: 25px;
+  line-height: 37.5px;
+  font-family: Poppins-Bold;
 }
-.title{
-    padding-bottom: 15px;
+.title {
+  padding-bottom: 15px;
 }
-.title-padding{
-    padding-top: 53px;
+.title-padding {
+  padding-top: 53px;
 }
 /* Add transition effect for the answer content */
 .notabal-card-content {
@@ -90,21 +84,20 @@
 }
 
 .notabal-card-content.show {
-  max-height: 200px; 
+  max-height: 200px;
   opacity: 1;
 }
 
 .green-text {
-  color: #5ABA47;
-  
+  color: #5aba47;
 }
 .expanded .li-class {
-  color:  #5ABA47;  ; 
+  color: #5aba47;
 }
-.padding-bottom{
+.padding-bottom {
   padding-bottom: 100px;
 }
-.ans-padding{
+.ans-padding {
   padding-bottom: 16px;
 }
 .icon-down-arrow {
@@ -115,161 +108,175 @@
   transform: rotate(180deg);
 }
 
-@media (max-width:767px) {
-    .title-cards {
-        /* margin: 16px 30px 15px 40px; */
-        font-size: 16px;
-        gap: 35px;
-    }
+@media (max-width: 1024px) {
+  .under-1380 {
+    padding: 0 25px;
+  }
 
-    .icon-down-arrow {
-        position: relative;
-        /* bottom: 15px; */
-        bottom: 0;
-    }
-
-    .notabal-card-content {
-        font-size: 16px;
-    }
-
-    .icon-down-arrow {
-        position: relative;
-        /* bottom: 15px; */
-        bottom: 0;
-    }
-
-    .li-title .li-class {
-        font-size: 16px;
-    }
-    .notabal-title {
-        margin: 50px 0 20px;
-    }
+  .title-padding {
+    padding-top: 40px;
+  }
+  .notabal-card-content {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 39px 0 25px;
+  }
+  .notable-cards {
+    margin-bottom: 10px;
+  }
 }
 
+@media (max-width: 767px) {
+  .maintitle {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .notable-container {
+    padding-top: 50px;
+  }
+  .title {
+    padding-bottom: 15px;
+  }
+  .notable-cards {
+    margin-bottom: 10px;
+  }
+  .title-cards {
+    /* margin: 16px 10px 15px !important; */
+    /* margin: 16px 30px 15px 40px; */
+    font-size: 16px;
+    gap: 35px;
+    align-items: baseline;
+  }
+  .title-padding {
+    padding-top: 30px;
+  }
 
-/* .notabal-card-content{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    justify-content: space-between;
+  .ans-padding {
+    padding-bottom: 10px;
+  }
+  .icon-down-arrow {
+    position: relative;
+    /* bottom: 15px; */
+    bottom: 0;
+  }
+
+  .notabal-card-content {
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0 25px 0 10px;
+  }
+
+  .icon-down-arrow {
+    position: relative;
+    /* bottom: 15px; */
+    bottom: 0;
+    top: 5px;
+  }
+
+  .li-title .li-class {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .notabal-title {
+    margin: 50px 0 20px;
+  }
+  .under-1380 {
+    padding: 0 10px;
+  }
 }
 
-.notable-small-img-container  {
-    width: 200px;
-    padding: 20px 0 0;
-    align-items: left;
+.notabal-card-content {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+}
 
+.notable-small-img-container {
+  width: 200px;
+  padding: 20px 0 0;
+  align-items: left;
 }
 
 .notable-small-img-background {
-    position: relative;
-    width: 200px;
-    height: 270px;
-    background-color: #E42326;
-    border-bottom-left-radius: 25px;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-    border-top-left-radius: 3px;
+  position: relative;
+  width: 200px;
+  height: 270px;
+  background-color: #e42326;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-left-radius: 3px;
 }
 
 .notable-small-img {
-    position: absolute;
-    width: 200px;
-    Height: 270px;
-    bottom: 10px;
-    left: 10px;
-    object-fit: cover;
-    border-bottom-left-radius: 22px;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-    border-top-left-radius: 3px;
+  position: absolute;
+  width: 200px;
+  height: 270px;
+  bottom: 10px;
+  left: 10px;
+  object-fit: cover;
+  border-bottom-left-radius: 22px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-left-radius: 3px;
 }
-.person-detail-desc{
-    width: 75%;
+
+.person-detail-desc {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  word-break: break-word; /* Ensures long words break properly */
 }
-.next-div{
-font-family: Poppins-Regular;
-font-size: 18px;
-line-height: 30px;
-text-align: justify;
-margin: 0 20px ;
-} */
+.notabal-card-content-text {
+  font-family: Poppins-Regular;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: justify;
+  margin: 0 20px;
+}
 
+.first-text {
+  /* width: 75%; */
+  max-height: 270px; /* Adjust the height as needed */
+  /* overflow: hidden; */
+  position: relative;
+}
 
-.notabal-card-content {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    justify-content: space-between;
+.person-detail-desc::after {
+  content: "..."; /* Adds ellipsis to indicate there is more text */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 10px;
+  background: white;
+}
+.responsive-text {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .responsive-text {
+    display: none;
   }
-  
-  .notable-small-img-container {
-    width: 200px;
-    padding: 20px 0 0;
-    align-items: left;
-  }
-  
-  .notable-small-img-background {
-    position: relative;
-    width: 200px;
-    height: 270px;
-    background-color: #E42326;
-    border-bottom-left-radius: 25px;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-    border-top-left-radius: 3px;
-  }
-  
-  .notable-small-img {
-    position: absolute;
-    width: 200px;
-    height: 270px;
-    bottom: 10px;
-    left: 10px;
-    object-fit: cover;
-    border-bottom-left-radius: 22px;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-    border-top-left-radius: 3px;
-  }
-  
-  .person-detail-desc {
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    word-break: break-word; /* Ensures long words break properly */
-  }
-  .notabal-card-content-text{
-    font-family: Poppins-Regular;
-    font-size: 18px;
-    line-height: 30px;
-    text-align: justify;
-    margin: 0 20px;
+}
+
+.collaps-faq {
+  margin: 19px 25px 19px 25px;
+}
+
+.expanding {
+  margin: 16px 25px 15px 25px;
+}
+
+/* For screens 768px wide or less */
+@media (max-width: 768px) {
+  .collaps-faq {
+    margin: 12px 10px 11px 10px;
   }
 
-
-  .first-text {
-    /* width: 75%; */
-    max-height: 270px; /* Adjust the height as needed */
-    /* overflow: hidden; */
-    position: relative;
+  .expanding {
+    margin: 12px 10px 5px 10px;
   }
-  
-  .person-detail-desc::after {
-    content: '...'; /* Adds ellipsis to indicate there is more text */
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 0 10px;
-    background: white;
-  }
-  .responsive-text{
-    display: block;
-  }
-
-  @media (max-width:767px) {
-    .responsive-text{
-        display: none;
-      }
-  }
+}

@@ -58,19 +58,15 @@ const Faq = () => {
                 },
               ].map(({ question, answer, index }) => (
                 <div className={`notable-card-${index + 1}`} key={index}>
-                <div
+                  <div
                     className={`notable-cards ${
                       expandedIndex === index ? "expanded-margin" : ""
                     }`}
                   >
-                  <div
-                      className="title-cards"
-                      style={{
-                        margin:
-                          expandedIndex === index
-                            ? "16px 30px 12px 25px"
-                            : "19px 30px 19px 25px",
-                      }}
+                    <div
+                      className={`title-cards ${
+                        expandedIndex === index ? "expanding" : "collaps-faq"
+                      }`}
                     >
                       <div
                         className={`li-title ${
@@ -133,14 +129,10 @@ const Faq = () => {
               ].map(({ question, answer, index }) => (
                 <div className={`notable-card-${index + 1}`} key={index}>
                   <div className="notable-cards">
-                  <div
-                      className="title-cards"
-                      style={{
-                        margin:
-                          expandedIndex === index
-                            ? "16px 30px 12px 25px"
-                            : "19px 30px 19px 25px",
-                      }}
+                    <div
+                      className={`title-cards ${
+                        expandedIndex === index ? "expanding" : "collaps-faq"
+                      }`}
                     >
                       <div
                         className={`li-title ${
@@ -203,14 +195,10 @@ const Faq = () => {
               ].map(({ question, answer, index }) => (
                 <div className={`notable-card-${index + 1}`} key={index}>
                   <div className="notable-cards">
-                  <div
-                      className="title-cards"
-                      style={{
-                        margin:
-                          expandedIndex === index
-                            ? "16px 30px 12px 25px"
-                            : "19px 30px 19px 25px",
-                      }}
+                    <div
+                      className={`title-cards ${
+                        expandedIndex === index ? "expanding" : "collaps-faq"
+                      }`}
                     >
                       <div
                         className={`li-title ${
@@ -273,14 +261,10 @@ const Faq = () => {
               ].map(({ question, answer, index }) => (
                 <div className={`notable-card-${index + 1}`} key={index}>
                   <div className="notable-cards">
-                  <div
-                      className="title-cards"
-                      style={{
-                        margin:
-                          expandedIndex === index
-                            ? "16px 30px 12px 25px"
-                            : "19px 30px 19px 25px",
-                      }}
+                    <div
+                      className={`title-cards ${
+                        expandedIndex === index ? "expanding" : "collaps-faq"
+                      }`}
                     >
                       <div
                         className={`li-title ${
@@ -313,38 +297,37 @@ const Faq = () => {
             <div className="title title-padding">
               <p className="maintitle">Virtual Background:</p>
             </div>
-            <div className="padding-bottom">
-              <div className="notable-ol">
-                {[
-                  {
-                    question: "What is a virtual background?",
-                    answer:
-                      "A virtual background is a digital image or video used to replace your physical background during video calls, enhancing privacy and professionalism.",
-                    index: 17,
-                  },
-                  {
-                    question: "How do I use a virtual background?",
-                    answer:
-                      "Our platform offers easy-to-use virtual backgrounds. Simply select a background from our library or upload your own, and it will be applied during your video calls.",
-                    index: 18,
-                  },
-                  {
-                    question: "Can I customize my virtual background?",
-                    answer:
-                      "Yes, you can upload your own images or choose from our range of customizable templates to create a unique virtual background that reflects your brand.",
-                    index: 19,
-                  },
-                  {
-                    question:
-                      "Do virtual backgrounds work with all video conferencing platforms?",
-                    answer:
-                      "Most popular video conferencing platforms support virtual backgrounds. However, it's always best to check compatibility with your chosen platform.",
-                    index: 20,
-                  },
-                ].map(({ question, answer, index }) => (
-                  <div className={`notable-card-${index + 1}`} key={index}>
+            <div className="notable-ol">
+              {[
+                {
+                  question: "What is a virtual background?",
+                  answer:
+                    "A virtual background is a digital image or video used to replace your physical background during video calls, enhancing privacy and professionalism.",
+                  index: 17,
+                },
+                {
+                  question: "How do I use a virtual background?",
+                  answer:
+                    "Our platform offers easy-to-use virtual backgrounds. Simply select a background from our library or upload your own, and it will be applied during your video calls.",
+                  index: 18,
+                },
+                {
+                  question: "Can I customize my virtual background?",
+                  answer:
+                    "Yes, you can upload your own images or choose from our range of customizable templates to create a unique virtual background that reflects your brand.",
+                  index: 19,
+                },
+                {
+                  question:
+                    "Do virtual backgrounds work with all video conferencing platforms?",
+                  answer:
+                    "Most popular video conferencing platforms support virtual backgrounds. However, it's always best to check compatibility with your chosen platform.",
+                  index: 20,
+                },
+              ].map(({ question, answer, index }) => (
+                <div className={`notable-card-${index + 1}`} key={index}>
                   <div className="notable-cards">
-                  <div
+                    {/* <div
                       className="title-cards"
                       style={{
                         margin:
@@ -352,6 +335,12 @@ const Faq = () => {
                             ? "16px 30px 12px 25px"
                             : "19px 30px 19px 25px",
                       }}
+                    > */}
+
+                    <div
+                      className={`title-cards ${
+                        expandedIndex === index ? "expanding" : "collaps-faq"
+                      }`}
                     >
                       <div
                         className={`li-title ${
@@ -378,12 +367,11 @@ const Faq = () => {
                     </div>
                   </div>
                 </div>
-                ))}
-              </div>
+              ))}
             </div>
-
-            {/* Repeat similar structure for other sections */}
           </div>
+
+          {/* Repeat similar structure for other sections */}
         </div>
       </div>
     </>
@@ -391,4 +379,3 @@ const Faq = () => {
 };
 
 export default Faq;
-

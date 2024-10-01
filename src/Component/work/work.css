@@ -1,73 +1,89 @@
-.work{
-    text-align: center;
-    font-size: 40px;
-    font-family: Poppins-Bold;
+
+.work {
+  text-align: center;
+  font-size: 40px;
+  font-family: Poppins-Bold;
+}
+.work-container {
+  max-width: 1380px;
+  /* max-width: 200px; */
+  width: 100%;
+  margin: 0 auto;
+}
+.simple-step-container {
+  padding-top: 30px;
+}
+.process {
+  font-size: 18px;
+  font-family: Poppins-Regular;
+}
+.create {
+  font-size: 20px;
+  font-family: Poppins-SemiBold;
+}
+.choose {
+  width: 400px;
+  height: 400px;
+  background: #d9d9d96e;
+}
+
+.choose-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+.box-text-work {
+  display: flex;
+  gap: 15px;
+  padding: 20px 0 5px 0;
 
 }
-.work-container{
-    max-width: 1380px;
-    /* max-width: 200px; */
-    width: 100%;
-   
-    margin: 0 auto;
-}
-.simple-step-container{
-    padding-top: 30px;
-}
-.process{
-    font-size: 18px;
-    font-family: Poppins-Regular;
+.text {
+  font-family: Poppins-ExtraBold;
+  color: rgba(0, 0, 0, 0.2);
 
-
+  font-size: 20px;
 }
-.create{
-    font-size: 20px;
-
-    font-family: Poppins-SemiBold;
-
+.template {
+  font-family: Poppins-SemiBold;
+  color: rgba(90, 186, 71, 1);
+  font-size: 20px;
+  line-height: 30px;
 }
-.choose{
-    width: 400px;
-    height: 400px;
-    background: #D9D9D96E;
+.selecting {
+  font-size: 18px;
+  line-height: 27px;
+  text-align: justify;
+  font-family: Poppins-Regular;
+}
 
+.customize {
+  /* padding-top: 280px; */
 }
-.choose-flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-    
-    
+.information {
+  /* padding-top: 150px; */
 }
-.box-text-work{
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    padding: 20px 0 5px 0;
-}
-.text{
-    font-family: Poppins-ExtraBold;
-    color: rgba(0, 0, 0, 0.2);
+/* Step Layout */
 
-    font-size: 20px;
-}
-.template{
-    font-family: Poppins-SemiBold;
-    color: rgba(90, 186, 71, 1);
-    font-size: 20px;
-    line-height: 30px;
+/* .choose-template {
+    position: sticky;
+    top: 0; 
+    z-index: 3;
+  }
+  
+  .information {
+    position: relative;
+    top: 0px; 
+    z-index: 2;
+  }
+  
+  .customize {
+    position: relative;
+    top: 0px; 
+    z-index: 1;
+  } */
 
-
-}
-.selecting{
-    font-size: 18px;
-    line-height: 27px;
-    text-align: justify;
-    font-family: Poppins-Regular;
-
-    
-}
 .customize{
     padding-top: 280px;
 }
@@ -105,3 +121,4 @@
     transform: translateY(0); /* Slide up into view */
   }
   
+

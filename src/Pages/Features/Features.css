@@ -142,25 +142,26 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    width: 100%
   }
   .gray-card-left {
     margin: 10px 10px 0;
-    width: 698px;
+    width: 100%;
   }
   .card-feature-2-4 {
     flex-wrap: wrap-reverse;
     justify-content: center;
   }
   .gray-card-right {
-    width: 698px;
+    width: 100%;
     margin: 10px 10px 0;
   }
   .content-01 {
-    width: 718px;
+    width: 100%;
     padding: 30px 10px;
   }
   .content-02 {
-    width: 718px;
+    width: 100%;
     padding: 30px 10px;
   }
   .feature-pricing-plans-title {

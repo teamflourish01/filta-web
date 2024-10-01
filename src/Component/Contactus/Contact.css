@@ -37,7 +37,7 @@
   height: 40px;
   width: 100%;
   position: relative;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .container .inputs input {
@@ -59,6 +59,8 @@
 }
 
 .container .inputs label {
+  color: #00000099;
+
   position: absolute;
   bottom: 10px;
   left: 0;
@@ -83,7 +85,7 @@
 }
 
 .padding-bottom {
-  padding-bottom: 33px;
+  padding-bottom: 43px;
 }
 
 .container-padding {
@@ -103,7 +105,7 @@
 
 .submit-button {
   text-align: center;
-  padding: 30px 0 50px 0;
+  padding: 50px 0 30px 0;
 }
 
 .us {
@@ -119,14 +121,52 @@
 @keyframes shrink-expand {
   0% {
     transform: scaleX(1); /* Start with full width */
-    border-bottom-color: gray; 
+    border-bottom-color: gray;
   }
   50% {
     transform: scaleX(0.1); /* Shrink to 50% width */
-    border-bottom-color: gray; 
+    border-bottom-color: gray;
   }
   100% {
     transform: scaleX(1); /* Expand back to full width */
     border-bottom-color: #5aba47;
   }
+}
+
+@media (max-width: 1024px) {
+  .input-flex {
+    flex-wrap: wrap;
+    gap: 33px;
+  }
+  .contact-us {
+    padding: 30px 0 50px;
+  }
+  .container-padding {
+    padding: 0 30px;
+}
+.us {
+  font-size: 30px;
+  line-height: 45px;
+}
+}
+
+
+@media (max-width: 768px) {
+  .input-flex {
+    flex-wrap: wrap;
+    gap: 33px;
+  }
+  .contact-us {
+    padding: 25px 0 40px;
+  }
+  .container-padding {
+    padding: 0 5px;
+}
+.us {
+  font-size: 20px;
+  line-height: 30px;
+}
+.submit-button {
+  padding: 50px 0 25px 0;
+}
 }
