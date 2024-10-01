@@ -26,6 +26,7 @@
   height: 400px;
   background: #d9d9d96e;
 }
+
 .choose-flex {
   display: flex;
   justify-content: center;
@@ -36,6 +37,7 @@
   display: flex;
   gap: 15px;
   padding: 20px 0 5px 0;
+
 }
 .text {
   font-family: Poppins-ExtraBold;
@@ -55,6 +57,7 @@
   text-align: justify;
   font-family: Poppins-Regular;
 }
+
 .customize {
   /* padding-top: 280px; */
 }
@@ -80,3 +83,42 @@
     top: 0px; 
     z-index: 1;
   } */
+
+.customize{
+    padding-top: 280px;
+}
+.information{
+    padding-top: 150px;
+}
+.choose-template{
+    /* position: sticky; */
+}
+.scroll{
+    display: flex;
+}
+.choose-template, .information, .customize {
+    /* background-color: #f4f4f4; */
+    padding: 20px;
+    border-radius: 8px;
+   
+    position: relative;
+    transition: transform 2s ease, opacity 0.3s ease; /* Smooth transition */
+  }
+  
+  .sticky-card {
+    position: sticky;
+    top: 0;
+    z-index: 1; /* Ensure it stays on top */
+  }
+  
+  .scroll-up-card {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(100px); /* Positioned below the viewport */
+  }
+  
+  .scroll-up-card.in-view {
+    opacity: 1;
+    transform: translateY(0); /* Slide up into view */
+  }
+  
+

@@ -277,3 +277,27 @@
     position: relative;
     align-self: flex-start;
 }
+/* Default state */
+.welcome-to {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Hover state - Show the content */
+.welcome:hover .welcome-to {
+  opacity: 1; 
+  transform: translateY(0);
+}
+
+/* Hover effect for "Welcome to Filta!" text */
+.welcome:hover .filta {
+  transform: translateY(-10px); /* Jump up */
+  transition: transform 0.4s ease; /* Smooth jump */
+}
+
+/* Hover effect for the paragraph (jump down) */
+.welcome:hover .all-in {
+  transform: translateY(10px); /* Jump down */
+  transition: transform 0.4s ease; /* Smooth jump */
+}

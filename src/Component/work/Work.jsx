@@ -1,3 +1,4 @@
+
   // import React from "react";
   // import "../work/work.css";
   // const Work = () => {
@@ -122,6 +123,7 @@ const Work = () => {
             <div className="box-text-work">
               <p className="text">01</p>
               <p className="template">Choose a Template:</p>
+
             </div>
             <div className="selecting">
               Start by selecting from our wide range of professionally designed
