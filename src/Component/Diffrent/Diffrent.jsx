@@ -1,75 +1,65 @@
-import React,{useEffect} from 'react'
+import React, { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import {trigger} from "gsap/ScrollTrigger"
-import "../Diffrent/Diffrent.css"
-
+import { trigger } from "gsap/ScrollTrigger";
+import "../Diffrent/Diffrent.css";
 
 gsap.registerPlugin(ScrollTrigger);
 const Diffrent = () => {
-    useEffect(() => {
-        gsap.fromTo(
-          ".innovation",
-          {
-            x: -500, // Start point: Left se aaye
-            rotation: -360, // Rotate start se clockwise
-            opacity: 0, // Invisible starting me
-            scale:0.5,
-          },
-          {
-            x: 0, // End point: Apni jagah pe aa jaye
-           
-          
-            rotation: 0, // End me normal rotation
-            opacity: 1, // Full visibility
-            duration: 1.5, // Animation duration
-            scale: 1,
-            ease: "power2.out", // Smooth ease effect
-            scrollTrigger: {
-              trigger: ".innovation", // Kis element par scroll trigger ho
-              start: "top 90%", // Scroll kab start ho (viewport 80%)
-              end: "top 0%", // Scroll kab end ho
-              scrub: true, // Smooth animation scroll ke sath
-             // Testing ke liye markers enable karein
-            },
-          }
-        );
+  useEffect(() => {
+    gsap.fromTo(
+      ".innovation",
+      {
+        x: -500, // Start point: Left se aaye
+        rotation: -360, // Rotate start se clockwise
+        opacity: 0, // Invisible starting me
+        scale: 0.5,
+      },
+      {
+        x: 0, // End point: Apni jagah pe aa jaye
 
+        rotation: 0, // End me normal rotation
+        opacity: 1, // Full visibility
+        duration: 1.5, // Animation duration
+        scale: 1,
+        ease: "power2.out", // Smooth ease effect
+        scrollTrigger: {
+          trigger: ".innovation", // Kis element par scroll trigger ho
+          start: "top 90%", // Scroll kab start ho (viewport 80%)
+          end: "top 0%", // Scroll kab end ho
+          scrub: true, // Smooth animation scroll ke sath
+          // Testing ke liye markers enable karein
+        },
+      }
+    );
 
+    gsap.fromTo(
+      ".trigger",
+      {
+        x: 500, // Start point: Left se aaye
+        rotation: 360, // Rotate start se clockwise
+        opacity: 0, // Invisible starting me
+        scale: 0.5,
+      },
+      {
+        x: 0, // End point: Apni jagah pe aa jaye
+        scale: 1,
 
+        rotation: 0, // End me normal rotation
+        opacity: 1, // Full visibility
+        duration: 1.5, // Animation duration
+        ease: "power2.out", // Smooth ease effect
+        scrollTrigger: {
+          trigger: ".trigger", // Kis element par scroll trigger ho
+          start: "top 90%", // Scroll kab start ho (viewport 80%)
+          end: "top 0%", // Scroll kab end ho
+          scrub: true, // Smooth animation scroll ke sath
+          // Testing ke liye markers enable karein
+        },
+      }
+    );
+  }, []);
 
-        gsap.fromTo(
-            ".trigger",
-            {
-              x: 500, // Start point: Left se aaye
-              rotation: 360, // Rotate start se clockwise
-              opacity: 0, // Invisible starting me
-              scale: 0.5,
-             
-            },
-            {
-              x: 0, // End point: Apni jagah pe aa jaye
-           scale:1,
-             
-              rotation: 0, // End me normal rotation
-              opacity: 1, // Full visibility
-              duration: 1.5, // Animation duration
-              ease: "power2.out", // Smooth ease effect
-              scrollTrigger: {
-                trigger: ".trigger", // Kis element par scroll trigger ho
-                start: "top 90%", // Scroll kab start ho (viewport 80%)
-                end: "top 0%", // Scroll kab end ho
-                scrub: true, // Smooth animation scroll ke sath
-               // Testing ke liye markers enable karein
-              },
-            }
-          );
-      }, []);
-    
-
-
-
-      
   return (
     <div>
       {" "}
@@ -110,81 +100,56 @@ const Diffrent = () => {
       </p> */}
       <div className="diffrent">
         <div className="all-flex">
-        <div className="innovation-main">
+          <div className="innovation-main">
             <div className="innovation"></div>
-          <div className="innovation-container">
-            <div className="in-div">
-              <div className="p">
-                <span>Innovative Technology :</span> We use the latest
-                technology to create digital business cards that are
-                interactive, engaging, and highly customizable.
+            <div className="innovation-container">
+              <div className="in-div">
+                <div className="p">
+                  <span>Innovative Technology :</span> We use the latest
+                  technology to create digital business cards that are
+                  interactive, engaging, and highly customizable.
+                </div>
               </div>
             </div>
           </div>
-
-
-
-
-          </div>
-
-
-
 
           <div className="innovation-main">
             <div className="innovation"></div>
-          <div className="innovation-container">
-            <div className="in-div">
-              <div className="p">
-                <span>Innovative Technology :</span> We use the latest
-                technology to create digital business cards that are
-                interactive, engaging, and highly customizable.
+            <div className="innovation-container">
+              <div className="in-div">
+                <div className="p">
+                  <span>Innovative Technology :</span> We use the latest
+                  technology to create digital business cards that are
+                  interactive, engaging, and highly customizable.
+                </div>
               </div>
             </div>
           </div>
-
-
-
-
-          </div>
-
-
-
 
           <div className="innovation-main">
             <div className="trigger"></div>
-          <div className="innovation-container">
-            <div className="in-div">
-              <div className="p">
-                <span>Innovative Technology :</span> We use the latest
-                technology to create digital business cards that are
-                interactive, engaging, and highly customizable.
+            <div className="innovation-container">
+              <div className="in-div">
+                <div className="p">
+                  <span>Innovative Technology :</span> We use the latest
+                  technology to create digital business cards that are
+                  interactive, engaging, and highly customizable.
+                </div>
               </div>
             </div>
           </div>
-
-
-
-
-          </div>
-
-
-
 
           <div className="innovation-main">
             <div className="trigger"></div>
-          <div className="innovation-container">
-            <div className="in-div">
-              <div className="p">
-                <span>Innovative Technology :</span> We use the latest
-                technology to create digital business cards that are
-                interactive, engaging, and highly customizable.
+            <div className="innovation-container">
+              <div className="in-div">
+                <div className="p">
+                  <span>Innovative Technology :</span> We use the latest
+                  technology to create digital business cards that are
+                  interactive, engaging, and highly customizable.
+                </div>
               </div>
             </div>
-          </div>
-
-
-
-
           </div>
         </div>
       </div>
@@ -223,7 +188,7 @@ const Diffrent = () => {
         communication to ensure your project meets your expectations.
       </p> */}
     </div>
-  )
-}
+  );
+};
 
-export default Diffrent
+export default Diffrent;

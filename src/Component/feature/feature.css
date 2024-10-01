@@ -34,7 +34,7 @@
 .overlay-text {
   position: absolute;
   top: 59%;
-  left: 50%;
+  left: 44%;
   transform: translate(-50%, -50%) rotate(-90deg);
   color: #5aba47;
   font-family: Poppins-SemiBold;

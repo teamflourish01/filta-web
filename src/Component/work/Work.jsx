@@ -1,4 +1,5 @@
-  import React from "react";
+import React, { useEffect, useRef } from "react";
+
   import "../work/work.css";
   const Work = () => {
     return (
@@ -29,7 +30,7 @@
             </div>
             <div className="information">
               <div className="choose"></div>
-              <div className="box-text-work-work">
+              <div className="box-text-work">
                 <p className="text">02</p>
                 <p className="template">Customize Your Information:</p>
               </div>
