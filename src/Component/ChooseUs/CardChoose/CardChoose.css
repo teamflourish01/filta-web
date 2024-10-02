@@ -1,110 +1,121 @@
-
 .CardChoose-card {
-    max-width: 318px;
-    min-width: 200px;
-    width: 100%;
-    height: 319px;
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    display: block;
-    position: relative;
-    text-decoration: none;
-    z-index: 0;
-    overflow: hidden;
-    transition: background-color 0.8s ease-out; 
-  }
-  .CardChoose-title {
-    padding: 10px 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    flex-direction: column;
-  }
-  .title-chooseus {
-    font-family: Poppins-SemiBold;
-    font-size: 18px;
-    line-height: 27px;
-    text-align: center;
-  }
-  
-  .img-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    outline: 1.7px solid #E6E6E6;
-    font-size: 20px;
-  }
-  .dashed-hr {
-    border: none; 
-    border-top: 1.5px dashed black; 
-    margin: 10px 0;
-  }
-  .dashed-hr:hover {
-    border-top: 1.5px dashed white;
-  }
+  max-width: 318px;
+  min-width: 200px;
+  width: 100%;
+  height: 319px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: block;
+  position: relative;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  transition: background-color 0.8s ease-out;
+}
+.CardChoose-title {
+  padding: 10px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  flex-direction: column;
+}
+.title-chooseus {
+  font-family: Poppins-SemiBold;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+}
+
+.img-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  outline: 1.7px solid #e6e6e6;
+  font-size: 20px;
+}
+.dashed-hr {
+  border: none;
+  border-top: 1.5px dashed black;
+  margin: 10px 0;
+}
+.dashed-hr:hover {
+  border-top: 1.5px dashed white;
+}
+.p-choose-desc {
+  font-family: Poppins-Regular;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  padding: 0 14px 37px;
+}
+
+.img-title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-title img {
+  max-width: 100%;
+  border-radius: 4px;
+  transition: transform 0.25s ease-out, opacity 0.3s ease;
+}
+
+.img-title:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 40%;
+  right: 30%;
+  background: white;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  transform: scale(2);
+  transition: transform 0.8s ease-out, height 0.8s ease-out, width 0.8s ease-out,
+    background-color 0.8s ease-out;
+}
+
+.CardChoose-card:hover .img-title:before {
+  transform: scale(20);
+  top: 30%;
+  right: 30%;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-color: #5aba47;
+}
+
+.CardChoose-card:hover .img-title img {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.CardChoose-card:hover .dashed-hr {
+  border-top-color: white;
+}
+.CardChoose-card:hover p {
+  transition: all 0.3s ease-out;
+  color: #ffffff;
+}
+.CardChoose-card:hover .img-title img {
+  transform: scale(1.1);
+  filter: invert(1) brightness(900);
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 767px) {
   .p-choose-desc {
-    font-family: Poppins-Regular;
-    font-size: 18px;
-    line-height: 27px;
-    text-align: center;
-    padding: 0 14px 37px;
+    padding: 0 28px 37px;
   }
-  
-  .img-title {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .CardChoose-card {
+    max-width: 350px;
+    min-width: 150px;
+    width: 100%;
   }
-  
-  .img-title img {
-    max-width: 100%;
-    border-radius: 4px;
-    transition: transform 0.25s ease-out, opacity 0.3s ease;
-  }
-  
-  .img-title:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 40%;
-    right: 30%;
-    background: white; 
-    height: 22px;
-    width: 22px;
-    border-radius: 50%;
-    transform: scale(2); 
-    transition: transform 0.8s ease-out, height 0.8s ease-out, width 0.8s ease-out, background-color 0.8s ease-out;
-  }
-  
-  .CardChoose-card:hover .img-title:before {
-    transform: scale(20);
-    top: 30%;
-    right: 30%;
-    height: 32px;
-    width: 32px;
-    border-radius: 50%;
-    background-color: #5aba47;
-  }
-  
-  .CardChoose-card:hover .img-title img {
-    transform: scale(1.1);
-    opacity: 0.8;
-  }
-  
-  .CardChoose-card:hover .dashed-hr {
-    border-top-color: white;
-  }
-  .CardChoose-card:hover p {
-    transition: all 0.3s ease-out;
-    color: #FFFFFF; 
-  }
-  .CardChoose-card:hover .img-title img {
-    transform: scale(1.1);
-    filter: invert(1) brightness(900); 
-  }
+}
