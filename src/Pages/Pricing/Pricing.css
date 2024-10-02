@@ -9,7 +9,6 @@
   padding: 100px 0 0;
 }
 table {
-  font-family: arial, sans-serif;
   max-width: 1320px !important;
   min-width: 668px;
   width: 100%;
@@ -21,7 +20,7 @@ table {
   /* overflow: hidden;  */
   border-spacing: 0;
   border-collapse: separate;
-  /* background-color: white; */
+  background-color: #fff;
   position: relative;
 }
 .padding {
@@ -51,7 +50,7 @@ tr {
   border-bottom: 1px solid #ddd;
 }
 .black-header {
-  padding: 19px 0 !important ;
+  /* padding: 19px 0 !important ; */
   height: 75px;
   color: #5aba47;
   /* background-color: #303030; */
@@ -63,9 +62,12 @@ tr {
 }
 .w-330 {
   width: 330px;
+  padding: 19px 0
 }
 .w-300 {
   width: 300px;
+  padding: 19px 0
+
 }
 .text-with-icon {
   display: flex;
@@ -90,6 +92,9 @@ tr {
   text-align: center; /* Center the text horizontally */
   vertical-align: middle;
   background-color: #303030;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 23px 0;
 }
 .price-month-year {
   background-color: #f5f8f4;
@@ -112,7 +117,7 @@ tr {
 .feature-name {
   font-family: Poppins-Regular;
   font-size: 18px;
-  font-weight: 400;
+  /* font-weight: 400; */
   line-height: 27px;
 }
 
@@ -131,8 +136,9 @@ tr {
   .pricing-container {
     padding: 0 25px;
   }
+
   .w-330 {
-    width: 390px;
+    width: 476px;
   }
   td {
     padding: 15px 10px;
@@ -159,9 +165,28 @@ tr {
   .pop-up {
     width: 144px;
   }
+  table {
+    min-width: 408px;
+  }
+  .pricing-content {
+    display: flex;
+    justify-content: center;
+  }
+  .padding {
+    max-width: 1320px !important;
+    min-width: 700px;
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  .padding {
+    max-width: 1320px !important;
+    min-width: 768px;
+  }
+  .pricing-content {
+    display: block;
+    justify-content: center;
+}
   .black-header {
     font-size: 18px;
     line-height: 27px;

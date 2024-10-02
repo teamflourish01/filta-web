@@ -20,6 +20,8 @@
 }
 .img-res-detail {
   padding: 20px 0;
+  display: flex;
+  align-items: center;
 }
 .date-res-detail {
   font-family: Poppins-Regular;
@@ -59,7 +61,7 @@
     padding: 0 25px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .res-detail-container {
     padding: 0 10px;
   }

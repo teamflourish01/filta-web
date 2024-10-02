@@ -42,10 +42,10 @@
   color: black;
   text-align: left;
   margin: 0;
-  font-family: Poppins-Medium;
+  /* font-family: Poppins-Medium; */
   font-size: 18px;
   line-height: 27px;
-  /* font-family: Poppins-SemiBold; */
+  font-family: Poppins-SemiBold;
 }
 .green-text {
   color: #5aba47;
@@ -123,6 +123,9 @@
   }
   .notable-cards {
     margin-bottom: 10px;
+  }
+  .li-title .li-class {
+    font-family: Poppins-Medium;
   }
 }
 
@@ -271,12 +274,12 @@
 }
 
 /* For screens 768px wide or less */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .collaps-faq {
     margin: 12px 10px 11px 10px;
   }
 
   .expanding {
-    margin: 12px 10px 5px 10px;
+    margin: 10px 10px 5px 10px;
   }
 }

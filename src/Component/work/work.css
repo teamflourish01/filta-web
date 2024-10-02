@@ -1,30 +1,36 @@
-
 .work {
   text-align: center;
   font-size: 40px;
   font-family: Poppins-Bold;
+  line-height: 60px;
 }
 .work-container {
   max-width: 1380px;
   /* max-width: 200px; */
   width: 100%;
   margin: 0 auto;
+  padding: 0 30px;
 }
 .simple-step-container {
   padding-top: 30px;
 }
 .process {
+  padding: 5px 0 20px;
   font-size: 18px;
   font-family: Poppins-Regular;
+  line-height: 27px;
 }
 .create {
   font-size: 20px;
   font-family: Poppins-SemiBold;
+  line-height: 30px;
 }
 .choose {
   width: 400px;
   height: 400px;
   background: #d9d9d96e;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .choose-flex {
@@ -37,10 +43,10 @@
   display: flex;
   gap: 15px;
   padding: 20px 0 5px 0;
-
 }
 .text {
-  font-family: Poppins-ExtraBold;
+  /* font-family: Poppins-ExtraBold; */
+  font-weight: 800;
   color: rgba(0, 0, 0, 0.2);
 
   font-size: 20px;
@@ -58,67 +64,28 @@
   font-family: Poppins-Regular;
 }
 
+.choose-template {
+  /* position: sticky; */
+
+}
+.scroll {
+  display: flex;
+}
+.choose-template,
+.information,
 .customize {
-  /* padding-top: 280px; */
+  position: relative;
+  /* max-width: 400px;
+  min-width: 200px;
+  width: 100%; */
+  transition: transform 2s ease, opacity 0.3s ease; /* Smooth transition */
 }
-.information {
-  /* padding-top: 150px; */
-}
-/* Step Layout */
 
-/* .choose-template {
-    position: sticky;
-    top: 0; 
-    z-index: 3;
-  }
-  
-  .information {
-    position: relative;
-    top: 0px; 
-    z-index: 2;
-  }
-  
-  .customize {
-    position: relative;
-    top: 0px; 
-    z-index: 1;
-  } */
-
-.customize{
-    padding-top: 280px;
+.sticky-card {
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
-.information{
-    padding-top: 150px;
+.hei{
+  margin: 0 0 27px;
 }
-.choose-template{
-    /* position: sticky; */
-}
-.scroll{
-    display: flex;
-}
-.choose-template, .information, .customize {
-    /* background-color: #f4f4f4; */
-    padding: 20px;
-    border-radius: 8px;
-   
-    position: relative;
-    transition: transform 2s ease, opacity 0.3s ease; /* Smooth transition */
-  }
-  
-  .sticky-card {
-    position: sticky;
-    top: 0;
-    z-index: 1; /* Ensure it stays on top */
-  }
-  
-  .scroll-up-card {
-    opacity: 0; /* Initially hidden */
-    transform: translateY(100px); /* Positioned below the viewport */
-  }
-  
-  .scroll-up-card.in-view {
-    opacity: 1;
-    transform: translateY(0); /* Slide up into view */
-  }
-  
-
