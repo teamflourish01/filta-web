@@ -61,7 +61,7 @@
   /* font-family: Poppins-ExtraBold; */
   font-size: 80px;
   font-weight: 800;
-  line-height: 120px;
+  line-height: 85px;
   text-align: left;
   color: #5aba4780;
 }
@@ -97,7 +97,6 @@
 .feature-pricing-plans-title {
   font-family: Poppins-Bold;
   font-size: 40px;
-  font-weight: 700;
   line-height: 60px;
   text-align: center;
   padding: 60px 0 30px;
@@ -162,7 +161,7 @@
   }
   .content-02 {
     width: 100%;
-    padding: 30px 10px;
+    padding: 47px 10px;
   }
   .feature-pricing-plans-title {
     padding: 50px 0 30px;
@@ -171,6 +170,9 @@
   }
   .feature-container {
     padding: 0 25px;
+  }
+  .text-01 {
+    line-height: 80px;
   }
 }
 
@@ -227,4 +229,8 @@
     font-size: 16px;
     line-height: 24px;
   }
+  .cards-feature {
+ 
+    gap: 50px;
+}
 }

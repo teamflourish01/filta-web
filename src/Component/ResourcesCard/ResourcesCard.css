@@ -50,7 +50,7 @@
 
 .blog-img {
   max-width: 348px;
-  min-width: 185px;
+  min-width: 175px;
   width: 100%;
 }
 
@@ -66,7 +66,6 @@
 .blog-card-title {
   font-family: Poppins-SemiBold;
   font-size: 20px;
-  font-weight: 600;
   line-height: 28px;
   text-align: center;
   padding: 16px 24px;
@@ -95,7 +94,6 @@
 .view-more-blog {
   font-family: Poppins-Medium;
   font-size: 18px;
-  font-weight: 500;
   line-height: 24px;
   text-align: center;
 }
