@@ -23,6 +23,7 @@
     border-radius: 20px;
     position: relative;
     z-index: 1;
+    top: 80px;
     
 
 
@@ -37,6 +38,7 @@
     border-radius: 20px;
     position: relative;
     z-index: 1;
+    top: 80px;
 }
 .improvment{
     max-width: 320px;
@@ -109,11 +111,11 @@
     /* bottom: 167px; */
     position: relative;
     max-width: 320px;
-    min-width: 200px;
+    min-width: 100px;
     width: 100%;
     top: -20px;
     z-index: 1;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
 }
 .in-div .p{
     color: black;
@@ -122,16 +124,35 @@
     border-radius: 0 0 20px 20px;
     text-align: justify;
     padding: 10px;
-    font-weight: 400;
+    line-height: 27px;
+    font-family: Poppins-Regular;
+
 }
 .in-div .p span{
     color: #5ABA47;
     font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+  font-family: Poppins-SemiBold;
+ 
+
 }
+
 
 .web{
     padding-bottom: 90px;
 }
 .innovation-main{
     
+}
+.diffrent-title{
+    font-size: 40px;
+  font-family: Poppins-Bold;
+
+}
+.d-title{
+    font-size: 40px;
+  font-family: Poppins-Bold;
+text-align: center;
+padding: 125px 0 30px 0;
 }
