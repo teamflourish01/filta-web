@@ -21,6 +21,8 @@
   display: flex;
   /* flex-direction: column; */
   align-items: center;
+  animation: slideFromTop 1s ease-in-out forwards;
+  overflow: visible; /* Ensures text is visible */
 }
 
 .now {
@@ -198,7 +200,7 @@
 .card-right {
   transform: rotate(16.95deg); /* Keep the rotation */
   transform-origin: left; /* Ensure it rotates from the left */
-  animation: slideRight 1s forwards 0s; /* Start immediately */
+  animation: slideRight 1s forwards 0.9s; /* Start immediately */
   /* background-image: url("../../assets/thrstar.png"); */
   /* top: -20px; */
   background-repeat: no-repeat;
@@ -216,7 +218,9 @@
   opacity: 0;
   z-index: 3; /* Ensure center card is on top */
 }
-
+.eco-friendly{
+  width: 290px;
+}
 /* Animations */
 @keyframes slideLeft {
   from {
@@ -298,6 +302,9 @@
 
 /* Hover effect for the paragraph (jump down) */
 .welcome:hover .all-in {
-  transform: translateY(10px); /* Jump down */
+  transform: translateY(5px); /* Jump down */
   transition: transform 0.4s ease; /* Smooth jump */
+}
+.eco-friendly{
+  white-space: nowrap;
 }

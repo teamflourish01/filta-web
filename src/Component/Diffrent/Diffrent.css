@@ -10,27 +10,34 @@
   margin: 0 auto;
 
 }
-.innovation {
-  max-width: 320px;
-  min-width: 250px;
-  height: 442px;
-  width: 100%;
-  border: 1px solid #0000001a;
-  background: #e2e2e2;
-  border-radius: 20px;
-  position: relative;
-  z-index: 1;
+
+.innovation{
+    max-width: 320px;
+    min-width: 250px;
+    height: 442px;
+    width: 100%;
+    border: 1px solid #0000001A;
+    background: #E2E2E2;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+    top: 80px;
+    
+
+
 }
-.trigger {
-  max-width: 320px;
-  min-width: 250px;
-  height: 442px;
-  width: 100%;
-  border: 1px solid #0000001a;
-  background: #e2e2e2;
-  border-radius: 20px;
-  position: relative;
-  z-index: 1;
+.trigger{
+    max-width: 320px;
+    min-width: 250px;
+    height: 442px;
+    width: 100%;
+    border: 1px solid #0000001A;
+    background: #E2E2E2;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+    top: 80px;
+
 }
 .improvment {
   max-width: 320px;
@@ -184,29 +191,52 @@
   .in-div {
     position: relative;
     max-width: 320px;
-    min-width: 200px;
+    min-width: 100px;
     width: 100%;
     top: -20px;
     z-index: 1;
-    border: 1px solid gray;
-  }
-  
-  .in-div .p {
+
+    /* border: 1px solid gray; */
+}
+.in-div .p{
+
     color: black;
     background-color: white;
     font-size: 18px;
     border-radius: 0 0 20px 20px;
     text-align: justify;
     padding: 10px;
-    font-weight: 400;
-  }
-  
-  .in-div .p span {
-    color: #5aba47;
+
+    line-height: 27px;
+    font-family: Poppins-Regular;
+
+}
+.in-div .p span{
+    color: #5ABA47;
     font-weight: 600;
-  }
-  
-  .web {
+    font-size: 18px;
+    line-height: 27px;
+  font-family: Poppins-SemiBold;
+ 
+
+}
+
+
+.web{
     padding-bottom: 90px;
-  }
-  
+}
+.innovation-main{
+    
+}
+.diffrent-title{
+    font-size: 40px;
+  font-family: Poppins-Bold;
+
+}
+.d-title{
+    font-size: 40px;
+  font-family: Poppins-Bold;
+text-align: center;
+padding: 125px 0 30px 0;
+}
+

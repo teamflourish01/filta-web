@@ -6,7 +6,7 @@ const Cursor = () => {
     
         const handleMouseMove = (e) => {
           cursor.style.left = `${e.clientX}px`;
-          cursor.style.top = `${e.clientY}px`;
+          cursor.style.top = `${e.clientY - 7 }px`;
         };
     
         window.addEventListener('mousemove', handleMouseMove);

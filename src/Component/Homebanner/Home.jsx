@@ -11,27 +11,26 @@ import 'aos/dist/aos.css'; // Import AOS styles
 import Work from "../work/Work";
 import Transform from "../Transform/Transform";
 import ChooseUs from '../ChooseUs/ChooseUs';
+import Homefaq from "../Homefaq/Homefaq";
+import GreenBtn from "../GreenBtn/GreenBtn";
 
 const Home = () => {
+
+  useEffect(() => {
+    AOS.init({ duration: 1000, easing: "ease-in-out", once: true });
+  }, []);
+
   
   return (
     <>
       <div className="home-conatiner">
-        {/* <div className="wrapper">
-        <p>The Way of Networking, Now</p>
-        <div className="words">
-          <span>Eco-friendly</span>
-          <span>Digital</span>
-          <span>Faster</span>
-          <span>Dynamic</span>
-        </div>
-      </div>  */}
-        <div className="wrapper">
-          <div className="now">
+        
+        <div className="wrapper" >
+          <div className="now" data-aos="slide-down">
             <p>The Way of Networking,Now</p>
 
             <span className="words">
-              <span>Eco-friendly</span>
+              <span className="eco-friendly">Eco-friendly</span>
               <span>Digital</span>
               <span>Faster</span>
               <span>Dynamic</span>
@@ -45,7 +44,7 @@ const Home = () => {
           <img src={smallstar} alt="small star" className="small-left-star" />
         </div>
         <div className="simple">
-          <p className="network">
+          <p className="network" data-aos="slide-down">
             Networking Made Simple and Easier with India’s Smartest Digital
             Business Card Platform.
           </p>
@@ -84,7 +83,11 @@ const Home = () => {
       <Diffrent/>
       <Feature/>
       <Work/>
+
       <Transform/>
+      
+
+      <Homefaq/>
     </>
   );
 };

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../digitalcard/digital.css";
 import AOS from "aos";
+import GreenBtn from "../GreenBtn/GreenBtn";
 
 
 const Digitalcard = () => {
@@ -90,7 +91,8 @@ const Digitalcard = () => {
                   Create a professional email signature easily.
                 </p>
                 <div className="btn">
-                  <button className="b">Create Now</button>
+                <GreenBtn greenBtnName="Create Now" />
+
                 </div>
               </div>
               <div className="cardcontainer"></div>
@@ -109,7 +111,8 @@ const Digitalcard = () => {
                   Design your custom virtual background for meetings.
                 </p>
                 <div className="btn">
-                  <button className="b">Create Now</button>
+                <GreenBtn greenBtnName="Create Now" />
+
                 </div>
               </div>
               <div className="cardcontainer"></div>
