@@ -21,7 +21,7 @@ import Cursor from "./Component/cursor/Cursor";
 function App() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
 
       <div className="content-wrapper">
         <Cursor/>

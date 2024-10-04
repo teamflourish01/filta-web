@@ -1,3 +1,20 @@
+.feature-1380{
+  max-width: 1380px;
+  min-width: 200px;
+  width: 100%;
+}
+.feature-1320{
+  max-width: 1380px;
+  min-width: 200px;
+  width: 100%;
+  padding: 0 30px;
+}
+
+
+
+
+
+
 .feature-container-home {
   font-size: 40px;
   line-height: 60px;
@@ -15,7 +32,7 @@
 }
 
 .feature-image-home:hover {
-  width: 420px; /* Width on hover */
+  width: 420px; 
 }
 
 .exclusive-container {
@@ -76,4 +93,37 @@ font-size: 18px;
   display: block; /* Show the personalized text on hover */
   opacity: 1; /* Fully visible */
   text-align: justify;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .exclusive-container{
+    flex-direction: column;
+  }
+  .feature-image-home {
+width: 100%;
+height: 165px;
+  }
+  .feature-image-home:hover{
+    height: 360px;
+    width: 100%;
+
+  }
+  .overlay-text{
+    transform: translate(-50%, -50%) rotate(0deg);
+    top: 36%;
+    left: 19%;
+  }
+  .personalized {
+    
+    top: 48%;
+    /* left: 51%; */
+    width: 100%;
+  }
+  .feature-left-padding{
+    padding: 0 14px;
+    gap: 10px;
+
+  }
+  
 }

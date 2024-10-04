@@ -4,6 +4,17 @@
   font-family: Poppins-Bold;
   line-height: 60px;
 }
+.under-1380-work{
+  max-width: 1380px;
+  min-width: 200px;
+  width: 100%;
+}
+.under-1320-work{
+  max-width: 1380px;
+  min-width: 200px;
+  width: 100%;
+  padding: 0 30px;
+}
 .work-container {
   max-width: 1380px;
   /* max-width: 200px; */

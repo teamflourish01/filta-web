@@ -1,10 +1,13 @@
 import React from "react";
 import "../feature/feature.css";
 import feature from "../../assets/featurebg.png";
+import image1 from "../../assets/image1.png";
 
 const Feature = () => {
   return (
     <>
+    <div className="feature-1380">
+    <div className="feature-1320">
       <div className="feature-container-home">Exclusive Features!</div>
       <div className="exclusive-container">
         <div className="voice-over">
@@ -13,12 +16,14 @@ const Feature = () => {
             alt="Feature background"
             className="feature-image-home"
           />
+          <div className="feature-left-padding">
           <p className="overlay-text">Voice Over</p>
           <p className="personalized">
             Set personalized voice messages directly on your digital business
             card. Enhance client engagement with a personal touch, making your
             communication more memorable and effective.
           </p>
+          </div>
         </div>
 
         <div className="voice-over">
@@ -86,6 +91,8 @@ const Feature = () => {
             clients/customers, directly into the digital business card.
           </p>
         </div>
+      </div>
+      </div>
       </div>
     </>
   );
