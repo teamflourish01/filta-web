@@ -281,7 +281,7 @@ const Diffrent = () => {
           top: 50,
 
         },
-        {
+        
           x: 0,
           y: 0, // Move to their original position
           rotation: 0,
