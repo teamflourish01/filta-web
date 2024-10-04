@@ -1,36 +1,40 @@
-import React,{useEffect} from "react";
+import React, { useEffect, useState } from "react";
 import "../Homebanner/Home.css";
 import star from "../../assets/star.png";
 import smallstar from "../../assets/small.png";
 import Digitalcard from "../digitalcard/Digitalcard";
 import Diffrent from "../Diffrent/Diffrent";
 import Feature from "../feature/Feature";
-import thcard from "../../assets/thrstar.png"
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // Import AOS styles
+import thcard from "../../assets/thrstar.png";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 import Work from "../work/Work";
 import Transform from "../Transform/Transform";
-import ChooseUs from '../ChooseUs/ChooseUs';
+import ChooseUs from "../ChooseUs/ChooseUs";
 import Homefaq from "../Homefaq/Homefaq";
 import GreenBtn from "../GreenBtn/GreenBtn";
 
 const Home = () => {
-
+  const [isvisable, setvisable] = useState(false);
   useEffect(() => {
     AOS.init({ duration: 1000, easing: "ease-in-out", once: true });
   }, []);
 
-  
+  const handlemouseenter = () => {
+    setvisable(true);
+  };
+
   return (
     <>
       <div className="home-conatiner">
-        
-        <div className="wrapper" >
+        <div className="wrapper">
           <div className="now" data-aos="slide-down">
-            <p>The Way of Networking,Now</p>
+            <p>
+              The Way of Networking, <span class="now-responsive">Now</span>
+            </p>
 
             <span className="words">
-              <span className="eco-friendly">Eco-friendly</span>
+              <span className="eco-friendly">Eco-Friendly</span>
               <span>Digital</span>
               <span>Faster</span>
               <span>Dynamic</span>
@@ -55,39 +59,42 @@ const Home = () => {
         </div>
       </div>
 
-
+{/*     
       <div className="card-container">
         <div className="card-left"></div>
         <div className="card-center"></div>
         <div className="card-right"></div>
-        <img src={thcard} alt="" srcset="" className="side-image" />
-      </div>
+ 
+        <div className="side-star"></div>
+      </div>  */}
 
       <div className="hr">
         <div className="hrs"></div>
         <img src={star} alt="" srcset="" />
       </div>
 
-
-
-
-
-      <section className="welcome">
-            <div className="welcome-to">
-                <p className="filta">Welcome to Filta!</p>
-                <p className="all-in">India’s all-in-one platform for seamless digital networking solutions. Whether you are an entrepreneur, individual professional, corporate professional, or small or large enterprise, we provide innovative products like digital business cards, NFC cards, review stickers/cards, and email signatures to help you build stronger connections effortlessly.</p>
-            </div>
+      <section className="welcome" onMouseEnter={handlemouseenter}>
+        <div className={`welcome-to ${isvisable ? "visible" : ""}`}>
+          <p className="filta">Welcome to Filta!</p>
+          <p className="all-in">
+            India’s all-in-one platform for seamless digital networking
+            solutions. Whether you are an entrepreneur, individual professional,
+            corporate professional, or small or large enterprise, we provide
+            innovative products like digital business cards, NFC cards, review
+            stickers/cards, and email signatures to help you build stronger
+            connections effortlessly.
+          </p>
+        </div>
       </section>
-      <ChooseUs/>
+      {/* <ChooseUs/> */}
       <Digitalcard/>
-      <Diffrent/>
+      {/* <Diffrent/> */}
       <Feature/>
       <Work/>
 
-      <Transform/>
-      
+      {/* <Transform/> */}
 
-      <Homefaq/>
+      {/* <Homefaq/> */}
     </>
   );
 };
