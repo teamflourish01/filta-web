@@ -4,7 +4,7 @@ import "../CardChoose/CardChoose.css";
 function CardChoose({ title, description, chooseusimg }) {
   return (
     <div className="CardChoose-container">
-      <div className="CardChoose-card">
+      <div className="CardChoose-card about-CardChoose-card ">
         <div className="CardChoose-title">
           <div className="img-title">
             <img src={chooseusimg} alt={title} />

@@ -8,16 +8,16 @@ function GreenBtn({greenBtnName}) {
       <button type="button" className="btn-green">
         <span className="login-text feature-create-your-card-text">
           {greenBtnName}
-          <div class="green-star-2">
+          <div className="green-star-2">
             <PiStarFourFill className="stars-login" />
           </div>
-          <div class="green-star-3">
+          <div className="green-star-3">
             <PiStarFourFill className="stars-login" />
           </div>
-          <div class="green-star-4">
+          <div className="green-star-4">
             <PiStarFourFill className="stars-login" />
           </div>
-          <div class="green-star-6">
+          <div className="green-star-6">
             <PiStarFourFill className="stars-login" />
           </div>
         </span>

@@ -2,7 +2,8 @@
   max-width: 1320px;
   min-width: 200px;
   width: 100%;
-  display: contents;
+  margin: 0 auto;
+  /* display: contents; */
   overflow-x: hidden !important;
 }
 .why-choose-us {
@@ -13,7 +14,7 @@
   padding: 60px 0 0;
 }
 .why-choose-us-cards {
-  padding: 30px 0 60px;
+  padding: 30px 30px 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,5 +31,33 @@
 @media (max-width: 1024px) {
   .why-choose-us-cards {
     flex-wrap: wrap;
+  }
+  .choose-cards-left {
+    flex-direction: column;
+  }
+  .choose-cards-right {
+    flex-direction: column;
+  }
+  .choose-cards-right {
+    gap: 18px;
+  }
+  .why-choose-us-cards {
+    gap: 18px;
+    padding: 30px 25px 50px;
+
+  }
+
+}
+@media (max-width: 767px) {
+  .ChooseUs-main {
+    display: contents;
+  }
+  .why-choose-us-cards {
+    flex-direction: column;
+    padding: 20px 10px 40px;
+  }
+  .why-choose-us {
+    font-size: 20px;
+    line-height: 30px;
   }
 }

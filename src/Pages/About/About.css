@@ -68,7 +68,10 @@
   display: flex;
   gap: 16px;
 }
-
+@media only screen and (max-width: 1284px) and (min-width: 1025px) {
+ 
+ 
+}
 @media only screen and (max-width: 1024px) {
   .empowering-title {
     font-size: 30px;
@@ -148,7 +151,5 @@
     line-height: 24px !important;
     padding: 0 10px 37px;
   }
-  .CardChoose-card {
-    height: auto !important;
-  }
+ 
 }
