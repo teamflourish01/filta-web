@@ -47,9 +47,10 @@ const Transform = () => {
   }, []);
 
   // Wrapping each letter in a span
-  const text = "Ready to Transform Your Networking Digitally ?";
+  const text = "Ready to transform your connections digitally?";
 
   return (
+    <div className="under-1380-transform">
     <div className="container-word">
       <p ref={textRef} className="word-padding">
         {text.split("").map((letter, index) => (
@@ -62,6 +63,7 @@ const Transform = () => {
       {/* <div className="faq-home">
         <p className="faq-head">FAQ’S</p>
       </div> */}
+    </div>
     </div>
   );
 };

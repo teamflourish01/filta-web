@@ -4,12 +4,12 @@
   font-family: Poppins-Bold;
   line-height: 60px;
 }
-.under-1380-work{
+.under-1380-work {
   max-width: 1380px;
   min-width: 200px;
   width: 100%;
 }
-.under-1320-work{
+.under-1320-work {
   max-width: 1380px;
   min-width: 200px;
   width: 100%;
@@ -38,7 +38,9 @@
   line-height: 30px;
 }
 .choose {
-  width: 400px;
+  max-width: 400px;
+  min-width: 200px;
+  width: 100%;
   height: 400px;
   background: #d9d9d96e;
   border-top-left-radius: 10px;
@@ -78,7 +80,6 @@
 
 .choose-template {
   /* position: sticky; */
-
 }
 .scroll {
   display: flex;
@@ -98,6 +99,33 @@
   top: 0;
   z-index: 1;
 }
-.hei{
+.hei {
   margin: 0 0 27px;
+}
+
+@media screen and (max-width: 1024px) {
+  .choose-flex {
+    flex-wrap: wrap;
+  }
+  .choose {
+    max-width: unset;
+    min-width: unset;
+    gap: 20px;
+  }
+  .process {
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .work {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .simple-step-container {
+    padding-top: 20px;
+}
+.work-container{
+  padding: 0 10px;
+}
 }
