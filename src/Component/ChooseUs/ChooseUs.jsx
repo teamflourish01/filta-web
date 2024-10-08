@@ -382,6 +382,7 @@ import ecofriendly from '../../assets/ecofriendly.png';
 import instantsharing from '../../assets/instantsharing.png'
 import { gsap } from "gsap"; 
 import { ScrollTrigger } from "gsap/ScrollTrigger"; 
+import BenifitCard from "../BenifitCard/BenifitCard";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -475,24 +476,24 @@ function ChooseUs() {
       <div className="why-choose-us">Benefits of Using Filta</div>
       <div className="why-choose-us-cards">
         <div className="choose-cards-left" ref={cardsLeftRef}>
-          <CardChoose
+          <BenifitCard
             title="Time Saving"
             description="Create, share, and update your business card in minutes. Save time by connecting instantly, without the hassle of printing or carrying physical cards."
             chooseusimg={timesaving}
           />
-          <CardChoose
+          <BenifitCard
             title="Customizable & Professional"
             description="Make your card look as professional as possible. Completely customizable with your logo, multimedia, & colors to guarantee a professional first impression each and every time."
             chooseusimg={customization}
           />
         </div>
         <div className="choose-cards-right" ref={cardsRightRef}>
-          <CardChoose
+          <BenifitCard
             title="Eco-Friendly & Cost-Effective"
             description="Discard paper cards to reduce printing expenses. Our eco-friendly cards save the environment and will not harm your bank balance."
             chooseusimg={ecofriendly}
           />
-          <CardChoose
+          <BenifitCard
             title="Instant Sharing"
             description="Quickly share your business card by email, WhatsApp, or QR code. Connect instantly, without having to wait or have worries about missing your card."
             chooseusimg={instantsharing}
