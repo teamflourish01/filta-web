@@ -16,28 +16,27 @@ import Features from './Pages/Features/Features';
 import Contact from "./Component/Contactus/Contact";
 import Home from "./Component/Homebanner/Home";
 import Cursor from "./Component/cursor/Cursor";
+import ChooseUs from "./Component/ChooseUs/ChooseUs";
 
 
 function App() {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
 
       <div className="content-wrapper">
         <Cursor/>
         <Routes>
           <Route path="/about" element={<About />} />
           <Route path="/faqs" element={<Faq />} />
-
           <Route path="/resources" element={<Resources />} />
           <Route path="/resourcedetails" element={<ResouceDetails/>}/>
           <Route path="/pricing" element={<Pricing/>} />
           <Route path="/features" element={<Features/>}/>
-
-
           <Route path="/Contact" element={<Contact />} />
           <Route path="/" element={<Home/>} />
-   
+          <Route path="/ChooseUs" element={<ChooseUs />} />
+
 
         </Routes>
       </div>

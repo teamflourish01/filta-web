@@ -103,9 +103,9 @@ const Diffrent = () => {
           y: 0, // Centered initially
 
         },
-      }
+      
     );
-  }, []);
+ }, []);
 
   return (
     <div>

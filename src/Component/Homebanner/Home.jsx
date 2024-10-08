@@ -30,7 +30,7 @@ const Home = () => {
         <div className="wrapper">
           <div className="now" data-aos="slide-down">
             <p>
-              The Way of Networking, <span class="now-responsive">Now</span>
+              The Way of Networking, <span className="now-responsive">Now</span>
             </p>
 
             <span className="words">
@@ -44,7 +44,7 @@ const Home = () => {
       </div>
       <div className="simple-star-flex">
         <div className="background left-star-wrapper">
-          <img src={star} alt="" srcset="" className="left-star" />
+          <img src={star} alt="" srcSet="" className="left-star" />
           <img src={smallstar} alt="small star" className="small-left-star" />
         </div>
         <div className="simple">
@@ -55,22 +55,22 @@ const Home = () => {
         </div>
 
         <div className="background">
-          <img src={star} alt="" srcset="" className="right-star" />
+          <img src={star} alt="" srcSet="" className="right-star" />
         </div>
       </div>
 
-{/*     
+    
       <div className="card-container">
         <div className="card-left"></div>
         <div className="card-center"></div>
         <div className="card-right"></div>
  
         <div className="side-star"></div>
-      </div>  */}
+      </div> 
 
       <div className="hr">
         <div className="hrs"></div>
-        <img src={star} alt="" srcset="" />
+        <img src={star} alt="" srcSet="" />
       </div>
 
       <section className="welcome" onMouseEnter={handlemouseenter}>
@@ -86,11 +86,11 @@ const Home = () => {
           </p>
         </div>
       </section>
-      {/* <ChooseUs/> */}
+      <ChooseUs/>
       <Digitalcard/>
       {/* <Diffrent/> */}
       <Feature/>
-      <Work/>
+      {/* <Work/> */}
 
       {/* <Transform/> */}
 
