@@ -9,6 +9,7 @@
   max-width: 1380px;
     min-width: 200px;
     width: 100%;
+    margin: 0 auto;
     /* padding: 0 30px; */
    
 }
@@ -163,6 +164,28 @@ line-height: 60px;
     }
     .under-1320{
       padding: 0 25px;
+    }
+    .what{
+      font-size: 30px;
+    }
+  }
+  @media screen and (max-width: 767px){
+    .feature-1320{
+      padding: 0 10px;
+    }
+    .under-1320{
+      padding: 0 10px;
+    }
+    .dashed-border{
+      font-size: 18px;
+      padding: 5px 0 5px 0;
+    }
+    .business{
+      font-size: 18px;
+      line-height: 27px;
+    }
+    .business-card {
+      padding: 5px 0 15px 0;
     }
   }
 

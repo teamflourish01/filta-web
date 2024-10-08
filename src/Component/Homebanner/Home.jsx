@@ -59,14 +59,14 @@ const Home = () => {
         </div>
       </div>
 
-{/*     
+  
       <div className="card-container">
         <div className="card-left"></div>
         <div className="card-center"></div>
         <div className="card-right"></div>
  
         <div className="side-star"></div>
-      </div>  */}
+      </div>  
 
       <div className="hr">
         <div className="hrs"></div>
@@ -88,13 +88,13 @@ const Home = () => {
       </section>
       {/* <ChooseUs/> */}
       <Digitalcard/>
-      {/* <Diffrent/> */}
+      <Diffrent/>
       <Feature/>
       <Work/>
 
-      {/* <Transform/> */}
+      <Transform/>
 
-      {/* <Homefaq/> */}
+      <Homefaq/>
     </>
   );
 };

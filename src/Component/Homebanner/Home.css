@@ -47,6 +47,7 @@
   text-align: center;
   font-size: 40px;
   font-weight: 700;
+  /* line-height: 30px; */
   font-family: Poppins-Bold;
 }
 .side-star {
@@ -286,6 +287,8 @@
   font-size: 40px;
   font-family: Poppins-Bold;
   text-align: center;
+  line-height: 45px;
+  padding-bottom: 30px;
 }
 
 .all-in {
@@ -337,6 +340,9 @@
   .now {
     flex-direction: column;
   }
+  .home-conatiner{
+    padding-top: 50px;
+  }
   .wrapper {
     display: initial;
     /* max-width: 541px; */
@@ -367,4 +373,78 @@
   .all-in {
     padding: 0 25px;
   }
+  .filta{
+    font-size: 30px;
+  }
+  .right-star{
+    display: none;
+  }
+  .side-star{
+    display: none;
+  }
+  .card-center{
+    width: 217px;
+    height: 371px;
+  }
+  .card-right{
+    height: 371px;
+    max-width: 217px;
+    min-width: 50px;
+
+
+  }
+  .card-left{
+    height: 371px;
+    width: 217px;
+  }
+}
+@media screen and (max-width: 767px){
+  .now p{
+    font-size: 20px;
+  }
+  .words span{
+    font-size: 20px;
+  }
+  .now-responsive{
+    margin: 0 0 0 -103px;
+  }
+  .simple p{
+    font-size: 16px;
+  }
+  .card-right {
+    height: 114px;
+    max-width: 84px;
+    min-width: 50px;
+}
+.card-left{
+  height: 114px;
+  max-width: 84px;
+}
+.card-center{
+  height: 114px;
+  max-width: 84px;
+}
+.card-container {
+  padding: 30px 0 0;
+}
+.welcome {
+  
+  padding: 32px 0 20px 0;
+}
+.all-in{
+  padding: 0 10px;
+}
+.hr{
+  padding-top: 35px;
+}
+.hr img {
+ 
+  top: 12px;
+ 
+}
+.filta{
+  padding-bottom: 20px;
+  font-size: 20px;
+  line-height: 30px;
+}
 }

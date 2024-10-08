@@ -1,19 +1,24 @@
-.feature-1380{
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+.feature-1380 {
   max-width: 1380px;
   min-width: 200px;
   width: 100%;
+  margin: 0 auto;
 }
-.feature-1320{
+.feature-1320 {
   max-width: 1380px;
   min-width: 200px;
   width: 100%;
   padding: 0 30px;
 }
-
-
-
-
-
 
 .feature-container-home {
   font-size: 40px;
@@ -32,7 +37,7 @@
 }
 
 .feature-image-home:hover {
-  width: 420px; 
+  width: 420px;
 }
 
 .exclusive-container {
@@ -71,23 +76,23 @@
 }
 
 .personalized {
-  position: absolute; 
+  position: absolute;
   top: 65%; /* Center vertically in the parent container */
   left: 50%; /* Center horizontally in the parent container */
   transform: translate(-50%); /* Center it perfectly */
   color: white;
   padding: 0 14px;
   font-family: Poppins-Regular;
-  
-font-size: 18px;
+
+  font-size: 18px;
   border-radius: 5px;
-  display: none; 
-  opacity: 0; 
+  display: none;
+  opacity: 0;
   transition: opacity 0.3s ease;
   width: 420px;
   text-align: justify;
- 
 }
+
 
 .voice-over:hover .personalized {
   display: block; /* Show the personalized text on hover */
@@ -95,35 +100,56 @@ font-size: 18px;
   text-align: justify;
 }
 
-
 @media screen and (max-width: 1024px) {
-  .exclusive-container{
+  .exclusive-container {
     flex-direction: column;
   }
-  .feature-image-home {
-width: 100%;
-height: 165px;
+  .feature-1320{
+    padding: 0 25px;
   }
-  .feature-image-home:hover{
+  
+  .feature-image-home {
+    width: 100%;
+    height: 165px;
+  }
+  .feature-image-home:hover {
     height: 360px;
     width: 100%;
-
   }
-  .overlay-text{
+  .overlay-text {
     transform: translate(-50%, -50%) rotate(0deg);
     top: 36%;
-    left: 19%;
+    left: 25%;
   }
   .personalized {
-    
     top: 48%;
     /* left: 51%; */
     width: 100%;
   }
-  .feature-left-padding{
+  .feature-left-padding {
     padding: 0 14px;
     gap: 10px;
-
   }
-  
+}
+@media screen and (max-width: 767px){
+  .feature-container-home{
+    font-size: 20px;
+  }
+  .exclusive-container {
+
+    padding: 20px 0 40px 0;
+}
+  .feature-1320{
+    padding: 0 10px;
+  }
+  .overlay-text {
+    transform: translate(-50%, -50%) rotate(0deg);
+    top: 36%;
+    
+    padding: 0 0 0 15px;
+}
+.overlay-text{
+  font-size: 16px;
+  line-height: 24px;
+}
 }
