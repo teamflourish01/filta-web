@@ -139,8 +139,13 @@
     min-width: 200px;
     width: 100%;
     margin: 0 auto;
+    border: 1px solid black;
   }
-  
+  .card-max{
+    max-width: 1320px;
+    min-width: 200px;
+    width: 100%;
+  }
   .p-container {
     position: relative;
     text-align: center;
@@ -195,6 +200,7 @@
     width: 100%;
     top: -20px;
     z-index: 1;
+    height: 155px;
 
     /* border: 1px solid gray; */
 }
@@ -240,3 +246,16 @@ text-align: center;
 padding: 125px 0 30px 0;
 }
 
+@media screen and (max-width: 1024px){
+  .card-max{
+    overflow-x: scroll;
+  }
+  @media screen and (max-width: 1320px) {
+    .in-div, .innovation, .trigger {
+      animation: none !important;
+      transform: none !important;
+      opacity: 1 !important;
+    }
+  }
+  
+}
