@@ -86,6 +86,8 @@ const Diffrent = () => {
   return (
     <div className="diffrent">
       <div className="d-title">Why Are We Different?</div>
+      <div className="card-max">
+
       <div className="all-flex">
         {/* Card 1 */}
         <div className="innovation-main">
@@ -134,6 +136,7 @@ const Diffrent = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );
