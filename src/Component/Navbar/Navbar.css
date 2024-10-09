@@ -408,7 +408,11 @@ button:hover .star-6 {
 .hide {
   display: flex;
 }
-
+@media screen and (max-width: 1088px) and (min-width:1024px){
+  .navbar-tabs{
+    gap:41px;
+  }
+}
 @media (max-width: 1024px) {
 
   .navbar {

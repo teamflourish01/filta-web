@@ -92,9 +92,9 @@ const Home = () => {
       </section>
       <ChooseUs/>
       <Digitalcard/>
-      <Diffrent/>
+      {/* <Diffrent/> */}
       <Feature/>
-      {/* <Work/> */}
+      <Work/>
 
       <Transform/>
 
