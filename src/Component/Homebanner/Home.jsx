@@ -94,7 +94,7 @@ const Home = () => {
       <Digitalcard/>
       <Diffrent/>
       <Feature/>
-      {/* <Work/> */}
+      <Work/>
 
       <Transform/>
 
