@@ -82,8 +82,10 @@ const Diffrent = () => {
         },
       }
     );
+
   }
   }, []);
+
 
   return (
     <div className="diffrent">

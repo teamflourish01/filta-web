@@ -11,10 +11,10 @@
   font-size: 40px;
   line-height: 60px;
   text-align: center;
-  padding: 60px 0 0;
+  padding: 60px 0 30px;
 }
 .why-choose-us-cards {
-  padding: 30px 30px 60px;
+  padding: 0 30px;
   display: flex;
   justify-content: center;
   align-items: center;
