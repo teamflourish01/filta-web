@@ -1,4 +1,4 @@
-/* * {
+* {
   margin: 0;
   padding: 0;
 }
@@ -104,7 +104,8 @@
   width: 100%;
   top: -20px;
   z-index: 1;
-  border: 1px solid gray;
+  
+ 
 }
 .in-div .p {
   color: black;
@@ -139,7 +140,7 @@
     min-width: 200px;
     width: 100%;
     margin: 0 auto;
-    border: 1px solid black;
+    
   }
   .card-max{
     max-width: 1320px;
@@ -209,10 +210,16 @@
     color: black;
     background-color: white;
     font-size: 18px;
-    border-radius: 0 0 20px 20px;
+    border-radius: 20px;
     text-align: justify;
-    padding: 10px;
+    padding: 6px;
+    border-width: 0px, 1px, 1px, 1px;
 
+   
+    border: 1px solid rgba(0, 0, 0, 0.1);
+   
+   
+    
     line-height: 27px;
     font-family: Poppins-Regular;
 
@@ -243,19 +250,33 @@
     font-size: 40px;
   font-family: Poppins-Bold;
 text-align: center;
-padding: 125px 0 30px 0;
+padding: 60px 0 30px 0;
 }
 
 @media screen and (max-width: 1024px){
-  .card-max{
+  .all-flex{
     overflow-x: scroll;
+    padding: 0 25px;
+    justify-content: flex-start;
   }
-  @media screen and (max-width: 1320px) {
-    .in-div, .innovation, .trigger {
-      animation: none !important;
-      transform: none !important;
-      opacity: 1 !important;
-    }
+  .innovation{
+    top: 50px;
+  }
+  .trigger{
+    top: 50px;
   }
   
+  
+}
+
+
+@media screen and (max-width: 767px){
+  .in-div .p{
+    font-size: 16px;
+    line-height: 24px;
+    height: 200px;
+  }
+  .in-div .p span{
+    font-size: 16px;
+  }
 }

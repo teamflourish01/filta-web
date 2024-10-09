@@ -7,7 +7,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Diffrent = () => {
   useEffect(() => {
-    // Slide down animation for all '.in-div' elements
+    const screenwidth = window.innerWidth;
+    if (screenwidth > 1024) {
     gsap.fromTo(
       ".in-div",
       {
@@ -82,58 +83,14 @@ const Diffrent = () => {
       }
     );
 
-
-    // Move text from center to bottom when cards appear
-    gsap.fromTo(
-      ".p-container",
-      {
-        y: 0, // Centered initially
-      },
-      {
-        y: 200, // Move to bottom when cards appear
-        duration: 2.5,
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: ".p-container",
-          start: "top center",
-          scrub: true,
-          top: 50,
-
-
-        },
-        
-          x: 0,
-          y: 0, // Move to their original position
-          rotation: 0,
-          opacity: 1,
-          duration: 2,
-          scale: 1,
-          ease: "power2.out",
-          scrollTrigger: {
-            trigger: ".trigger",
-            start: "top center",
-            end: "top 0%",
-            scrub: true,
-          },
-        }
-      );
-  
-      // Move text from center to bottom when cards appear
-      gsap.fromTo(
-        ".p-container",
-        {
-          y: 0, // Centered initially
-        },
-      
-    );
- }, []);
+  }
+  }, []);
 
 
   return (
     <div className="diffrent">
       <div className="d-title">Why Are We Different?</div>
-      <div className="card-max">
-
+      
       <div className="all-flex">
         {/* Card 1 */}
         <div className="innovation-main">
@@ -182,7 +139,6 @@ const Diffrent = () => {
             </div>
           </div>
         </div>
-      </div>
       </div>
     </div>
   );

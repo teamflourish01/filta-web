@@ -43,8 +43,8 @@
   width: 100%;
   height: 400px;
   background: #d9d9d96e;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-radius: 10px;
+  
 }
 
 .choose-flex {
