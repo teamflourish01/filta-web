@@ -61,7 +61,8 @@
   /* font-family: Poppins-ExtraBold; */
   font-size: 80px;
   font-weight: 800;
-  line-height: 85px;
+  /* line-height: 85px; */
+  line-height: 66px;
   text-align: left;
   color: #5aba4780;
 }
@@ -172,7 +173,7 @@
     padding: 0 25px;
   }
   .text-01 {
-    line-height: 80px;
+    line-height: 68px;
   }
 }
 
@@ -190,7 +191,9 @@
   }
   .text-01 {
     font-size: 35px;
-    line-height: 52.5px;
+    /* line-height: 52.5px; */
+    /* line-height: 35.5px; */
+    line-height: 30px;
   }
   .content-01 {
     padding: 20px 10px;
@@ -231,6 +234,6 @@
   }
   .cards-feature {
  
-    gap: 50px;
+    gap: 30px;
 }
 }

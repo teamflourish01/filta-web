@@ -123,7 +123,6 @@ const Diffrent = () => {
         ".p-container",
         {
           y: 0, // Centered initially
-
         },
       
     );
