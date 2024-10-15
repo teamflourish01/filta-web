@@ -1,0 +1,11 @@
+<div className="voice-over" onClick={() => handleClick(1)}>
+              <img
+                src={feature}
+                alt="Feature background"
+                className={`feature-image-home ${expandedCard === 1 ? 'expanded' : ''}`}
+              />
+              <p className="overlay-text">Multilanguage Support</p>
+              <p className="personalized">
+                Connect globally with our multilanguage support feature. Communicate in your client's preferred language, breaking down barriers and fostering stronger, more inclusive relationships.
+              </p>
+            </div>
