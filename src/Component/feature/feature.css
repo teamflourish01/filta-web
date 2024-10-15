@@ -99,11 +99,7 @@
   opacity: 1; /* Fully visible */
   text-align: justify;
 }
-@media screen and (max-width: 1220px) and (min-width:1024px){
-  .hr-rotate {
-    margin: 0 34px;
-  }
-}
+
 
 @media screen and (max-width: 1024px) {
   .exclusive-container {
