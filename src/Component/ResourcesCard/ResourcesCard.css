@@ -97,17 +97,24 @@
   line-height: 24px;
   text-align: center;
 }
-.view-more-btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 16px 24px;
-    gap: 5px;
+.view-more-blog:hover {
+  color: #5aba47;
 }
-.view-more-btn-arrow{
-    display: flex;
+.view-more-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 24px;
+  gap: 5px;
 }
-
+.view-more-btn:hover {
+  color: #5aba47;
+}
+.view-more-btn-arrow {
+  display: flex;
+}
+.view-more-btn-arrow svg:hover {
+  color: #5aba47;
+}
 @media (max-width: 1024px) {
-
 }

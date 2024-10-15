@@ -5,7 +5,7 @@
     height: 37px;
   }
   .login-text {
-    padding: 5px 25.5px;
+    /* padding: 5px 25.5px; */
     font-family: Poppins-SemiBold;
     font-size: 18px;
     line-height: 27px;
@@ -20,7 +20,7 @@
   }
   
   .btn-green {
-    background-color: #fff;
+    background-color: transparent;
     border: 1px solid #000;
     border-radius: 32px;
     height: 37px;
@@ -32,9 +32,9 @@
     color: #131313;
     cursor: pointer;
     position: relative;
-    overflow: hidden;
+    overflow: hidden; 
     transition: all 0.5s;
-    background-color: #fff;
+    /* background-color: #fff; */
     font-weight: bolder;
     width: 185px;
   }

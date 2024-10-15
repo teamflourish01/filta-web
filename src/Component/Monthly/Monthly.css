@@ -5,7 +5,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 38px;
-  padding: 0 30px;
+  /* padding: 0 30px; */
 }
 .monthly-price-card {
   /* max-width: 415px !important;
@@ -23,7 +23,7 @@
   scrollbar-width: none;
 }
 .free {
-  border-bottom: 2px solid #0000001a;
+  border-bottom: 1px solid #0000001a;
   padding: 56px 0;
   background-color: #fff;
   position: sticky;
@@ -31,7 +31,7 @@
   z-index: 90;
 }
 .box {
-  border-bottom: 2px solid #0000001a;
+  border-bottom: 1px solid #0000001a;
 }
 .free-text {
   text-transform: uppercase;
@@ -64,6 +64,7 @@
 @media (max-width: 1024px) {
   .monthly-card-container {
     grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
     padding: unset;
     gap: 28px;
   }
