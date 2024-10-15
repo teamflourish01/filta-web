@@ -148,7 +148,9 @@ function Footer() {
               <p className="page-name hover-color">filta.india@gmail.com</p>
             </div>
           </div>
-          <hr className="hr-color"></hr>
+         
+        </div>
+        <hr className="hr-color"></hr>
           <div className="footer-copyright">
             <p className="copyright">
               Copyrights © 2024 Filta All rights reserved.
@@ -157,7 +159,6 @@ function Footer() {
               Design & Developed By: FLOURISH CREATIONS PVT. LTD.
             </p>
           </div>
-        </div>
       </div>
     </>
   );

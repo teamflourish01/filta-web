@@ -114,10 +114,10 @@
   margin: 0 auto;
 }
 .feature-create-your-card-text {
-  padding: 5px 13.5px;
+  /* padding: 5px 13.5px; */
   font-family: Poppins-SemiBold;
   font-size: 18px;
-  line-height: 27px;
+  /* line-height: 27px; */
   display: flex;
   justify-content: center;
 }
