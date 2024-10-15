@@ -15,13 +15,17 @@ import Homefaq from "../Homefaq/Homefaq";
 import GreenBtn from "../GreenBtn/GreenBtn";
 
 const Home = () => {
-  const [isvisable, setvisable] = useState(false);
   useEffect(() => {
     AOS.init({ duration: 1000, easing: "ease-in-out", once: true });
   }, []);
+  const [isvisable, setvisable] = useState(false);
+  const [hasHovered, setHasHovered] = useState(false);
 
   const handlemouseenter = () => {
-    setvisable(true);
+    if (window.innerWidth > 1024) {
+      setHasHovered(true);
+      setvisable(true);
+    }
   };
 
   return (
@@ -59,22 +63,19 @@ const Home = () => {
         </div>
       </div>
 
-
-    
-
       <div className="card-container">
-        <div className="card-left"></div>
-        <div className="card-center"></div>
-        <div className="card-right"></div>
- 
+        <div className="  card card-left"></div>
+        <div className="card  card-center"></div>
+        <div className="card  card-right"></div>
+
         <div className="side-star"></div>
+      </div>
 
-      </div>  
-
-
-      <div className="hr">
-        <div className="hrs"></div>
-        <img src={star} alt="" srcSet="" />
+      <div className="hr-parent">
+        <div className="hr">
+          <div className="hrs"></div>
+          <img src={star} alt="" srcSet="" />
+        </div>
       </div>
 
       <section className="welcome" onMouseEnter={handlemouseenter}>
@@ -90,15 +91,15 @@ const Home = () => {
           </p>
         </div>
       </section>
-      <ChooseUs/>
-      <Digitalcard/>
-      {/* <Diffrent/> */}
-      <Feature/>
-      <Work/>
+      <ChooseUs />
+      <Digitalcard />
+      <Diffrent />
+      <Feature />
+      <Work />
 
-      <Transform/>
+      <Transform />
 
-      <Homefaq/>
+      <Homefaq />
     </>
   );
 };

@@ -56,6 +56,7 @@
 .box-text-work {
   display: flex;
   gap: 15px;
+  align-items: center;
   padding: 20px 0 5px 0;
 }
 .text {
@@ -106,6 +107,10 @@
 @media screen and (max-width: 1024px) {
   .choose-flex {
     flex-wrap: wrap;
+    gap: 20px;
+  }
+  .hei {
+    margin: 0;
   }
   .choose {
     max-width: unset;
@@ -115,6 +120,17 @@
   .process {
     text-align: justify;
   }
+  .box-text-work {
+
+    padding: 10px 0 2px 0;
+    gap: 13px;
+}
+.work {
+  
+  font-size: 30px;
+  
+  line-height: 45px;
+}
 }
 
 @media screen and (max-width: 767px) {
@@ -127,5 +143,32 @@
 }
 .work-container{
   padding: 0 10px;
+}
+.create {
+  font-size: 16px;
+ 
+  line-height: 24px;
+}
+.process {
+  
+  font-size: 16px;
+  padding: 5px 0 15px;
+  line-height: 24px;
+}
+.selecting {
+  font-size: 16px;
+  line-height: 24px;
+  
+}
+.template {
+  
+  font-size: 16px;
+  line-height: 24px;
+}
+.text {
+  /* font-family: Poppins-ExtraBold; */
+  
+  font-size: 18px;
+  line-height: 27px;
 }
 }

@@ -110,7 +110,7 @@ const Digitalcard = () => {
                 </div>
                 <div className="cardcontainer"></div>
               </div>
-            )}
+            )} 
 
             {/* Email Signature */}
             <div

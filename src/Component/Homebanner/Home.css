@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
   /* overflow-y: hidden; */
+  box-sizing: border-box;
+}
+::before, *::after {
+  box-sizing: border-box;
 }
 
 .home-conatiner {
@@ -115,7 +119,7 @@
 }
 
 .hr {
-  padding-top: 50px;
+  padding-top: 61px;
   position: relative;
   color: #5aba47;
   text-align: center;
@@ -128,7 +132,7 @@
 
 .hr img {
   position: absolute;
-  top: 27px;
+  top: 38px;
   animation: slide 20s linear infinite;
 }
 
@@ -169,6 +173,7 @@
   display: flex;
   justify-content: space-evenly;
   padding-top: 14.62px;
+  align-items: center;
 }
 
 .left-star {
@@ -199,22 +204,27 @@
   padding: 50px 0;
 }
 
-.card-left,
-.card-center,
-.card-right {
+.card{
   width: 259.94px;
   height: 444.34px;
   border-radius: 15px;
   border: 1px solid #0000004d;
   background-color: #d9d9d9;
   position: relative;
-  opacity: 0; /* Start hidden */
+  opacity: 0; 
+  transition: all 0.3s ease;
 }
+
+
+
+
+
 
 .card-left {
   transform: rotate(-16.95deg); /* Keep the rotation */
   transform-origin: right; /* Ensure it rotates from the right */
   animation: slideLeft 1s forwards 0.5s; /* Delay of 0.5s */
+  
 }
 
 .card-right {
@@ -225,17 +235,14 @@
   /* top: -20px; */
   background-repeat: no-repeat;
   background-position: center;
+
 }
 
 .card-center {
   /* No rotation */
   animation: slideCenter 1s forwards 1.5s; /* Delay of 1.5s */
-  width: 259.94px;
-  height: 444.34px;
-  border-radius: 15px;
-  border: 1px solid #0000004d;
-  background-color: #d9d9d9;
-  opacity: 0;
+  
+
   z-index: 3; /* Ensure center card is on top */
 }
 .eco-friendly {
@@ -280,14 +287,14 @@
   min-width: 200px;
   width: 100%;
   margin: 0 auto;
-  padding: 76px 0 0 0;
+  padding: 100px 0 0 0;
 }
 
 .filta {
   font-size: 40px;
   font-family: Poppins-Bold;
   text-align: center;
-  line-height: 45px;
+  line-height: 60px;
   padding-bottom: 30px;
 }
 
@@ -336,12 +343,23 @@
   display: inline;
 }
 
+
 @media screen and (max-width: 1024px) {
   .now {
     flex-direction: column;
   }
   .home-conatiner{
     padding-top: 50px;
+  }
+  .welcome-to.visible{
+    animation: none;
+  }
+  .welcome:hover .filta{
+    transform: unset;
+    transition: unset;
+  }
+  .welcome-to{
+    animation: none;
   }
   .wrapper {
     display: initial;
@@ -360,6 +378,7 @@
   }
   .simple-star-flex {
     justify-content: center;
+    padding-top: 15.61px;
   }
   .left-star {
     display: none;
@@ -375,6 +394,7 @@
   }
   .filta{
     font-size: 30px;
+    line-height: 45px;
   }
   .right-star{
     display: none;
@@ -390,12 +410,19 @@
     height: 371px;
     max-width: 217px;
     min-width: 50px;
-
-
   }
   .card-left{
     height: 371px;
     width: 217px;
+  }
+  .hr {
+    padding-top: 50px;
+
+  }
+  .hr img {
+    
+    top: 27px;
+   
   }
 }
 @media screen and (max-width: 767px){
@@ -410,6 +437,7 @@
   }
   .simple p{
     font-size: 16px;
+    line-height: 24px;
   }
   .card-right {
     height: 114px;
@@ -429,17 +457,20 @@
 }
 .welcome {
   
-  padding: 32px 0 20px 0;
+  padding: 50px 0 10px 0;
 }
 .all-in{
   padding: 0 10px;
+  font-size: 16px;
+  line-height: 24px;
 }
 .hr{
-  padding-top: 35px;
+  padding-top: 48px;
 }
 .hr img {
- 
-  top: 12px;
+ height: 36px;
+ width: 36px;
+  top: 31px;
  
 }
 .filta{
@@ -447,4 +478,26 @@
   font-size: 20px;
   line-height: 30px;
 }
+.home-conatiner{
+  padding-top: 30px;
+}
+.simple-star-flex {
+ 
+  padding-top: 15px;
+}
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  .welcome-to {
+    opacity: 1;
+    transform: none; /* No animation or translate */
+  }
+
+  .filta,
+  .all-in {
+    transform: none; /* No jump effect */
+    transition: none; /* Remove smooth transition */
+  }
 }

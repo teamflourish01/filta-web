@@ -1,15 +1,53 @@
-.cursor{
-    position: fixed;
-    width: 10px; /* Size of the round effect */
-    height: 10px;
-    background-color: #5ABA47; /* Color of the round */
-    border-radius: 50%; /* Make it circular */
-    pointer-events: none; /* Prevent it from blocking mouse events */
-    transform: translate(-50%, -50%); /* Center it on the cursor */
-    transition: transform 0.2s ease, background-color 0.2s ease; /* Smooth transition */
-    z-index: 1000;
+
+.cursor-dot {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(90, 186, 71, 1);
+  ; 
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: transparent;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
 }
-.cursor:hover {
-    background-color: #7BFF5D; /* Change color on hover (optional) */
-    transform: scale(1.5); /* Scale up on hover (optional) */
+
+
+article:hover ~ .cursor-dot {
+  width: 120px;
+  height: 120px;
+ 
+  background: linear-gradient(to right, rgba(105, 66, 49, 0.4), rgba(117, 116, 122, 0.4));
+  backdrop-filter: blur(10px);
+  opacity: 0.8;
+  color: white; 
+ 
+}
+
+@media screen and (max-width:1024px) {
+  .cursor-dot{
+    position: unset;
+  width: unset;
+  height: unset;
+  background-color:unset; 
+  border-radius: unset;
+  pointer-events: unset;
+  transform: translate(unset);
+  z-index: unset;
+  transition: width unset, height unset, background-color unset;
+  display: unset;
+  align-items: unset;
+  justify-content: unset;
+  color: unset;
+  font-size: unset;
+  font-weight: unset;
+  display: none;
   }
+}

@@ -2,42 +2,40 @@
   margin: 0;
   padding: 0;
 }
-
+.innovation-container {
+  bottom: 135px;
+  position: relative;
+}
 .diffrent {
   max-width: 1320px;
   min-width: 200px;
   width: 100%;
   margin: 0 auto;
-
 }
 
-.innovation{
-    max-width: 320px;
-    min-width: 250px;
-    height: 442px;
-    width: 100%;
-    border: 1px solid #0000001A;
-    background: #E2E2E2;
-    border-radius: 20px;
-    position: relative;
-    z-index: 1;
-    top: 80px;
-    
-
-
+.innovation {
+  max-width: 320px;
+  min-width: 250px;
+  height: 442px;
+  width: 100%;
+  border: 1px solid #0000001a;
+  background: #e2e2e2;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+  /* top: 120px; */
 }
-.trigger{
-    max-width: 320px;
-    min-width: 250px;
-    height: 442px;
-    width: 100%;
-    border: 1px solid #0000001A;
-    background: #E2E2E2;
-    border-radius: 20px;
-    position: relative;
-    z-index: 1;
-    top: 80px;
-
+.trigger {
+  max-width: 320px;
+  min-width: 250px;
+  height: 442px;
+  width: 100%;
+  border: 1px solid #0000001a;
+  background: #e2e2e2;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+  /* top: 120px; */
 }
 .improvment {
   max-width: 320px;
@@ -97,15 +95,14 @@
   justify-content: center;
 }
 .in-div {
-
   position: relative;
   max-width: 320px;
   min-width: 200px;
   width: 100%;
   top: -20px;
   z-index: 1;
-  
- 
+  height: 100%;
+  overflow: hidden;
 }
 .in-div .p {
   color: black;
@@ -114,6 +111,8 @@
   border-radius: 0 0 20px 20px;
   text-align: justify;
   padding: 10px;
+  height: 100%;
+  overflow-y: auto;
   font-weight: 400;
 }
 .in-div .p span {
@@ -124,159 +123,172 @@
 .web {
   padding-bottom: 90px;
 }
-.innovation-main {
-} */
-
 
 /* General reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .diffrent {
-    max-width: 1320px;
-    min-width: 200px;
-    width: 100%;
-    margin: 0 auto;
-    
-  }
-  .card-max{
-    max-width: 1320px;
-    min-width: 200px;
-    width: 100%;
-  }
-  .p-container {
-    position: relative;
-    text-align: center;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Full viewport height to center the text */
-  }
-  
-  .p-container .p {
-    color: black;
-    background-color: white;
-    font-size: 18px;
-    border-radius: 20px;
-    padding: 20px;
-    font-weight: 400;
-  }
-  
-  .p-container .p span {
-    color: #5aba47;
-    font-weight: 600;
-  }
-  
-  .all-flex {
-    display: flex;
-    gap: 13px;
-    justify-content: center;
-  }
-  
-  .innovation-main {
-    position: relative;
-  }
-  
-  .innovation, .trigger {
-    max-width: 320px;
-    min-width: 250px;
-    height: 442px;
-    width: 100%;
-    border: 1px solid #0000001a;
-    background: #e2e2e2;
-    border-radius: 20px;
-    position: relative;
-    z-index: 1;
-  }
-  
-  
-  .in-div {
-    position: relative;
-    max-width: 320px;
-    min-width: 100px;
-    width: 100%;
-    top: -20px;
-    z-index: 1;
-    height: 155px;
-
-    /* border: 1px solid gray; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.in-div .p{
 
-    color: black;
-    background-color: white;
-    font-size: 18px;
-    border-radius: 20px;
-    text-align: justify;
-    padding: 6px;
-    border-width: 0px, 1px, 1px, 1px;
-
-   
-    border: 1px solid rgba(0, 0, 0, 0.1);
-   
-   
-    
-    line-height: 27px;
-    font-family: Poppins-Regular;
-
+.diffrent {
+  max-width: 1320px;
+  min-width: 200px;
+  width: 100%;
+  margin: 0 auto;
 }
-.in-div .p span{
-    color: #5ABA47;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 27px;
+.card-max {
+  max-width: 1320px;
+  min-width: 200px;
+  width: 100%;
+}
+.p-container {
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height to center the text */
+}
+
+.p-container .p {
+  color: black;
+  background-color: white;
+  font-size: 18px;
+  border-radius: 20px;
+  padding: 20px;
+  font-weight: 400;
+}
+
+.p-container .p span {
+  color: #5aba47;
+  font-weight: 600;
+}
+
+.all-flex {
+  display: flex;
+  gap: 13px;
+  justify-content: center;
+}
+
+.innovation-main {
+  height: 442px;
+}
+
+.innovation,
+.trigger {
+  max-width: 320px;
+  min-width: 250px;
+  height: 442px;
+  width: 100%;
+  border: 1px solid #0000001a;
+  background: #e2e2e2;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.in-div {
+  position: relative;
+  max-width: 320px;
+  min-width: 100px;
+  width: 100%;
+  top: -20px;
+  z-index: 1;
+  height: 155px;
+  border-radius: 20px;
+  border-width: 0px, 1px, 1px, 1px;
+
+  /* border: 1px solid rgba(0, 0, 0, 0.1); */
+  /* border: 1px solid gray; */
+}
+.in-div .p {
+  color: black;
+  background-color: white;
+  font-size: 18px;
+
+  text-align: justify;
+  padding: 6px;
+
+  line-height: 27px;
+  font-family: Poppins-Regular;
+}
+.in-div .p span {
+  color: #5aba47;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
   font-family: Poppins-SemiBold;
- 
-
 }
 
-
-.web{
-    padding-bottom: 90px;
+.web {
+  padding-bottom: 90px;
 }
-.innovation-main{
-    
+.innovation-main {
 }
-.diffrent-title{
-    font-size: 40px;
+.diffrent-title {
+  font-size: 40px;
   font-family: Poppins-Bold;
-
 }
-.d-title{
-    font-size: 40px;
+.d-title {
+  font-size: 40px;
   font-family: Poppins-Bold;
-text-align: center;
-padding: 60px 0 30px 0;
+  text-align: center;
+  padding: 60px 0 30px 0;
 }
 
-@media screen and (max-width: 1024px){
-  .all-flex{
+@media screen and (max-width: 1024px) {
+  .all-flex {
     overflow-x: scroll;
     padding: 0 25px;
     justify-content: flex-start;
-  }
-  .innovation{
-    top: 50px;
-  }
-  .trigger{
-    top: 50px;
+    height: 525px;
   }
   
+  .innovation {
+    /* top: 50px; */
+    /* height: 422px; */
+  }
   
+  .innovation-container {
+    /* bottom: 0; */
+    
+  }
+  .trigger {
+    /* top: 50px; */
+    /* height: 422px; */
+  }
+  .d-title {
+    font-size: 30px;
+    padding: 50px 0 30px 0;
+  }
+  .in-div .p {
+    height: 200px;
+  }
+  .innovation-main{
+    /* height: unset; */
+  }
+  .in-div{
+    height: 200px;
+  }
 }
 
-
-@media screen and (max-width: 767px){
-  .in-div .p{
+@media screen and (max-width: 767px) {
+  .in-div .p {
     font-size: 16px;
     line-height: 24px;
     height: 200px;
   }
-  .in-div .p span{
+  .all-flex{
+    padding: 0 10px;
+    gap: 10px;
+  }
+  .in-div .p span {
     font-size: 16px;
   }
+  .d-title {
+    font-size: 20px;
+    padding: 40px 0 20px 0;
+}
 }

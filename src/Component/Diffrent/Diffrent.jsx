@@ -12,13 +12,15 @@ const Diffrent = () => {
     gsap.fromTo(
       ".in-div",
       {
-        y: -400, // Start 300px above its normal position
+        y: -300, // Start 300px above its normal position
         opacity: 2,
+         borderRadius: "20px",
       },
       {
         y: 0, // Slide to its original position
         opacity: 1,
         duration: 2.5,
+        borderRadius: "0px",
         ease: "power2.out",
         scrollTrigger: {
           trigger: ".in-div", // Trigger animation when '.in-div' comes into view
@@ -35,7 +37,7 @@ const Diffrent = () => {
       {
         x: -300, // Start from the left side
         y: -200, // Start from the top
-        rotation: -180,
+        rotation: -360,
         opacity: 0,
         scale: 0.5,
       },
@@ -50,7 +52,7 @@ const Diffrent = () => {
         scrollTrigger: {
           trigger: ".innovation",
           start: "top center",
-          end: "top 0%",
+          end: "top 20%",
           scrub: true,
         },
       }
@@ -77,7 +79,7 @@ const Diffrent = () => {
         scrollTrigger: {
           trigger: ".trigger",
           start: "top center",
-          end: "top 0%",
+          end: "top 20%",
           scrub: true,
         },
       }

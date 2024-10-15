@@ -15,6 +15,7 @@
   margin: 0 auto;
 }
 
+
 /* .contact-form {
   background: linear-gradient(
     0deg,
@@ -34,7 +35,7 @@
 }
 
 .container .inputs {
-  height: 40px;
+  /* height: 40px; */
   width: 100%;
   position: relative;
   /* margin-bottom: 30px; */
@@ -44,19 +45,67 @@
   width: 100%;
   height: 40px;
   border: none;
-  border-bottom: 1px solid #00000080;
+  /* border-bottom: 1px solid #00000080; */
   outline: none;
-  transition: border-bottom-color 0.5s ease; /* Added transform transition */
   position: relative;
   font-size: 18px;
-  transform-origin: left; /* Ensure scaling happens from the left side */
-  transform: scaleX(1); /* Start with full width */
+  /* transition: border-bottom-color 0.5s ease, transform 0.5s ease; */
+  /* transform-origin: left; */
+  /* transform: scaleX(1); */
 }
 
 .container .inputs input:focus {
-  border-bottom-color: #5aba47; /* Change border color on focus */
-  animation: shrink-expand 3s ease forwards; /* Shrink to 50% on focus */
+  /* border-bottom-color: #5aba47; Change border color on focus */
+  /* Shrink to 50% on focus */
 }
+.inputs {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.inputs input {
+  border: none;
+  outline: none;
+  width: 100%;
+  /* padding: 10px; */
+  font-size: 16px;
+  background-color: transparent;
+  border-bottom: 2px solid gray;
+  transition: border-bottom-color 0.3s ease;
+}
+
+.border-green-div {
+  height: 1px;
+  width: 100%;
+  /* border-bottom: 1px solid grey; */
+  background-color: gray;
+  transform-origin: left;
+  transform: scaleX(1) scaleY(1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  
+}
+
+/* Target the div when the input is focused */
+.inputs input:focus + .border-green-div {
+  animation: shrink-expand 3s ease forwards;
+}
+
+/* Shrink-expand animation */
+@keyframes shrink-expand {
+  0% {
+    transform: scaleX(1) scaleY(1); /* Start with full width */
+    background-color: gray;
+  }
+  50% {
+    transform: scaleX(0.2) scaleY(1); /* Shrink to 20% width */
+    background-color: gray;
+  }
+  100% {
+    transform: scaleX(1) scaleY(1); /* Expand back to full width */
+    background-color: #5aba47; /* Green color */
+  }
+}
+
 
 .container .inputs label {
   color: #00000099;
@@ -70,8 +119,9 @@
   transition: transform 0.5s ease; /* Smooth transition for label */
 }
 
-.container .inputs input:focus ~ label {
-  transform: translateY(-23px); /* Move the label up on focus */
+.container .inputs input:focus ~ label,
+.container .inputs.filled label {
+  transform: translateY(-23px);
 }
 
 .input-flex {
@@ -118,20 +168,7 @@
   text-align: center;
   padding: 30px 0 60px;
 }
-@keyframes shrink-expand {
-  0% {
-    transform: scaleX(1); /* Start with full width */
-    border-bottom-color: gray;
-  }
-  50% {
-    transform: scaleX(0.1); /* Shrink to 50% width */
-    border-bottom-color: gray;
-  }
-  100% {
-    transform: scaleX(1); /* Expand back to full width */
-    border-bottom-color: #5aba47;
-  }
-}
+
 
 @media (max-width: 1024px) {
   .input-flex {

@@ -57,7 +57,7 @@ const Faq = () => {
                   index: 3,
                 },
               ].map(({ question, answer, index }) => (
-                <div className={`notable-card-${index + 1}`} key={index}>
+                <div className={`notable-card-${index + 1}`} key={index}  onClick={() => handleToggle(index)}>
                   <div
                     className={`notable-cards ${
                       expandedIndex === index ? "expanded-margin" : ""
@@ -127,7 +127,7 @@ const Faq = () => {
                   index: 8,
                 },
               ].map(({ question, answer, index }) => (
-                <div className={`notable-card-${index + 1}`} key={index}>
+                <div className={`notable-card-${index + 1}`} key={index} onClick={() => handleToggle(index)}>
                   <div className="notable-cards">
                     <div
                       className={`title-cards ${
@@ -193,7 +193,7 @@ const Faq = () => {
                   index: 12,
                 },
               ].map(({ question, answer, index }) => (
-                <div className={`notable-card-${index + 1}`} key={index}>
+                <div className={`notable-card-${index + 1}`} key={index} onClick={() => handleToggle(index)}>
                   <div className="notable-cards">
                     <div
                       className={`title-cards ${
@@ -259,7 +259,7 @@ const Faq = () => {
                   index: 16,
                 },
               ].map(({ question, answer, index }) => (
-                <div className={`notable-card-${index + 1}`} key={index}>
+                <div className={`notable-card-${index + 1}`} key={index} onClick={() => handleToggle(index)}>
                   <div className="notable-cards">
                     <div
                       className={`title-cards ${
@@ -325,7 +325,7 @@ const Faq = () => {
                   index: 20,
                 },
               ].map(({ question, answer, index }) => (
-                <div className={`notable-card-${index + 1}`} key={index}>
+                <div className={`notable-card-${index + 1}`} key={index} onClick={() => handleToggle(index)}>
                   <div className="notable-cards">
                     {/* <div
                       className="title-cards"

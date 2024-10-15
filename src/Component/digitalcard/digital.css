@@ -3,7 +3,8 @@
     font-size: 40px;
     text-align: center;
     font-weight: 700;
-    padding: 0 0 30px 0;
+    padding: 60px 0 30px 0;
+    line-height: 45px;
 }
 .under-1380-digital{
   max-width: 1380px;
@@ -39,7 +40,7 @@
     max-width: 607px;
     min-width: 200px;
     width: 100%;
-    
+    margin: 30px 0;
     background: #E2E2E280;
 height: 471px;
 border-radius: 10px;
@@ -80,9 +81,9 @@ font-family: Poppins-Regular;
 
 }
 .dashed-border {
-    border-top: 1px dashed #0000004D;
+    /* border-top: 1px dashed #0000004D; */
     /* border-bottom: 1px dashed #0000004D; */
-    padding: 13px 0 12px 0;
+    /* padding: 13px 0 12px 0; */
    /* Optional: width of the element */
      /* Optional: center the text */
      font-family: Poppins;
@@ -115,6 +116,12 @@ line-height: 60px;
     opacity: 0;
     transform: translateY(100%); /* Initially hidden below */
     transition: all 0.6s ease-in-out;
+    border-bottom: 1px dashed #0000004D;
+  }
+  .title-digital-digital{
+    border-bottom: 1px dashed #0000004D;
+    padding: 13px 0 12px 0;
+
   }
   
   /* When card is active, animate it sliding from bottom to top */
@@ -144,11 +151,18 @@ line-height: 60px;
     animation: jump 0.6s ease-out; /* Apply the jump animation */
   }
   
+  
   @media screen and (max-width: 1024px){
     .Digital-flex{
       flex-direction: column;
-      gap: 25px;
+      gap: 20px;
       padding: 5px 0;
+    }
+    .dashed-border{
+      /* padding: 10px 0 10px 0; */
+    }
+    .title-digital-digital{
+      padding: 10px 0 10px 0;
     }
     .digital-card{
       max-width: unset;
@@ -161,24 +175,32 @@ line-height: 60px;
       min-width: unset;
       width: 100%;
       /* width: unset; */
+      margin: 0;
     }
     .under-1320{
       padding: 0 25px;
     }
     .what{
       font-size: 30px;
+      padding: 0 0 30px;
     }
   }
   @media screen and (max-width: 767px){
     .feature-1320{
       padding: 0 10px;
     }
+    .what {
+      font-size: 20px;
+      padding: 0 0 20px;
+      line-height: 30px;
+  }
     .under-1320{
       padding: 0 10px;
     }
     .dashed-border{
       font-size: 18px;
-      padding: 5px 0 5px 0;
+      /* padding: 5px 0 5px 0; */
+      line-height: 27px;
     }
     .business{
       font-size: 18px;
@@ -186,6 +208,11 @@ line-height: 60px;
     }
     .business-card {
       padding: 5px 0 15px 0;
+      line-height: 24px;
+      font-size: 16px;
+    }
+    .title-digital-digital{
+      padding: 5px 0 5px 0;
     }
   }
 
