@@ -7,9 +7,18 @@ import { FaWhatsapp } from "react-icons/fa6";
 import { TfiEmail } from "react-icons/tfi";
 import { FaInstagram } from "react-icons/fa";
 import { SlSocialLinkedin } from "react-icons/sl";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 function Footer() {
+  const location = useLocation();
+
+  // Scroll to top on route change
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    // console.log(location);
+    
+  }, [location]);
   return (
     <>
       <div className="footer-container">

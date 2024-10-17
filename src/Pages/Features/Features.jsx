@@ -15,7 +15,9 @@ function Features() {
     <>
       <Banner pageName="Features" />
 
-      <div className="feature" data-aos="fade-up" data-aos-duration="2000">
+
+      <div className="features-page">
+
         <div className="feature-container">
           <div className="title-feature">
             Unlock The Future Of Networking With Filta
