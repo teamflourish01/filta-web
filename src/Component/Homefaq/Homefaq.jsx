@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { SlArrowDown } from "react-icons/sl";
+import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import GreenBtn from "../GreenBtn/GreenBtn";
 import "../Homefaq/Homefaq.css";
-
+import faq from "../../Pages/Faq/Faq"
 const Homefaq = () => {
   const [expandedIndex, setExpandedIndex] = useState(0);
 
@@ -16,9 +17,7 @@ const Homefaq = () => {
     <div>
       <div className="under-1380">
         <div>
-          <div className="faq-btn">
-            <GreenBtn greenBtnName="Explore Now" />
-          </div>
+          
           <div className="faq-home">
             <p className="faq-head">FAQ’S</p>
           </div>
@@ -98,7 +97,9 @@ const Homefaq = () => {
           </div>
 
           <div className="faq-bottom-btn">
-            <GreenBtn greenBtnName="View All" />
+            <Link to="/faqs"> {/* Wrap GreenBtn inside Link */}
+              <GreenBtn greenBtnName="View All" />
+            </Link>
           </div>
         </div>
       </div>
