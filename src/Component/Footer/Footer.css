@@ -145,9 +145,9 @@
   max-width: 1320px;
   min-width: 200px;
   width: 100%;
-  /* margin: 0 auto; */
+  margin: 0 auto;
   color: #fff;
-  padding: 22px 17px;
+  padding: 22px 0;
 }
 
 .copyright {

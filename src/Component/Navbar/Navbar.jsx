@@ -2,11 +2,18 @@ import React, { useState, useEffect } from "react";
 import "../Navbar/Navbar.css";
 import filta from "../../assets/filta.png";
 import { PiStarFourFill } from "react-icons/pi";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { CgClose } from "react-icons/cg";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
+
+  // Scroll to top on route change
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
   // const [showTabs, setShowTabs] = useState(false);
 
   return (
