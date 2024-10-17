@@ -1,4 +1,6 @@
 import React, { useEffect, useRef } from "react";
+import "aos/dist/aos.css"; // Import AOS styles
+import AOS from "aos"; // Import AOS library
 import "../Transform/Transform.css";
 import "../GreenBtn/GreenBtn";
 import GreenBtn from "../GreenBtn/GreenBtn";
@@ -7,63 +9,62 @@ const Transform = () => {
   const textRef = useRef(null);
 
   useEffect(() => {
+    AOS.init({ duration: 2000 });
+
     const textElement = textRef.current;
     const letters = textElement.querySelectorAll(".letter");
 
-    const handleMouseMove = (e) => {
-      let closestLetter = null;
-      let closestDistance = Infinity;
+    // Handle letter jump animation on hover
+    const handleLetterEnter = (e) => {
+      const letter = e.target;
+      letter.classList.add("jump");
 
-      letters.forEach((letter) => {
-        const rect = letter.getBoundingClientRect();
-        const letterX = rect.left + rect.width / 2; // X center of letter
-        const letterY = rect.top + rect.height / 2; // Y center of letter
-
-        const distanceX = e.clientX - letterX;
-        const distanceY = e.clientY - letterY;
-        const distance = Math.sqrt(distanceX ** 2 + distanceY ** 2);
-
-        // Find the closest letter to the cursor
-        if (distance < closestDistance) {
-          closestDistance = distance;
-          closestLetter = letter;
-        }
+      // Restart animation to ensure it plays properly
+      letter.style.animation = "none";
+      requestAnimationFrame(() => {
+        letter.style.animation = "";
       });
-
-      // Apply jump effect to the closest letter if within distance threshold
-      if (closestDistance < 50) {
-        // Distance threshold
-        closestLetter.classList.add("jump");
-      } else {
-        letters.forEach((letter) => letter.classList.remove("jump"));
-      }
     };
 
-    document.addEventListener("mousemove", handleMouseMove);
+    const handleLetterLeave = (e) => {
+      const letter = e.target;
+      // Remove 'jump' class after the animation completes
+      setTimeout(() => {
+        letter.classList.remove("jump");
+      }, 500); // Match animation duration
+    };
 
+    // Add event listeners to each letter
+    letters.forEach((letter) => {
+      letter.addEventListener("mouseenter", handleLetterEnter);
+      letter.addEventListener("mouseleave", handleLetterLeave);
+    });
+
+    // Cleanup listeners on component unmount
     return () => {
-      document.removeEventListener("mousemove", handleMouseMove);
+      letters.forEach((letter) => {
+        letter.removeEventListener("mouseenter", handleLetterEnter);
+        letter.removeEventListener("mouseleave", handleLetterLeave);
+      });
     };
   }, []);
 
-  // Wrapping each letter in a span
   const text = "Ready to transform your connections digitally?";
 
   return (
     <div className="under-1380-transform">
-    <div className="container-word">
-      <p ref={textRef} className="word-padding">
-        {text.split("").map((letter, index) => (
-          <span key={index} className="letter">
-            {letter === " " ? "\u00A0" : letter} {/* Preserve spaces */}
-          </span>
-        ))}
-      </p>
-      {/* <GreenBtn greenBtnName="Explore Now" /> */}
-      {/* <div className="faq-home">
-        <p className="faq-head">FAQ’S</p>
-      </div> */}
-    </div>
+      <div className="container-word" data-aos="fade-up" data-aos-duration="2000">
+        <p ref={textRef} className="word-padding">
+          {text.split("").map((letter, index) => (
+            <span key={index} className="letter">
+              {letter === " " ? "\u00A0" : letter}
+            </span>
+          ))}
+        </p>
+        <div className="faq-btn">
+          <GreenBtn greenBtnName="Explore Now" />
+        </div>
+      </div>
     </div>
   );
 };

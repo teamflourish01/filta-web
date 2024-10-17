@@ -1,16 +1,21 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "../Features/Features.css";
 import greenstar from "../../assets/greenstar.png";
 import ToggleBtn from "../../Component/ToggleBtn/ToggleBtn";
 import Banner from "../../Component/banner/Banner";
 import GreenBtn from "../../Component/GreenBtn/GreenBtn";
+import "aos/dist/aos.css"; 
+import AOS from "aos"; // Import AOS library
 
 function Features() {
+  useEffect(() => {
+    AOS.init({duration: 2000}); // Initialize AOS animations
+  }, []);
   return (
     <>
       <Banner pageName="Features" />
 
-      <div className="feature">
+      <div className="feature" data-aos="fade-up" data-aos-duration="2000">
         <div className="feature-container">
           <div className="title-feature">
             Unlock The Future Of Networking With Filta
