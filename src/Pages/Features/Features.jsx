@@ -10,7 +10,7 @@ function Features() {
     <>
       <Banner pageName="Features" />
 
-      <div className="feature">
+      <div className="features-page">
         <div className="feature-container">
           <div className="title-feature">
             Unlock The Future Of Networking With Filta
