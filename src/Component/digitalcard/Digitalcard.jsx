@@ -51,6 +51,7 @@ const Digitalcard = () => {
       window.scrollTo({
         top: finalPosition,
         behavior: "smooth",
+        block:"center"
       });
     }
   };

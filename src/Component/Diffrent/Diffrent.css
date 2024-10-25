@@ -2,6 +2,18 @@
   margin: 0;
   padding: 0;
 }
+.under-diffrent-1380{
+  max-width: 1380px;
+    min-width: 200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.under-diffrent-1320{
+  max-width: 1380px;
+    min-width: 200px;
+    width: 100%;
+    padding: 0 30px;
+}
 .innovation-container {
   bottom: 135px;
   position: relative;

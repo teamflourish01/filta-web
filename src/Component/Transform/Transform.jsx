@@ -9,7 +9,10 @@ const Transform = () => {
   const textRef = useRef(null);
 
   useEffect(() => {
-    AOS.init({ duration: 2000 });
+    AOS.init({ duration: 1000,
+      offset:100,
+      once:true,
+     });
 
     const textElement = textRef.current;
     const letters = textElement.querySelectorAll(".letter");
@@ -53,7 +56,7 @@ const Transform = () => {
 
   return (
     <div className="under-1380-transform">
-      <div className="container-word" data-aos="fade-up" data-aos-duration="2000">
+      <div className="container-word" data-aos="fade-up" >
         <p ref={textRef} className="word-padding">
           {text.split("").map((letter, index) => (
             <span key={index} className="letter">

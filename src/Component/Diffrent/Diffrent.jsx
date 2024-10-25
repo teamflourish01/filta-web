@@ -90,6 +90,8 @@ const Diffrent = () => {
 
 
   return (
+    <div className="under-diffrent-1380">
+    <div className="under-diffrent-1320">
     <div className="diffrent">
       <div className="d-title">Why Are We Different?</div>
       
@@ -141,7 +143,11 @@ const Diffrent = () => {
             </div>
           </div>
         </div>
+
+        
       </div>
+    </div>
+    </div>
     </div>
   );
 };

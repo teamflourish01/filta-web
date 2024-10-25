@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "../feature/feature.css";
 import feature from "../../assets/featurebg.png";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Feature = () => {
   const [expandedFeature, setExpandedFeature] = useState("voice-over"); // Default card expanded
 
@@ -9,17 +10,26 @@ const Feature = () => {
     setExpandedFeature((prev) => (prev === featureName ? null : featureName));
   };
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration (in ms)
+      offset: 100, // Offset from the viewport
+      once: true, // Animation happens only once
+    });
+  }, []);
+
   const isExpanded = (featureName) => expandedFeature === featureName;
 
   return (
     <div className="feature-1380">
-      <div className="feature-1320">
+      <div className="feature-1320"  data-aos="fade-up">
         <div className="feature-container-home">Exclusive Features!</div>
         <div className="exclusive-container">
           {/* Voice Over - Open by default */}
           <div
             className={`voice-over ${isExpanded("voice-over") ? "active" : ""}`}
             onMouseEnter={() => handleClick("voice-over")}
+           
           >
             <img
               src={feature}
