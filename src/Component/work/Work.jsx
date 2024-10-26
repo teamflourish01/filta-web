@@ -211,7 +211,7 @@ const Work = () => {
                 <div className="choose"></div>
                 <div className="box-text-work">
                   <p className="text">03</p>
-                  <p className="template">Share Your Card:</p>
+                  <p className="template">Share Instantly with QR code/ link:</p>
                 </div>
                 <div className="selecting hei">
                   Once your digital business card is ready, sharing it is simple
@@ -219,6 +219,8 @@ const Work = () => {
                   you can give to anyone, anywhere.
                 </div>
               </div>
+
+
             </div>
           </div>
         </div>

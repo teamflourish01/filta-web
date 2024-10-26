@@ -208,7 +208,7 @@
   width: 100%;
   top: -20px;
   z-index: 1;
-  height: 155px;
+  height: 200px;
   border-radius: 20px;
   border-width: 0px, 1px, 1px, 1px;
 
@@ -232,6 +232,7 @@
   font-size: 18px;
   line-height: 27px;
   font-family: Poppins-SemiBold;
+  
 }
 
 .web {
@@ -257,7 +258,12 @@
     justify-content: flex-start;
     height: 525px;
   }
-  
+  .under-diffrent-1320{
+ 
+      
+     
+      padding: 0 ;
+  }
   .innovation {
     /* top: 50px; */
     /* height: 422px; */
