@@ -147,7 +147,7 @@
   width: 100%;
   margin: 0 auto;
   color: #fff;
-  padding: 22px 0;
+  padding: 22px 30px;
 }
 
 .copyright {
@@ -183,6 +183,8 @@
   }
   .footer-copyright {
     flex-direction: column;
+    padding: 22px 25px;
+
   }
   .page-name {
     font-size: 16px;
