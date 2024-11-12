@@ -30,6 +30,7 @@ table {
   /* padding: 0 10px; */
 }
 td {
+  position: relative;
   text-align: center;
   padding: 15px;
   border-bottom: 1px solid #0000001a;
@@ -75,6 +76,9 @@ tr {
   gap: 5px;
   justify-content: center;
 }
+/* .ab-posi{
+  position: absolute;
+} */
 .filta-contact {
   display: flex;
   justify-content: center;
@@ -110,6 +114,7 @@ tr {
 .sticky {
   position: sticky;
   top: 85px;
+  z-index: 10;
 }
 .border-bottom-none {
   border-bottom: none !important;
@@ -119,6 +124,7 @@ tr {
   font-size: 18px;
   /* font-weight: 400; */
   line-height: 27px;
+  height: 60px;
 }
 
 @media (max-width: 1024px) {
@@ -132,6 +138,7 @@ tr {
   .feature-name {
     font-size: 16px;
     line-height: 24px;
+    height: 58.69px;
   }
   .pricing-container {
     padding: 0 25px;
@@ -179,6 +186,11 @@ tr {
 }
 
 @media (max-width: 767px) {
+    .feature-name {
+        font-size: 16px;
+        line-height: 24px;
+        height: 42.7px;
+    }
   .padding {
     max-width: 1320px !important;
     min-width: 768px;
@@ -237,6 +249,9 @@ tr {
   .padding {
     padding: 0 10px;
   }
+  .absolute-p{
+    position: unset;
+  }
 }
 
 .icon-top {
@@ -244,4 +259,16 @@ tr {
   align-items: center;
   gap: 5px;
   justify-content: center;
+}
+.flex-pop{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.absolute-p{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
 }

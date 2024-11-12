@@ -209,7 +209,7 @@ function Monthly() {
             <p className="box-text">Latest Statistics of Business</p>
           </div>
           <div className="box">
-            <p className="box-text">Presentation Deck</p>
+            <p className="box-text">Product Gallery</p>
           </div>
           <div className="box">
             <p className="box-text">Card View Counter</p>
@@ -329,7 +329,7 @@ function Monthly() {
             <p className="box-text">Latest Statistics of Business</p>
           </div>
           <div className="box">
-            <p className="box-text">Presentation Deck</p>
+            <p className="box-text">Product Gallery</p>
           </div>
           <div className="box">
             <p className="box-text">Card View Counter</p>

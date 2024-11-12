@@ -52,6 +52,12 @@
   min-width: 200px;
   width: 100%;
 }
+.p-5{
+  padding-bottom: 5px;
+}
+.padding-left{
+  padding-left: 30px;
+}
 @media (max-width: 1024px) {
   .title-res-detail {
     font-size: 30px;

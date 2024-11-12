@@ -13,25 +13,22 @@ function Resources() {
       <div className="resources-container">
         <div className="resources-content">
           <ResourcesCard
-            date="August 20, 2022"
-            title="The Impact of Technology on : "
-            text="At Filta, our mission is simple: to empower you with the tools you need to..."
+            date="December 01, 2024"
+            title="Why Professionals Should Switch to Digital Business Cards ? "
             image={blogImg}
             link="/resourcedetails"
           />
           <ResourcesCard
-            date="August 20, 2022"
-            title="The Impact of Technology on : "
-            text="At Filta, our mission is simple: to empower you with the tools you need to..."
+            date="November 20, 2024"
+            title="How a Digital Business Card Can Boost Your Brand Image"
             image={blogImg2}
-            link="/blog/blogsocialmedia"
+            link="/resourcedetailtwo"
           />
           <ResourcesCard
-            date="August 20, 2022"
-            title="The Impact of Technology on : "
-            text="At Filta, our mission is simple: to empower you with the tools you need to..."
+            date="November 08, 2024"
+            title="Top Benefits of Using a Digital Business Card for Networking"
             image={blogImg3}
-            link="/blog/blogsocialmedia"
+            link="/resourcedetailthree"
           />
         </div>
       </div>
