@@ -17,6 +17,8 @@ import Contact from "./Component/Contactus/Contact";
 import Home from "./Component/Homebanner/Home";
 import Cursor from "./Component/cursor/Cursor";
 import ChooseUs from "./Component/ChooseUs/ChooseUs";
+import ResourceDetailTwo from "./Component/ResourceDetailTwo/ResourceDetailTwo";
+import ResourceDetailThree from "./Component/ResourceDetailThree/ResourceDetailThree";
 
 
 function App() {
@@ -31,6 +33,8 @@ function App() {
           <Route path="/faqs" element={<Faq />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/resourcedetails" element={<ResouceDetails/>}/>
+          <Route path="/resourcedetailtwo" element={<ResourceDetailTwo/>}/>
+          <Route path="/resourcedetailthree" element={<ResourceDetailThree/>}/>
           <Route path="/pricing" element={<Pricing/>} />
           <Route path="/features" element={<Features/>}/>
           <Route path="/Contact" element={<Contact />} />
