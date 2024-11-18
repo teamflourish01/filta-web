@@ -104,7 +104,11 @@
 .all-flex {
   display: flex;
   gap: 13px;
+  
   justify-content: center;
+  padding: 0 0 43px 0;
+
+  
 }
 .in-div {
   position: relative;
@@ -124,7 +128,7 @@
   text-align: justify;
   padding: 10px;
   height: 100%;
-  overflow-y: auto;
+  /* overflow-y: auto; */
   font-weight: 400;
 }
 .in-div .p span {
@@ -203,7 +207,7 @@
 
 .in-div {
   position: relative;
-  max-width: 320px;
+  max-width: 340px;
   min-width: 100px;
   width: 100%;
   top: -20px;
@@ -248,6 +252,7 @@
   font-size: 40px;
   font-family: Poppins-Bold;
   text-align: center;
+  line-height: 60px;
   padding: 60px 0 30px 0;
 }
 

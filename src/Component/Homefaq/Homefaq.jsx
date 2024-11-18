@@ -19,7 +19,7 @@ const Homefaq = () => {
         <div>
           
           <div className="faq-home">
-            <p className="faq-head">FAQ’S</p>
+            <p className="faqs-head">FAQ’S</p>
           </div>
           <div className="notable-ol">
             {[
