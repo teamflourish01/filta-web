@@ -34,6 +34,7 @@ td {
   text-align: center;
   padding: 15px;
   border-bottom: 1px solid #0000001a;
+  z-index: 9;
 }
 th {
   text-align: center;
@@ -63,11 +64,13 @@ tr {
 }
 .w-330 {
   width: 330px;
-  padding: 19px 0
+  padding: 19px 0;
+  z-index: 10;
 }
 .w-300 {
   width: 300px;
-  padding: 19px 0
+  padding: 19px 0;
+  z-index:10;
 
 }
 .text-with-icon {
@@ -183,6 +186,12 @@ tr {
     max-width: 1320px !important;
     min-width: 700px;
   }
+  .set-icon-info{
+    top:-1px !important
+  }
+  .set-icon-info-pop{
+    top:-2px !important
+  }
 }
 
 @media (max-width: 767px) {
@@ -251,6 +260,12 @@ tr {
   }
   .absolute-p{
     position: unset;
+  }
+  .h-60{
+    height: 60px;
+  }
+  .set-icon-info{
+    top:-1px !important
   }
 }
 

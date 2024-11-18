@@ -1,10 +1,10 @@
 import React from "react";
-import blogImg from "../../assets/blog1.png";
+import blogImg from "../../assets/b1.png";
 import "../Resources/Resources.css";
 import ResourcesCard from '../../Component/ResourcesCard/ResourcesCard';
 import Banner from "../../Component/banner/Banner";
-import blogImg2 from '../../assets/blog2.png'
-import blogImg3 from '../../assets/blog3.png'
+import blogImg2 from '../../assets/b2.png'
+import blogImg3 from '../../assets/b2.png'
 
 function Resources() {
   return (

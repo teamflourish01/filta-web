@@ -3,6 +3,8 @@ import "../ResourceDetails/ResourceDetails.css";
 import detailImg from "../../assets/details.png";
 import Banner from "../banner/Banner";
 import { Helmet } from "react-helmet";
+import BlogBanner from "../BlogBanner/BlogBanner";
+import blog2 from '../../assets/blog2.svg'
 
 function ResourceDetailTwo() {
   return (
@@ -17,18 +19,13 @@ function ResourceDetailTwo() {
 
         <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
+      <BlogBanner
+        title="How a Digital Business Card Can Boost Your Brand Image"
+        img={blog2}
+      />
       <div className="res-detail-container">
         <div className="res-detail-content">
-          <div className="title-res-detail">
-            How a Digital Business Card Can Boost Your Brand Image
-          </div>
-          <div className="img-res-detail">
-            <img
-              src={detailImg}
-              alt="A digital business card displaying contact details and links to improve brand networking."
-              className="resc-detail-img"
-            />
-          </div>
+         
           <p className="date-res-detail">November 20, 2024</p>
           <p className="res-detail-desc ">
             In the modern digital world, where things move quickly, initial
@@ -190,10 +187,10 @@ function ResourceDetailTwo() {
               <li className="p-5">Link to online promotional resources</li>
               <li className="p-5">Real-time updates on contact information</li>
               <li className="p-5">Links to e-commerce sites</li>
-              <li>Access to blog and content hubs</li>
+              <li className="p-5">Access to blog and content hubs</li>
               <li className="p-5">Options for subscribing to newsletters</li>
               <li className="p-5">Channels for customer service</li>
-              <li>Systems for online reservations </li>
+              <li className="p-5">Systems for online reservations </li>
             </ul>
           </p>
           <p className="res-detail-desc">
