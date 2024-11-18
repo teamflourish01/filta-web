@@ -3,6 +3,8 @@ import "../ResourceDetails/ResourceDetails.css";
 import detailImg from "../../assets/details.png";
 import Banner from "../banner/Banner";
 import { Helmet } from "react-helmet";
+import BlogBanner from "../BlogBanner/BlogBanner";
+import blog1 from '../../assets/blog1.svg'
 
 function ResouceDetails() {
   return (
@@ -17,11 +19,10 @@ function ResouceDetails() {
 
         <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
-      <Banner pageName="Resources Details" />
-
+      <BlogBanner title="Why Professionals Should Switch to Digital Business Cards ?" img={blog1}/>
       <div className="res-detail-container">
         <div className="res-detail-content">
-          <div className="title-res-detail">
+          {/* <div className="title-res-detail">
             Why Professionals Should Switch to Digital Business Cards ?
           </div>
           <div className="img-res-detail">
@@ -30,7 +31,7 @@ function ResouceDetails() {
               alt="Digital business card displayed with multiple sharing options for seamless networking."
               className="resc-detail-img"
             />
-          </div>
+          </div> */}
           <p className="date-res-detail">December 01, 2024</p>
           <p className="res-detail-desc">
             In today's digital world, the classic paper business card is quickly

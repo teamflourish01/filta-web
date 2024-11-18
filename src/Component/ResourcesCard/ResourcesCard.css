@@ -69,6 +69,7 @@
   line-height: 28px;
   text-align: center;
   padding: 16px 21px 16px 24px;
+  height: 116px;
 }
 
 .blog-card-text {
@@ -116,5 +117,9 @@
 .view-more-btn-arrow svg:hover {
   color: #5aba47;
 }
-@media (max-width: 1024px) {
+
+@media (max-width: 768px) {
+  .blog-card-title {
+    height: unset;
+  }
 }

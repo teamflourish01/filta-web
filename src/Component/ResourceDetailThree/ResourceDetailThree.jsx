@@ -2,6 +2,8 @@ import React from "react";
 import "../ResourceDetails/ResourceDetails.css";
 import detailImg from "../../assets/details.png";
 import { Helmet } from "react-helmet";
+import BlogBanner from "../BlogBanner/BlogBanner";
+import blog2 from '../../assets/blog2.svg'
 
 function ResourceDetailThree() {
   return (
@@ -18,19 +20,14 @@ function ResourceDetailThree() {
 
         <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
+      <BlogBanner
+        title="Top Benefits of Using a Digital Business Card for Networking"
+        img={blog2}
+      />
+
       <div className="res-detail-container">
         <div className="res-detail-content">
-          <div className="title-res-detail">
-            Top Benefits of Using a Digital Business Card for Networking
-          </div>
-          <div className="img-res-detail">
-            <img
-              src={detailImg}
-              alt="Smartphone displaying a digital business card, illustrating eco-friendly, efficient networking benefits.
-"
-              className="resc-detail-img"
-            />
-          </div>
+        
           <p className="date-res-detail">November 08, 2024</p>
           <p className="res-detail-desc ">
             How we network and engage with people changes quickly in the modern

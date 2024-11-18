@@ -538,15 +538,15 @@ function Pricing() {
                 </td>
               </tr>
               <tr>
-                <td className=" feature-name icon-top">
+                <td className=" feature-name icon-top h-60">
                   <div className="absolute-p b-5">
                     <span className="pop-up">POP-UP Greetings Message</span>
                     <span
-                      className="i-center"
+                      className="i-center set-icon-info-pop"
                       onMouseEnter={() => handleMouseEnter("tooltip12")}
                       onMouseLeave={() => handleMouseLeave("tooltip12")}
                     >
-                      <CgInfo className="set-icon" />
+                      <CgInfo className="set-icon " />
                     </span>
                     {tooltips.tooltip12 && (
                       <div className="tooltip position-12">
@@ -567,13 +567,13 @@ function Pricing() {
                 </td>
               </tr>
               <tr>
-                <td className="icon-top feature-name">
+                <td className="icon-top feature-name h-60">
                   <div className="absolute-p  b-5">
                     <span className="pop-up">
                       Latest Statistics of Business
                     </span>
                     <span
-                      className="i-center"
+                      className="i-center set-icon-info"
                       onMouseEnter={() => handleMouseEnter("tooltip13")}
                       onMouseLeave={() => handleMouseLeave("tooltip13")}
                     >
