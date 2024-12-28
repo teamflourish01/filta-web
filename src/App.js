@@ -19,6 +19,8 @@ import Cursor from "./Component/cursor/Cursor";
 import ChooseUs from "./Component/ChooseUs/ChooseUs";
 import ResourceDetailTwo from "./Component/ResourceDetailTwo/ResourceDetailTwo";
 import ResourceDetailThree from "./Component/ResourceDetailThree/ResourceDetailThree";
+import Privacy from "./Pages/Privacy/Privacy";
+import Terms from "./Pages/Terms/Terms";
 
 
 function App() {
@@ -40,6 +42,8 @@ function App() {
           <Route path="/Contact" element={<Contact />} />
           <Route path="/" element={<Home/>} />
           <Route path="/ChooseUs" element={<ChooseUs />} />
+          <Route path='/privacy' element={<Privacy/>}/>
+          <Route path="/terms" element={<Terms/>}/>
 
 
         </Routes>

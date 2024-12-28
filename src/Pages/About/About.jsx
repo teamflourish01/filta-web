@@ -19,7 +19,10 @@ function About() {
         <div className="about-desc">
           <p className="empowering-title">Empowering Modern Networking</p>
           <p className="empowering-desc">
-            Welcome to Filta, where we revolutionize the way you connect and
+            Welcome to {" "}
+                <span className="filta-logo-text">
+                  f<span className="i-green">i</span>lta
+                </span>{" "}, where we revolutionize the way you connect and
             network in today’s digital world. Our goal is to give you a strong,
             eco-friendly alternative to traditional business cards that not only
             saves time but also leaves a lasting impression.
@@ -37,7 +40,10 @@ function About() {
             to be shared.
           </p>
           <p className="empowering-desc padding-empo">
-            At Filta, we’re more than just a digital business card provider,
+            At {" "}
+                <span className="filta-logo-text">
+                  f<span className="i-green">i</span>lta
+                </span>{" "}, we’re more than just a digital business card provider,
             we’re your partner in modern networking. Join thousands of
             professionals who have made the switch to digital and start making
             smarter connections today.
@@ -45,7 +51,10 @@ function About() {
           <div className="mission">
             <p className="mission-title">Our Mission</p>
             <p className="empowering-desc">
-              At Filta, our mission is simple: to empower you with the tools you
+              At {" "}
+                <span className="filta-logo-text">
+                  f<span className="i-green">i</span>lta
+                </span>{" "}, our mission is simple: to empower you with the tools you
               need to stand out in an increasingly digital world. We believe
               that first impressions matter, and we are committed to helping you
               create memorable and impactful connections that drive your

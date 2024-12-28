@@ -508,3 +508,14 @@ padding: 0 30px;
     transition: none; /* Remove smooth transition */
   }
 }
+
+
+.filta-logo-text-title {
+  font-family: Croogla4F;
+  font-size: 40px;
+  line-height: 40.36px;
+  font-weight: 600;
+}
+.i-green{
+  color:#5aba47 ;
+}

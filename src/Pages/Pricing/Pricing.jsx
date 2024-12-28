@@ -140,7 +140,11 @@ function Pricing() {
               <tr>
                 <td className="text-with-icon feature-name">
                   <div className="absolute-p">
-                    Hide FILTA Branding
+                    Hide{" "}
+                    <span className="filta-logo-text">
+                      f<span className="i-green">i</span>lta
+                    </span>{" "}
+                    Branding
                     <span
                       className="i-center"
                       onMouseEnter={() => handleMouseEnter("tooltip2")}
@@ -150,7 +154,11 @@ function Pricing() {
                     </span>
                     {tooltips.tooltip2 && (
                       <div className="tooltip position-2">
-                        Remove Filta branding
+                        Remove{" "}
+                        <span className="filta-logo-text">
+                          f<span className="i-green">i</span>lta
+                        </span>{" "}
+                        branding
                       </div>
                     )}
                   </div>
@@ -178,7 +186,11 @@ function Pricing() {
                     </span>
                     {tooltips.tooltip3 && (
                       <div className="tooltip position-3">
-                        Filta always ensures SSL certificates
+                        {" "}
+                        <span className="filta-logo-text">
+                          f<span className="i-green">i</span>lta
+                        </span>{" "}
+                        always ensures SSL certificates
                         <br /> for enhance protection
                       </div>
                     )}
@@ -196,7 +208,11 @@ function Pricing() {
               </tr>
               <tr className="black-header">
                 <td colSpan="4" className="merged-header">
-                  FILTA Connect
+                  {" "}
+                  <span className="filta-logo-text">
+                    f<span className="i-green">i</span>lta
+                  </span>{" "}
+                  Connect
                 </td>
               </tr>
               <tr>
@@ -880,7 +896,13 @@ function Pricing() {
                 </td>
               </tr>
               <tr>
-                <td className="feature-name">FILTA Branding</td>
+                <td className="feature-name">
+                  {" "}
+                  <span className="filta-logo-text">
+                    f<span className="i-green">i</span>lta
+                  </span>{" "}
+                  Branding
+                </td>
                 <td>
                   <img src={arrow} alt="" />
                 </td>
@@ -934,7 +956,11 @@ function Pricing() {
               </tr>
               <tr className="border-bottom-none">
                 <td className="border-bottom-none feature-name">
-                  FILTA Branding
+                  {" "}
+                  <span className="filta-logo-text">
+                    f<span className="i-green">i</span>lta
+                  </span>{" "}
+                  Branding
                 </td>
                 <td>
                   <img src={arrow} alt="" />
