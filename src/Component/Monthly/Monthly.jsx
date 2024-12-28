@@ -122,7 +122,10 @@ function Monthly() {
             <p className="box-text">-</p>
           </div>
           <div className="box">
-            <p className="box-text">FILTA Branding</p>
+            <p className="box-text">{" "}
+                <span className="filta-logo-text">
+                  f<span className="i-green">i</span>lta
+                </span>{" "} Branding</p>
           </div>
         </div>
         {/* card two */}
@@ -148,7 +151,10 @@ function Monthly() {
             <p className="box-text">Customer Support</p>
           </div>
           <div className="box">
-            <p className="box-text">Hide FILTA Branding</p>
+            <p className="box-text">Hide {" "}
+                <span className="filta-logo-text">
+                  f<span className="i-green">i</span>lta
+                </span>{" "} Branding</p>
           </div>
           <div className="box">
             <p className="box-text">SSL Certificate</p>
@@ -268,7 +274,10 @@ function Monthly() {
             <p className="box-text">Customer Support</p>
           </div>
           <div className="box">
-            <p className="box-text">Hide FILTA Branding</p>
+            <p className="box-text">Hide {" "}
+                <span className="filta-logo-text">
+                  f<span className="i-green">i</span>lta
+                </span>{" "} Branding</p>
           </div>
           <div className="box">
             <p className="box-text">SSL Certificate</p>

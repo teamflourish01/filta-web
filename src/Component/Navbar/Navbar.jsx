@@ -22,6 +22,9 @@ function Navbar() {
         <div className="navbar-container">
           <div className="logo-container">
             <div className="filta-logo">
+              {/* <p className="filta-logo-text">
+                f<span className="i-green">i</span>lta
+              </p> */}
               <img src={filta} alt="filta_logo" className="filta-logo-size" />
             </div>
 

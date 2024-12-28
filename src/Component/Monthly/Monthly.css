@@ -20,7 +20,7 @@
   border-top: 5px solid #5aba47;
   border-bottom: 5px solid #5aba47;
   overflow-y: scroll;
-  scrollbar-width: none;
+  scrollbar-width: thin;
 }
 .free {
   border-bottom: 1px solid #0000001a;

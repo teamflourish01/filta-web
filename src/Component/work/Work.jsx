@@ -34,7 +34,7 @@ const Work = () => {
           trigger: topContainerRef.current,
           start: "top 20%",
           end: "bottom top",
-          scrub: 0.3, 
+          scrub: 0.1, 
           pin: topContainerRef.current,
           toggleActions: "play reverse play reverse",
         },
@@ -44,7 +44,7 @@ const Work = () => {
       timeline.to(card3, {
         y: 120, 
         ease: "power2.out",
-        duration: 0.3, 
+        duration: 0.1, 
       });
   
       // Phase 2: Move both the second and third cards together to align with the first card
@@ -53,113 +53,12 @@ const Work = () => {
         {
           y: 0, 
           ease: "power2.out",
-          duration: 0.3, 
+          duration: 0, 
         },
         "+=0.2" 
       );
     }
   }, []);
-  
-  
-  
-  // useEffect(() => {
-  //   const card1 = chooseTemplateRef.current;
-  //   const card2 = informationRef.current;
-  //   const card3 = customizeRef.current;
-  
-  //   const screenWidth = window.innerWidth;
-  //   if (
-  //     screenWidth > 1024 &&
-  //     topContainerRef.current &&
-  //     customizeRef.current &&
-  //     informationRef.current &&
-  //     chooseTemplateRef.current
-  //   ) {
-  //     // Initial positions of the cards for a stepped layout
-  //     gsap.set(card1, { y: 0 });
-  //     gsap.set(card2, { y: 120 });
-  //     gsap.set(card3, { y: 180 });
-  
-  //     // Pin the container and add scroll animations
-  //     const timeline = gsap.timeline({
-  //       scrollTrigger: {
-  //         trigger: topContainerRef.current,
-  //         start: "top 20%",
-  //         end: "bottom top",
-  //         scrub: 0.5,
-  //         pin: topContainerRef.current,
-  //         toggleActions: "play none none none", // Prevents reset
-  //       },
-  //     });
-  
-  //     // Step 1: Scroll-based continuous animation for the third card to align with the second card
-  //     timeline.to(card3, { y: 120, ease: "power2.out", duration: 0.5 });
-  
-  //     // Step 2: Move cards to align with the first card gradually as you scroll down
-  //     timeline.to(card2, { y: 0, ease: "power2.out", duration: 0.5 }, "<");
-  //     timeline.to(card3, { y: 0, ease: "power2.out", duration: 0.5 }, "<");
-  
-  //     // Apply continuous scrolling motion
-  //     ScrollTrigger.create({
-  //       trigger: topContainerRef.current,
-  //       start: "top 20%",
-  //       end: "bottom top",
-  //       scrub: true,
-  //       onUpdate: (self) => {
-  //         // Continuously control positions based on scroll position
-  //         const progress = self.progress;
-  //         gsap.to(card2, { y: 120 * (1 - progress), overwrite: true });
-  //         gsap.to(card3, { y: 180 * (1 - progress), overwrite: true });
-  //       },
-  //     });
-  //   }
-  // }, []);
-  
-
-  // useEffect(() => {
-  //   const screenWidth = window.innerWidth;
-  //   if (
-  //     screenWidth > 1024 &&
-  //     topContainerRef.current &&
-  //     customizeRef.current &&
-  //     informationRef.current &&
-  //     chooseTemplateRef.current
-  //   ) {
-  //     const timeline = gsap.timeline({
-  //       scrollTrigger: {
-  //         trigger: topContainerRef.current,
-  //         start: "top 20%",
-  //         end: "bottom top",
-  //         scrub: true,
-  //         pin: topContainerRef.current,
-  //         toggleActions: "play reverse play reverse", // play reverse play reverse
-  //       },
-  //     });
-
-  //     // Set initial positions of the cards
-  //     gsap.set(customizeRef.current, { y: 190, opacity: 1 });
-  //     gsap.set(informationRef.current, { y: 100, opacity: 1 });
-  //     gsap.set(chooseTemplateRef.current, { y: 0, opacity: 1 });
-
-  //     // Animation sequence for scrolling down
-  //     timeline
-  //       // Third card aligns with the second card
-  //       .to(customizeRef.current, { y: 100, opacity: 1, duration: 0.5 })
-  //       // Second and third cards align with the first card
-  //       .to(
-  //         informationRef.current,
-  //         { y: 0, opacity: 1, duration: 0.5 },
-  //         "-=0.25" // Overlap for faster animation
-  //       )
-  //       .to(customizeRef.current, { y: 0, opacity: 1, duration: 0.5 }, "-=0.55");
-
-  //     return () => {
-  //       // Clean up ScrollTrigger and timeline when the component unmounts
-  //       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-  //       timeline.kill();
-  //     };
-  //   }
-  // }, []);
 
   return (
     <div className="top-container-wrapper">
