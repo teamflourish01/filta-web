@@ -80,10 +80,10 @@ const Home = () => {
 
       <section className="welcome" onMouseEnter={handlemouseenter}>
         <div className={`welcome-to ${isvisable ? "visible" : ""}`}>
-          <p className="filta">Welcome to {" "}
-                <span className="filta-logo-text-title">
+          <p className="filta">Welcome to Filta
+                {/* <span className="filta-logo-text-title">
                   f<span className="i-green">i</span>lta!
-                </span></p>
+                </span></p> */}</p>
           <p className="all-in">
             India’s all-in-one platform for seamless digital networking
             solutions. Whether you are an entrepreneur, individual professional,

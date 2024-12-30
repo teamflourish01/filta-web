@@ -28,13 +28,10 @@ function Footer() {
                 <img src={filta} alt="filta_logo" />
               </div>
               <p className="footer-desc">
-                Empower your networking with{" "}
-                <span className="filta-logo-text">
-                  f<span className="i-green">i</span>lta's
-                </span>{" "}
-                innovative digital business cards and more. Seamlessly share,
-                connect, and make lasting impressions—anytime, anywhere. Join
-                the future of networking today.
+                Empower your networking with Filta innovative digital business
+                cards and more. Seamlessly share, connect, and make lasting
+                impressions—anytime, anywhere. Join the future of networking
+                today.
               </p>
               <div className="social-icon-footer">
                 <div className="icons-f">
@@ -165,10 +162,7 @@ function Footer() {
         <hr className="hr-color"></hr>
         <div className="footer-copyright">
           <p className="copyright">
-            Copyrights © 2024 {" "}
-                <span className="filta-logo-text">
-                  f<span className="i-green">i</span>lta
-                </span>{" "} All rights reserved.
+            Copyrights © 2024 filta All rights reserved.
           </p>
           <p className="copyright">
             Design & Developed By: FLOURISH CREATIONS PVT. LTD.

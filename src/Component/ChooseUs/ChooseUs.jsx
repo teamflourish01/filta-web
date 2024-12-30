@@ -101,10 +101,11 @@ function ChooseUs() {
 
   return (
     <div ref={chooseUsMainRef} className="ChooseUs-main">
-      <div className="why-choose-us">Benefits of Using {" "}
-                <span className="filta-logo-text-title">
+      <div className="why-choose-us">Benefits of Using Filta
+                {/* <span className="filta-logo-text-title">
                   f<span className="i-green">i</span>lta
-                </span>{" "}</div>
+                </span>{" "} */}
+                </div>
       <div className="why-choose-us-cards">
         <div className="choose-cards-left" ref={cardsLeftRef}>
           <BenifitCard

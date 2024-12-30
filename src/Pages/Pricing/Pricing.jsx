@@ -72,7 +72,8 @@ function Pricing() {
                     119/<p className="p-15">-</p>
                   </td>
                   <td>
-                    499/<p className="p-15">-</p>
+                    <span className="none-team-price">-</span>
+                    <p className="p-15">-</p>
                   </td>
                 </tr>
               </thead>
@@ -140,11 +141,7 @@ function Pricing() {
               <tr>
                 <td className="text-with-icon feature-name">
                   <div className="absolute-p">
-                    Hide{" "}
-                    <span className="filta-logo-text">
-                      f<span className="i-green">i</span>lta
-                    </span>{" "}
-                    Branding
+                    Hide Filta Branding
                     <span
                       className="i-center"
                       onMouseEnter={() => handleMouseEnter("tooltip2")}
@@ -154,11 +151,7 @@ function Pricing() {
                     </span>
                     {tooltips.tooltip2 && (
                       <div className="tooltip position-2">
-                        Remove{" "}
-                        <span className="filta-logo-text">
-                          f<span className="i-green">i</span>lta
-                        </span>{" "}
-                        branding
+                        Remove Filta branding
                       </div>
                     )}
                   </div>
@@ -186,11 +179,7 @@ function Pricing() {
                     </span>
                     {tooltips.tooltip3 && (
                       <div className="tooltip position-3">
-                        {" "}
-                        <span className="filta-logo-text">
-                          f<span className="i-green">i</span>lta
-                        </span>{" "}
-                        always ensures SSL certificates
+                        Filta always ensures SSL certificates
                         <br /> for enhance protection
                       </div>
                     )}
@@ -208,11 +197,7 @@ function Pricing() {
               </tr>
               <tr className="black-header">
                 <td colSpan="4" className="merged-header">
-                  {" "}
-                  <span className="filta-logo-text">
-                    f<span className="i-green">i</span>lta
-                  </span>{" "}
-                  Connect
+                  Filta Connect
                 </td>
               </tr>
               <tr>
@@ -896,13 +881,7 @@ function Pricing() {
                 </td>
               </tr>
               <tr>
-                <td className="feature-name">
-                  {" "}
-                  <span className="filta-logo-text">
-                    f<span className="i-green">i</span>lta
-                  </span>{" "}
-                  Branding
-                </td>
+                <td className="feature-name">Filta Branding</td>
                 <td>
                   <img src={arrow} alt="" />
                 </td>
@@ -956,11 +935,7 @@ function Pricing() {
               </tr>
               <tr className="border-bottom-none">
                 <td className="border-bottom-none feature-name">
-                  {" "}
-                  <span className="filta-logo-text">
-                    f<span className="i-green">i</span>lta
-                  </span>{" "}
-                  Branding
+                  Filta Branding
                 </td>
                 <td>
                   <img src={arrow} alt="" />
