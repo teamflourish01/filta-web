@@ -1,23 +1,21 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import "../Features/Features.css";
 import greenstar from "../../assets/greenstar.png";
 import ToggleBtn from "../../Component/ToggleBtn/ToggleBtn";
 import Banner from "../../Component/banner/Banner";
 import GreenBtn from "../../Component/GreenBtn/GreenBtn";
-import "aos/dist/aos.css"; 
+import "aos/dist/aos.css";
 import AOS from "aos"; // Import AOS library
 
 function Features() {
   useEffect(() => {
-    AOS.init({duration: 2000}); // Initialize AOS animations
+    AOS.init({ duration: 2000 }); // Initialize AOS animations
   }, []);
   return (
     <>
       <Banner pageName="Features" />
 
-
       <div className="features-page">
-
         <div className="feature-container">
           <div className="title-feature">
             Unlock The Future Of Networking With Filta
@@ -52,10 +50,8 @@ function Features() {
                     <img src={greenstar} alt="" />
                     <p className="point-text">Connect instantly with links </p>
                   </div>
-
                 </div>
                 <GreenBtn greenBtnName="Create your card" />
-
               </div>
             </div>
             <div className="card-feature-2-4">
@@ -83,7 +79,6 @@ function Features() {
                   </div>
                 </div>
                 <GreenBtn greenBtnName="Create your card" />
-
               </div>
               <div className="gray-card-right"></div>
             </div>
@@ -120,7 +115,6 @@ function Features() {
                   </div>
                 </div>
                 <GreenBtn greenBtnName="Create your card" />
-
               </div>
             </div>
             <div className="card-feature-2-4">
@@ -134,7 +128,9 @@ function Features() {
                 <div className="points-featutre">
                   <div className="point-green-star">
                     <img src={greenstar} alt="" />
-                    <p className="point-text text-14">Easily manage team details </p>
+                    <p className="point-text text-14">
+                      Easily manage team details{" "}
+                    </p>
                   </div>
                   <div className="point-green-star">
                     <img src={greenstar} alt="" />
@@ -144,9 +140,12 @@ function Features() {
                     <img src={greenstar} alt="" />
                     <p className="point-text">Business-Level Support </p>
                   </div>
+                  <div className="point-green-star">
+                    <img src={greenstar} alt="" />
+                    <p className="point-text">Customize Dashboard Branding</p>
+                  </div>
                 </div>
                 <GreenBtn greenBtnName="Create your card" />
-
               </div>
               <div className="gray-card-right"></div>
             </div>

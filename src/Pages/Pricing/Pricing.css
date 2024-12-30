@@ -5,6 +5,9 @@
   padding: 0 30px;
   margin: 0 auto;
 }
+.none-team-price{
+  color: #f5f8f4;
+}
 .pricing-content {
   padding: 100px 0 0;
 }

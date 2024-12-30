@@ -7,7 +7,7 @@ import Banner from "./Component/banner/Banner";
 import { Route, Routes } from "react-router-dom";
 import About from "./Pages/About/About";
 import { FaQ } from "react-icons/fa6";
-
+import Products from "./Pages/Products/Products";
 import Resources from "./Pages/Resources/Resources";
 import ResouceDetails from "./Component/ResourceDetails/ResouceDetails";
 import Pricing from "./Pages/Pricing/Pricing";
@@ -44,6 +44,7 @@ function App() {
           <Route path="/ChooseUs" element={<ChooseUs />} />
           <Route path='/privacy' element={<Privacy/>}/>
           <Route path="/terms" element={<Terms/>}/>
+          <Route path="/products" element={<Products/>}/>
 
 
         </Routes>

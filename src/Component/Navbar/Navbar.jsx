@@ -38,6 +38,14 @@ function Navbar() {
                 Home
               </NavLink>
               <NavLink
+                to="/products"
+                className={({ isActive }) =>
+                  isActive ? "tab-name active" : "tab-name"
+                }
+              >
+                Products
+              </NavLink>
+              <NavLink
                 to="/features"
                 className={({ isActive }) =>
                   isActive ? "tab-name active" : "tab-name"
