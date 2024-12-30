@@ -14,7 +14,7 @@ body {
   padding: 60px 0 0 0;
   text-align: center;
   color:  rgba(90, 186, 71, 1);
-  font-size: 40px;
+  
   font-family: Poppins-Bold;
 
 }
@@ -41,6 +41,8 @@ body {
 }
 .word-padding{
   padding-bottom: 30px;
+  font-size: 40px;
+  
 }
 .faq-head{
   font-size: 40px;

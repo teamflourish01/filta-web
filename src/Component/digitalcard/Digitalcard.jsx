@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import "../digitalcard/digital.css";
 import AOS from "aos";
 import GreenBtn from "../GreenBtn/GreenBtn";
+import { IoIosArrowDown } from "react-icons/io";
 
 const Digitalcard = () => {
   const [activeCard, setActiveCard] = useState("Review-card");
@@ -66,19 +67,28 @@ const Digitalcard = () => {
 
       <section>
         <div className="under-1380-digital">
-          <div className="under-1320">
+          <div className="under-1320 ">
             <div className="what">What We Offer?</div>
 
+< div className="digital-fade-up" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="200">
             {/* Digital Business Card */}
             <div
               className={`dashed-border ${activeCard === "Review-card" ? "no-border-top" : ""}`}
               onClick={() => handleCardClick("Review-card", reviewCardRef)}
               ref={reviewCardRef}
+              
             >
+            
               {!activeCard.includes("Review-card") && (
+                <div className="title-v">
                 <p className="title-digital-digital">Digital Business Card</p>
+                <IoIosArrowDown />
+
+                </div>
+                
               )}
             </div>
+
             {activeCard === "Review-card" && (
               <div className="Digital-flex open-card">
                 <div className="digital-card">
@@ -102,14 +112,19 @@ const Digitalcard = () => {
               onClick={() => handleCardClick("nfcCard", nfcCardRef)}
               ref={nfcCardRef}
             >
+
               {!activeCard.includes("nfcCard") && (
+                <div className="title-v">
                 <p className="title-digital-digital">NFC Card</p>
+                <IoIosArrowDown />
+                </div>
               )}
             </div>
             {activeCard === "nfcCard" && (
               <div className="Digital-flex open-card">
                 <div className="digital-card">
                   <p className="business">NFC Card</p>
+                  
                   <p className="business-card">
                     Simplify connections with NFC cards. Instantly share your
                     contact info, social profiles, and more with a tap. Ideal for
@@ -130,7 +145,10 @@ const Digitalcard = () => {
               ref={reviewCardRef}
             >
               {!activeCard.includes("reviewCard") && (
+                <div className="title-v">
                 <p className="title-digital-digital">Digital Review Card</p>
+                <IoIosArrowDown />
+                </div>
               )}
             </div>
             {activeCard === "reviewCard" && (
@@ -157,7 +175,12 @@ const Digitalcard = () => {
               ref={emailSignatureRef}
             >
               {!activeCard.includes("emailSignature") && (
+            <div className="title-v">
+                
                 <p className="title-digital-digital">Email Signature</p>
+                <IoIosArrowDown />
+              
+              </div>
               )}
             </div>
             {activeCard === "emailSignature" && (
@@ -184,7 +207,10 @@ const Digitalcard = () => {
               ref={virtualBackgroundRef}
             >
               {!activeCard.includes("virtualBackground") && (
+                <div className="title-v">
                 <p className="title-digital-digital">Virtual Background</p>
+                <IoIosArrowDown />
+                </div>
               )}
             </div>
             {activeCard === "virtualBackground" && (
@@ -203,6 +229,7 @@ const Digitalcard = () => {
                 <div className="cardcontainer"></div>
               </div>
             )}
+          </div>
           </div>
         </div>
       </section>

@@ -1,4 +1,9 @@
-
+.title-v{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed #0000004D;
+}
 .what{
     font-size: 40px;
     text-align: center;
@@ -13,6 +18,9 @@
     margin: 0 auto;
     /* padding: 0 30px; */
    
+}
+.div-dot{
+  display: flex;
 }
 
 
@@ -121,8 +129,9 @@ line-height: 60px;
     
   }
   .title-digital-digital{
-    border-bottom: 1px dashed #0000004D;
+   
     padding: 13px 0 12px 0;
+    width: 100%;
 
   }
   

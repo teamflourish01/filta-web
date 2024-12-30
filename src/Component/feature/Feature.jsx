@@ -22,9 +22,9 @@ const Feature = () => {
 
   return (
     <div className="feature-1380">
-      <div className="feature-1320"  data-aos="fade-up">
+      <div className="feature-1320"  >
         <div className="feature-container-home">Exclusive Features!</div>
-        <div className="exclusive-container">
+        <div className="exclusive-container" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="200">
           {/* Voice Over - Open by default */}
           <div
             className={`voice-over ${isExpanded("voice-over") ? "active" : ""}`}
