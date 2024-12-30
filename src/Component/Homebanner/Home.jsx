@@ -14,6 +14,7 @@ import ChooseUs from "../ChooseUs/ChooseUs";
 import Homefaq from "../Homefaq/Homefaq";
 import GreenBtn from "../GreenBtn/GreenBtn";
 
+
 const Home = () => {
   useEffect(() => {
     AOS.init({ duration: 1000, easing: "ease-in-out", once: true });
@@ -78,8 +79,9 @@ const Home = () => {
         </div>
       </div>
 
-      <section className="welcome" onMouseEnter={handlemouseenter}>
-        <div className={`welcome-to ${isvisable ? "visible" : ""}`}>
+      <section className="welcome" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="300">
+
+        <div className="welcome-to" >
           <p className="filta">Welcome to Filta!</p>
           <p className="all-in">
             India’s all-in-one platform for seamless digital networking
