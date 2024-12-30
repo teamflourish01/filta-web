@@ -72,7 +72,8 @@ function Pricing() {
                     119/<p className="p-15">-</p>
                   </td>
                   <td>
-                    499/<p className="p-15">-</p>
+                    <span className="none-team-price">-</span>
+                    <p className="p-15">-</p>
                   </td>
                 </tr>
               </thead>
@@ -140,7 +141,7 @@ function Pricing() {
               <tr>
                 <td className="text-with-icon feature-name">
                   <div className="absolute-p">
-                    Hide FILTA Branding
+                    Hide Filta Branding
                     <span
                       className="i-center"
                       onMouseEnter={() => handleMouseEnter("tooltip2")}
@@ -196,7 +197,7 @@ function Pricing() {
               </tr>
               <tr className="black-header">
                 <td colSpan="4" className="merged-header">
-                  FILTA Connect
+                  Filta Connect
                 </td>
               </tr>
               <tr>
@@ -880,7 +881,7 @@ function Pricing() {
                 </td>
               </tr>
               <tr>
-                <td className="feature-name">FILTA Branding</td>
+                <td className="feature-name">Filta Branding</td>
                 <td>
                   <img src={arrow} alt="" />
                 </td>
@@ -934,7 +935,7 @@ function Pricing() {
               </tr>
               <tr className="border-bottom-none">
                 <td className="border-bottom-none feature-name">
-                  FILTA Branding
+                  Filta Branding
                 </td>
                 <td>
                   <img src={arrow} alt="" />

@@ -7,7 +7,7 @@ import Banner from "./Component/banner/Banner";
 import { Route, Routes } from "react-router-dom";
 import About from "./Pages/About/About";
 import { FaQ } from "react-icons/fa6";
-
+import Products from "./Pages/Products/Products";
 import Resources from "./Pages/Resources/Resources";
 import ResouceDetails from "./Component/ResourceDetails/ResouceDetails";
 import Pricing from "./Pages/Pricing/Pricing";
@@ -19,6 +19,8 @@ import Cursor from "./Component/cursor/Cursor";
 import ChooseUs from "./Component/ChooseUs/ChooseUs";
 import ResourceDetailTwo from "./Component/ResourceDetailTwo/ResourceDetailTwo";
 import ResourceDetailThree from "./Component/ResourceDetailThree/ResourceDetailThree";
+import Privacy from "./Pages/Privacy/Privacy";
+import Terms from "./Pages/Terms/Terms";
 
 
 function App() {
@@ -40,6 +42,9 @@ function App() {
           <Route path="/Contact" element={<Contact />} />
           <Route path="/" element={<Home/>} />
           <Route path="/ChooseUs" element={<ChooseUs />} />
+          <Route path='/privacy' element={<Privacy/>}/>
+          <Route path="/terms" element={<Terms/>}/>
+          <Route path="/products" element={<Products/>}/>
 
 
         </Routes>

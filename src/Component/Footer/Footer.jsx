@@ -17,7 +17,6 @@ function Footer() {
   useEffect(() => {
     window.scrollTo(0, 0);
     // console.log(location);
-    
   }, [location]);
   return (
     <>
@@ -29,7 +28,7 @@ function Footer() {
                 <img src={filta} alt="filta_logo" />
               </div>
               <p className="footer-desc">
-                Empower your networking with Filta's innovative digital business
+                Empower your networking with Filta innovative digital business
                 cards and more. Seamlessly share, connect, and make lasting
                 impressions—anytime, anywhere. Join the future of networking
                 today.
@@ -122,23 +121,25 @@ function Footer() {
             <hr className="hr-rotate"></hr>
 
             <div className="footer-section-three">
-              <p className="page-name padding-company width-help">Help & Information</p>
+              <p className="page-name padding-company width-help">
+                Help & Information
+              </p>
               <NavLink
                 to="/faqs"
                 className={({ isActive }) =>
                   isActive ? "page-name active-link" : "page-name hover-color"
                 }
               >
-               FAQ’s
+                FAQ’s
               </NavLink>
-              
+
               <NavLink
                 to="/privacy"
                 className={({ isActive }) =>
                   isActive ? "page-name active-link" : "page-name hover-color"
                 }
               >
-               Privacy Policy
+                Privacy Policy
               </NavLink>
               <NavLink
                 to="/terms"
@@ -146,7 +147,7 @@ function Footer() {
                   isActive ? "page-name active-link" : "page-name hover-color"
                 }
               >
-               Terms & Conditions
+                Terms & Conditions
               </NavLink>
             </div>
             <hr className="hr-rotate"></hr>
@@ -157,17 +158,16 @@ function Footer() {
               <p className="page-name hover-color">filta.india@gmail.com</p>
             </div>
           </div>
-         
         </div>
         <hr className="hr-color"></hr>
-          <div className="footer-copyright">
-            <p className="copyright">
-              Copyrights © 2024 Filta All rights reserved.
-            </p>
-            <p className="copyright">
-              Design & Developed By: FLOURISH CREATIONS PVT. LTD.
-            </p>
-          </div>
+        <div className="footer-copyright">
+          <p className="copyright">
+            Copyrights © 2024 filta All rights reserved.
+          </p>
+          <p className="copyright">
+            Design & Developed By: FLOURISH CREATIONS PVT. LTD.
+          </p>
+        </div>
       </div>
     </>
   );

@@ -79,10 +79,14 @@ const Home = () => {
         </div>
       </div>
 
-      <section className="welcome" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="300">
 
-        <div className="welcome-to" >
-          <p className="filta">Welcome to Filta!</p>
+      <section className="welcome" onMouseEnter={handlemouseenter}>
+        <div className={`welcome-to ${isvisable ? "visible" : ""}`}>
+          <p className="filta">Welcome to Filta
+                {/* <span className="filta-logo-text-title">
+                  f<span className="i-green">i</span>lta!
+                </span></p> */}</p>
+
           <p className="all-in">
             India’s all-in-one platform for seamless digital networking
             solutions. Whether you are an entrepreneur, individual professional,

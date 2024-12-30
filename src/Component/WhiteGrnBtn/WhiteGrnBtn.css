@@ -1,0 +1,63 @@
+/* .whiteGrnBtn-create-new-card {
+    background-color: #5aba47;
+    border: 1px solid #5aba47;
+    border-radius: 32px;
+    height: 37px;
+    font-family: Poppins-SemiBold;
+    font-size: 18px;
+    line-height: 27px;
+    color: #fff;
+    padding: 5px 13px;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s;
+    background-color: #5aba47;
+    font-weight: bolder;
+}
+.star-2 {
+    position: absolute;
+    fill: black;
+    top: 0%;
+    left: 50%;
+    width: 10px;
+    height: auto;
+    z-index: -5;
+    transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
+    transition-delay: 0.2s;
+}
+.star-3 {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 5px;
+    height: auto;
+    z-index: -5;
+    transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
+    transition-delay: 0.2s;
+}
+.star-4 {
+    position: absolute;
+    top: 0%;
+    right: 50%;
+    width: 2px;
+    height: auto;
+    z-index: -5;
+    transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
+    transition-delay: 0.2s;
+}
+.star-6 {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 5px;
+    height: auto;
+    z-index: -5;
+    transition: all 0.8s ease;
+    transition-delay: 0.2s;
+}
+.whiteGrnBtn-create-new-card:hover {
+    background-color: #fff;
+    color: #000;
+} */

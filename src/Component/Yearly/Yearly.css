@@ -4,3 +4,10 @@
     color: black;
     text-align: center;
 }
+.g-b-m-y {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 37px;
+    /* padding-bottom: 8px; */
+  }
