@@ -411,9 +411,9 @@ button:hover .star-6 {
 .hide {
   display: flex;
 }
-@media screen and (max-width: 1088px) and (min-width: 1024px) {
+@media screen and (max-width: 1190px) and (min-width: 1024px) {
   .navbar-tabs {
-    gap: 41px;
+    gap: 18px;
   }
 }
 @media (max-width: 1024px) {
@@ -470,12 +470,14 @@ button:hover .star-6 {
     overflow: hidden;
     align-items: center;
     border-top: 1px solid #0000001a;
+    background-color: white;
   }
 
   .res-hide.open {
     animation: expand 0.9s forwards;
     padding: 20px 0;
     opacity: 1;
+    height: 230px !important;
   }
   .res-hide.collapsed {
     animation: close 0.4s forwards;
@@ -559,6 +561,12 @@ button:hover .star-6 {
   .navbar.expanded {
     height: 365px;
   }
+  .res-hide.open {
+    animation: expand 0.9s forwards;
+    padding: 20px 0;
+    opacity: 1;
+    height: 335px !important;
+  }
 }
 
 .hamburger svg {
@@ -570,6 +578,6 @@ button:hover .star-6 {
   font-size: 18px;
   line-height: 18.16px;
 }
-.i-green{
-  color:#5aba47 ;
+.i-green {
+  color: #5aba47;
 }
