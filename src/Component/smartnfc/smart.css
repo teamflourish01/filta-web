@@ -1,0 +1,623 @@
+.smart-nfc-container {
+  /* border: 1px solid #e8e8e8; */
+  border-radius: 10px;
+  max-width: 1320px;
+  min-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 68px;
+}
+
+.black-dot{
+  display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.build-trust-padding {
+  list-style: none; /* Remove the default bullet */
+  position: relative;
+  padding-left: 18px; 
+}
+
+.build-trust-padding::before {
+  content: "•"; 
+  position: absolute;
+  left: 0; 
+  font-size: 25px;
+  top: 0; 
+}
+
+
+
+.build-trust-padding span + text {
+  display: inline-block;
+}
+
+
+
+.align-icon-desc{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.unclock-exclusive-p {
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  font-family: Poppins-Bold;
+  color: rgba(90, 186, 71, 1);
+  padding-top: 60px;
+}
+.take-your {
+  font-size: 20px;
+  line-height: 30px;
+  padding: 15px 0 20px 0;
+  font-family: Poppins-SemiBold;
+  text-align: center;
+}
+.smart-contact-us {
+  text-align: center;
+}
+.smart-nfc-right {
+  max-width: 757px;
+  min-width: 200px;
+  width: 100%;
+  height: 672px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+.smart-nfc-inner {
+  border: 1px solid rgba(239, 241, 243, 1);
+  margin: 0 30px;
+}
+.smart-nfc-tab {
+  padding: 18px 0 18px 10px;
+  background: white;
+  border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.smart-nfc-buttons {
+  border-radius: 49px;
+  border: 1px solid #e8e8e8;
+  max-width: 528px;
+  min-width: 200px;
+  width: 100%;
+  padding: 5px 6px;
+  display: flex;
+  cursor: pointer;
+  justify-content: space-between;
+}
+.quickfeedback-padding {
+  padding: 2px 0;
+}
+.build-trust-padding {
+  padding-bottom: 2px;
+  
+}
+.smart-nfc-buttons button {
+  background: transparent;
+  color: black;
+  padding: 7px 10px;
+  border-radius: 45px;
+  font-size: 22px;
+  line-height: 33px;
+  font-family: Poppins-SemiBold;
+  border: none;
+}
+.smart-nfc-buttons button.active {
+  color: white;
+  cursor: pointer;
+  background-color: rgba(90, 186, 71, 1);
+}
+
+.smart-nfc-review-main {
+  padding: 20.81px 7px 18px 7px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: white;
+}
+.smart-nfc-review-img {
+  height: 110px;
+  width: 130px;
+  border-radius: 6px;
+}
+.review-img {
+  display: flex;
+  gap: 10px;
+  padding-top: 10px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+.smart-nfc-img {
+  height: 354px;
+
+  min-width: 200px;
+  max-width: 552px;
+
+  position: relative;
+  top: 19%;
+
+  margin: 0 auto;
+  width: 100%;
+}
+.smart-nfc-review-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 29px;
+}
+.smart-nfc-review-top {
+  background-color: rgba(239, 241, 243, 1);
+  height: 552px;
+  max-width: 552px;
+  min-width: 200px;
+  width: 100%;
+  max-height: 552px;
+  min-height: 300px;
+  height: 100%;
+  border-radius: 5px;
+}
+.smart-nfc-review-left {
+  max-width: 552px;
+  min-width: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.smart-nfc-radio {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+.smart-nfc-title {
+  font-family: Poppins-Bold;
+  font-size: 30px;
+}
+.rating {
+  padding: 10px 0 30px 0;
+}
+.capture {
+  font-size: 20px;
+  font-family: Poppins-SemiBold;
+  padding-bottom: 5px;
+}
+.review-help {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Poppins-Regular;
+  padding-bottom: 15px;
+}
+.portable-list span {
+  font-family: poppins-Medium;
+  font-size: 16px;
+  line-height: 24px;
+}
+.portable-list {
+  font-family: poppins-Regular;
+  font-size: 16px;
+  line-height: 24px;
+}
+.radio-smart {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #000;
+  position: relative;
+  background-color: #fff;
+  display: inline-block;
+}
+.radio-smart:checked::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #000;
+  transform: translate(-50%, -50%);
+}
+.radio-smart:checked {
+  border-color: #000;
+}
+.without-label {
+  font-size: 18px;
+  font-family: Poppins-SemiBold;
+}
+.label-with-input {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.smart-nfc-radio {
+  padding: 30px 0;
+}
+.product-price {
+  display: flex;
+  gap: 18px;
+}
+.original-price {
+  text-decoration: line-through;
+  color: grey;
+  font-size: 20px;
+  font-family: Poppins-Regular;
+}
+.discounted-price {
+  font-size: 22px;
+  color: black;
+  font-family: Poppins-SemiBold;
+}
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 120px;
+  margin: 13px 0;
+}
+.quantity-btn {
+  flex: 1;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #333;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+.quantity {
+  padding: 7px 21px;
+}
+
+.add-to-cart {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  width: 142px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Poppins-SemiBold;
+  border: none;
+}
+.buy-it-now {
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  width: 142px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Poppins-SemiBold;
+  background-color: white;
+}
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.quantity-display {
+  flex: 1 1;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  border-left: 1px solid #e0e0e0;
+  height: 39px;
+  border-right: 1px solid #e0e0e0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background: white;
+  color: #333;
+}
+.with-customize-radio {
+  display: flex;
+  gap: 15px;
+}
+.customize-logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.customize-name {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.customize-logo-label {
+  font-family: Poppins-Medium;
+  font-size: 18px;
+  line-height: 27px;
+}
+.customize-name-label {
+  font-family: Poppins-Medium;
+  font-size: 18px;
+  line-height: 27px;
+}
+.customize-input {
+  height: 18px;
+  width: 18px;
+}
+.file-arrow-box {
+  width: 160px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: rgba(239, 241, 243, 1);
+  border-radius: 5px;
+  margin: 10px 0 10px 0;
+}
+.file-input {
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  opacity: 0; /* Hide the input field */
+  width: 100%;
+  height: 100%;
+}
+.smart-save-btn {
+  width: 80px;
+  height: 35px;
+  background-color: black;
+  color: white;
+  margin-bottom: 13px;
+  margin-top: 30px;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: Poppins-SemiBold;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.smart-key-point-container {
+  max-width: 1320px;
+  min-width: 200px;
+  width: 100%;
+ padding: 0 30px;
+  margin: 0 auto;
+}
+.smart-key-point-p {
+  font-size: 22px;
+  font-family: Poppins-SemiBold;
+  padding: 60px 0 20px 0;
+}
+.smart-key-container-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+    overflow-y: auto;
+}
+.one-time-payment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.one-time-payment-img {
+  width: 40px;
+  height: 40px;
+}
+
+.one-time-radius {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.how-it-work {
+  font-size: 22px;
+  padding: 30px 0 20px 0;
+  font-family: Poppins-SemiBold;
+}
+.how-it-work-card-flex {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  /* justify-content: space-between; */
+  gap: 117px;
+}
+.design-smart-box {
+  max-width: 362px;
+  min-width: 100px;
+  width: 100%;
+  height: 281px;
+  border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.design-smart-box-p {
+  max-width: 362px;
+  min-width: 100px;
+  width: 100%;
+}
+.design-smart-inner-p {
+  font-size: 20px;
+  line-height: 30px;
+  font-family: Poppins-Medium;
+  padding-top: 15px;
+}
+.design-smart-para {
+  font-size: 18px;
+  line-height: 27px;
+  font-family: poppins-Regular;
+  padding-top: 3px;
+}
+
+.made-top-p {
+  padding-top: 10px;
+  white-space: nowrap;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: Poppins-Regular;
+}
+.offer-title {
+  font-size: 22px;
+  line-height: 33px;
+  font-family: Poppins-SemiBold;
+  padding: 30px 0 10px 0;
+}
+.technical-specification {
+  padding: 30px 0 10px 0;
+  font-size: 22px;
+  line-height: 33px;
+  font-family: Poppins-SemiBold;
+}
+.technical-s-container p {
+  font-size: 18px;
+  line-height: 27px;
+  font-family: Poppins-Regular;
+}
+.smart-card-offer-section p {
+  font-size: 18px;
+  line-height: 27px;
+  font-family: Poppins-Regular;
+}
+.offer-title-p-padding {
+  padding: 3px 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .smart-nfc-review-flex {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .how-it-work-card-flex {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px;
+  }
+  .review-img {
+    overflow-y: scroll;
+  }
+  .smart-nfc-img {
+    top: 17px;
+  }
+  .smart-nfc-inner {
+    margin: 0 25px;
+  }
+  .smart-nfc-review-main {
+    padding: 20px 10px 0px 10px;
+  }
+  .action-buttons {
+    padding-bottom: 10px;
+  }
+  .smart-nfc-right {
+    height: 100%;
+  }
+  .how-it-work-card-flex {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px;
+  }
+
+  .smart-key-point-container {
+    padding: 0 25px;
+  }
+  .unclock-exclusive-p{
+    font-size: 30px;
+    line-height: 45px;
+    padding-top: 50px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+}
+@media screen and (max-width: 768px) {
+  .smart-nfc-inner {
+    margin: 0 10px;
+  }
+  .unclock-exclusive-p {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 40px;
+}
+  .take-your {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .smart-key-point-p {
+    padding: 40px 0 20px 0;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .smart-key-container-flex {
+    max-width: 732px;
+    width: 100%;
+    min-width: 200px;
+    overflow-x: scroll;
+    gap: 60px;
+  }
+  .smart-key-point-container {
+    padding: 0 10px;
+  }
+
+  .made-top-p {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: Poppins-Regular;
+  }
+  .how-it-work-card-flex {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .smart-nfc-buttons button {
+    font-size: 18px;
+    white-space: nowrap;
+  }
+  .smart-nfc-tab {
+    padding: 18px 10px 18px 10px;
+  }
+  .smart-nfc-title {
+    font-size: 18px;
+  }
+  .smart-nfc-radio {
+    
+    gap: 5px;
+    align-items: baseline;
+        flex-direction: column;
+  }
+  .smart-nfc-img {
+    top: 20px;
+    left: 18px;
+  }
+  .capture {
+    font-size: 18px;
+  }
+  .add-to-cart {
+    width: 100%;
+  }
+  .buy-it-now {
+    width: 100%;
+  }
+  .action-buttons {
+    flex-wrap: wrap;
+  }
+  .smart-nfc-buttons {
+    overflow-y: scroll;
+  }
+}

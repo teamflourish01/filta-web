@@ -1,0 +1,53 @@
+.smart-standee-one{
+    width: 60px;
+    height: 60px;
+    background: rgba(239, 241, 243, 1);
+    border-radius: 5px;
+}
+.smart-nfc-review-main-container{
+    padding: 10px 7px 10px 7px;
+    background: white;
+}
+.smart-standee-boxes{
+    display: flex;
+    gap: 7px;
+    padding-top: 5px;
+    
+}
+.smart-standee-two{
+    width: 60px;
+    height: 60px;
+    background: rgba(239, 241, 243, 1);
+    border-radius: 5px;
+
+}
+.smartstandee-padiing{
+    padding: 2px 0;
+}
+.smartstandee-color{
+    color: #7f7f7f;
+    font-size: 18px;
+  font-family: Poppins-Medium;
+line-height: 27px;
+padding-top: 30px;
+
+}
+.smartstandee-color span{
+    color: black;
+    font-size: 18px;
+    line-height: 27px;
+  font-family: Poppins-Medium;
+
+
+}
+.name-input-smart{
+    width: 100%;
+    background: rgba(239, 241, 243, 1);
+    border: none;
+    padding: 10px ;
+    outline: none;
+    border-radius: 5px;
+}
+.name-input-box-smart{
+    padding: 10px 0;
+}

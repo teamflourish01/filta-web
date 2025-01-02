@@ -1,4 +1,3 @@
-
 import "./App.css";
 import Navbar from "./Component/Navbar/Navbar";
 import Footer from "./Component/Footer/Footer";
@@ -11,7 +10,7 @@ import Products from "./Pages/Products/Products";
 import Resources from "./Pages/Resources/Resources";
 import ResouceDetails from "./Component/ResourceDetails/ResouceDetails";
 import Pricing from "./Pages/Pricing/Pricing";
-import Features from './Pages/Features/Features';
+import Features from "./Pages/Features/Features";
 
 import Contact from "./Component/Contactus/Contact";
 import Home from "./Component/Homebanner/Home";
@@ -21,7 +20,8 @@ import ResourceDetailTwo from "./Component/ResourceDetailTwo/ResourceDetailTwo";
 import ResourceDetailThree from "./Component/ResourceDetailThree/ResourceDetailThree";
 import Privacy from "./Pages/Privacy/Privacy";
 import Terms from "./Pages/Terms/Terms";
-
+import Smartnfc from "./Component/smartnfc/Smartnfc";
+import Smartstandee from "./Component/smartstandee/Smartstandee";
 
 function App() {
   return (
@@ -29,29 +29,31 @@ function App() {
       <Navbar />
 
       <div className="content-wrapper">
-        <Cursor/>
+        <Cursor />
         <Routes>
           <Route path="/about" element={<About />} />6
           <Route path="/faqs" element={<Faq />} />
           <Route path="/resources" element={<Resources />} />
-          <Route path="/resourcedetails" element={<ResouceDetails/>}/>
-          <Route path="/resourcedetailtwo" element={<ResourceDetailTwo/>}/>
-          <Route path="/resourcedetailthree" element={<ResourceDetailThree/>}/>
-          <Route path="/pricing" element={<Pricing/>} />
-          <Route path="/features" element={<Features/>}/>
+          <Route path="/resourcedetails" element={<ResouceDetails />} />
+          <Route path="/resourcedetailtwo" element={<ResourceDetailTwo />} />
+          <Route
+            path="/resourcedetailthree"
+            element={<ResourceDetailThree />}
+          />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/features" element={<Features />} />
           <Route path="/Contact" element={<Contact />} />
-          <Route path="/" element={<Home/>} />
+          <Route path="/" element={<Home />} />
           <Route path="/ChooseUs" element={<ChooseUs />} />
-          <Route path='/privacy' element={<Privacy/>}/>
-          <Route path="/terms" element={<Terms/>}/>
-          <Route path="/products" element={<Products/>}/>
-
-
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/smartnfc" element={<Smartnfc />} />
+          <Route path="/smartstandee" element={<Smartstandee />} />
         </Routes>
       </div>
       <Footer />
     </>
-
   );
 }
 
