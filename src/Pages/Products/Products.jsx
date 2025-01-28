@@ -107,7 +107,7 @@ const Products = () => {
         <div className="products-container">
           {/* Top arrow section start  */}
 
-          {/* <div className="top-product-section-p-p">
+         <div className="top-product-section-p-p">
             <div className="top-2-section-flex">
               <div className="left-cotent-top-2">
                 <p className="grn-title-top-2">All-in-One Solution:</p>
@@ -128,11 +128,11 @@ const Products = () => {
               <div className="arrow-container-product">
                 <img src={updown} alt="" className="img-arrow-p-p" />
 
-                {/* <div class="vertical-line-with-arrows">
+                <div class="vertical-line-with-arrows">
                   <span class="arrow-top-arrow"></span>
                   <div class="vertical-line"></div>
                   <span class="arrow-bottom-arrow"></span>
-                </div> */}
+                </div> 
 
                 
                 <div class="horizontal-line-left"></div>
@@ -170,7 +170,7 @@ const Products = () => {
                 </p>
               </div>
             </div>
-          </div> */}
+          </div> 
           {/* Explore smart nfc product section start  */}
 
           <div className="smart-nfc-containers">
