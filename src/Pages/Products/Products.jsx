@@ -80,7 +80,7 @@ const Products = () => {
 
     const interval2 = setInterval(() => {
       setReviewCardImg((prevImage) => (prevImage + 1) % reviewCard.length);
-    }, 1000); // Change image every 3 seconds
+    }, 1000); 
 
     const interval3 = setInterval(() => {
       setStandeeCardImg((prevImage) => (prevImage + 1) % standee.length);
@@ -88,8 +88,8 @@ const Products = () => {
 
     return () => {
       clearInterval(interval);
-      clearInterval(interval2); // Cleanup for smart2
-      clearInterval(interval3); // Cleanup for smart3
+      clearInterval(interval2); 
+      clearInterval(interval3); 
     };
   }, []);
 
@@ -127,9 +127,17 @@ const Products = () => {
             <div className="top-2-center-flex-p-p">
               <div className="arrow-container-product">
                 <img src={updown} alt="" className="img-arrow-p-p" />
+
+                {/* <div class="vertical-line-with-arrows">
+                  <span class="arrow-top-arrow"></span>
+                  <div class="vertical-line"></div>
+                  <span class="arrow-bottom-arrow"></span>
+                </div> */}
+
                 
                 <div class="horizontal-line-left"></div>
               </div>
+              
               <div className="box-center-top-2">
                 <p className="grn-title-top-2">Filta's Innovation :</p>
                 <p className="black-desc-top-2">
