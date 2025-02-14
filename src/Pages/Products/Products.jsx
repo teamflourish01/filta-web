@@ -80,7 +80,7 @@ const Products = () => {
 
     const interval2 = setInterval(() => {
       setReviewCardImg((prevImage) => (prevImage + 1) % reviewCard.length);
-    }, 1000); 
+    }, 1000);
 
     const interval3 = setInterval(() => {
       setStandeeCardImg((prevImage) => (prevImage + 1) % standee.length);
@@ -88,8 +88,8 @@ const Products = () => {
 
     return () => {
       clearInterval(interval);
-      clearInterval(interval2); 
-      clearInterval(interval3); 
+      clearInterval(interval2);
+      clearInterval(interval3);
     };
   }, []);
 
@@ -107,7 +107,7 @@ const Products = () => {
         <div className="products-container">
           {/* Top arrow section start  */}
 
-         <div className="top-product-section-p-p">
+          <div className="top-product-section-p-p">
             <div className="top-2-section-flex">
               <div className="left-cotent-top-2">
                 <p className="grn-title-top-2">All-in-One Solution:</p>
@@ -132,12 +132,11 @@ const Products = () => {
                   <span class="arrow-top-arrow"></span>
                   <div class="vertical-line"></div>
                   <span class="arrow-bottom-arrow"></span>
-                </div> 
+                </div>
 
-                
                 <div class="horizontal-line-left"></div>
               </div>
-              
+
               <div className="box-center-top-2">
                 <p className="grn-title-top-2">Filta's Innovation :</p>
                 <p className="black-desc-top-2">
@@ -148,8 +147,6 @@ const Products = () => {
               <div className="arrow-container-product">
                 <div class="horizontal-line-left"></div>
                 <img src={updown} alt="" className="img-arrow-p-p-r" />
-
-                
               </div>
             </div>
             <div className="top-2-section-flex">
@@ -170,14 +167,18 @@ const Products = () => {
                 </p>
               </div>
             </div>
-          </div> 
+          </div>
           {/* Explore smart nfc product section start  */}
 
           <div className="smart-nfc-containers">
             <p className="title-products">Explore Our Smart NFC Products</p>
             <div className="card-smart-nfc">
               <div className="gray-card-left-products">
-                <img src={images[currentImage]} alt=""  className="gry-card-left-img-product"/>
+                <img
+                  src={images[currentImage]}
+                  alt=""
+                  className="gry-card-left-img-product"
+                />
               </div>
 
               <div className="s-n-business-card">
@@ -227,12 +228,20 @@ const Products = () => {
                 </Link>
               </div>
               <div className="gray-card-left-products-r">
-                <img src={reviewCard[reviewCardImg]} alt="" className="gry-card-left-img-product"/>
+                <img
+                  src={reviewCard[reviewCardImg]}
+                  alt=""
+                  className="gry-card-left-img-product"
+                />
               </div>
             </div>
             <div className="card-smart-nfc">
               <div className="gray-card-left-products">
-                <img src={standee[standeeCardImg]} alt="" className="gry-card-left-img-product"/>
+                <img
+                  src={standee[standeeCardImg]}
+                  alt=""
+                  className="gry-card-left-img-product"
+                />
               </div>
 
               <div className="s-n-business-card">
@@ -370,25 +379,25 @@ const Products = () => {
           </div>
         </div>
         <div className="unlock-exclusive">
-            <p className="unclock-exclusive-p">
-              Unlock Exclusive Benefits with Bulk Orders!{" "}
-            </p>
-            <p className="take-your">
-              Take your business networking to the next level with Filta’s bulk
-              order solutions.
-            </p>
-            <div className="smart-contact-us">
-              <GreenBtn greenBtnName="Contact Us" />
-            </div>
+          <p className="unclock-exclusive-p">
+            Unlock Exclusive Benefits with Bulk Orders!{" "}
+          </p>
+          <p className="take-your">
+            Take your business networking to the next level with Filta’s bulk
+            order solutions.
+          </p>
+          <div className="smart-contact-us">
+            <GreenBtn greenBtnName="Contact Us" />
           </div>
-      <div className="feature-pricing-plans ">
-            <div className="feature-pricing-plans-title">Pricing Plans</div>
-            <div className="feature-pricing-text-desc">
-              We are here to make your networking better, smoother, and smarter.
-              Start creating your digital impression today!
-            </div>
-            <ToggleBtn  />
+        </div>
+        <div className="feature-pricing-plans ">
+          <div className="feature-pricing-plans-title">Pricing Plans</div>
+          <div className="feature-pricing-text-desc">
+            We are here to make your networking better, smoother, and smarter.
+            Start creating your digital impression today!
           </div>
+          <ToggleBtn />
+        </div>
       </div>
 
       {/* start journey section start  */}
@@ -404,7 +413,6 @@ const Products = () => {
         </div>
         <GreenBtn greenBtnName="Create Your Card" />
       </div>
-      
     </>
   );
 };
