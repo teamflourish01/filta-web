@@ -1,68 +1,23 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import "../work/work.css";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Work = () => {
-  const topContainerRef = useRef(null);
-  const customizeRef = useRef(null);
-  const informationRef = useRef(null);
-  const chooseTemplateRef = useRef(null);
-
-
   useEffect(() => {
-    const card1 = chooseTemplateRef.current;
-    const card2 = informationRef.current;
-    const card3 = customizeRef.current;
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      once: false,
+       
+    });
+    AOS.refresh(); // Refresh AOS on component mount
+}, []);
+ ;
   
-    const screenWidth = window.innerWidth;
-    if (
-      screenWidth > 1024 &&
-      topContainerRef.current &&
-      customizeRef.current &&
-      informationRef.current &&
-      chooseTemplateRef.current
-    ) {
-      gsap.set(card1, { y: 0 });
-      gsap.set(card2, { y: 120 });
-      gsap.set(card3, { y: 220 });
-  
-      const timeline = gsap.timeline({
-        scrollTrigger: {
-          trigger: topContainerRef.current,
-          start: "top 20%",
-          end: "bottom top",
-          scrub: 0.1, 
-          pin: topContainerRef.current,
-          toggleActions: "play reverse play reverse",
-        },
-      });
-  
-      // Phase 1: Move the third card to align with the second card
-      timeline.to(card3, {
-        y: 120, 
-        ease: "power2.out",
-        duration: 0.1, 
-      });
-  
-      // Phase 2: Move both the second and third cards together to align with the first card
-      timeline.to(
-        [card2, card3],
-        {
-          y: 0, 
-          ease: "power2.out",
-          duration: 0, 
-        },
-        "+=0.2" 
-      );
-    }
-  }, []);
 
   return (
     <div className="top-container-wrapper">
-      <div className="top-container" ref={topContainerRef}>
+      <div className="top-container">
         <div className="main-work-container">
           <div className="work-container">
             <p className="work">How It Works?</p>
@@ -77,8 +32,12 @@ const Work = () => {
             </div>
 
             <div className="choose-flex">
-              {/* First card */}
-              <div className="choose-template" ref={chooseTemplateRef}>
+              {/* First card - Fades up immediately */}
+              <div
+                className="choose-template"
+                data-aos="fade-up"
+                data-aos-delay="0"
+              >
                 <div className="choose"></div>
                 <div className="box-text-work">
                   <p className="text">01</p>
@@ -91,8 +50,12 @@ const Work = () => {
                 </div>
               </div>
 
-              {/* Second card */}
-              <div className="information" ref={informationRef}>
+              {/* Second card - Delays by 2 seconds */}
+              <div
+                className="information"
+                data-aos="fade-up"
+                data-aos-delay="1500"
+              >
                 <div className="choose"></div>
                 <div className="box-text-work">
                   <p className="text">02</p>
@@ -105,8 +68,12 @@ const Work = () => {
                 </div>
               </div>
 
-              {/* Third card */}
-              <div className="customize" ref={customizeRef}>
+              {/* Third card - Delays by 4 seconds */}
+              <div
+                className="customize"
+                data-aos="fade-up"
+                data-aos-delay="2500"
+              >
                 <div className="choose"></div>
                 <div className="box-text-work">
                   <p className="text">03</p>
@@ -118,7 +85,6 @@ const Work = () => {
                   you can give to anyone, anywhere.
                 </div>
               </div>
-
 
             </div>
           </div>

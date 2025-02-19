@@ -1,31 +1,48 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect ,useRef } from "react";
 import "../Navbar/Navbar.css";
 import filta from "../../assets/filta.png";
 import { PiStarFourFill } from "react-icons/pi";
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { CgClose } from "react-icons/cg";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
+  const navbarRef = useRef(null);
 
   // Scroll to top on route change
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location]);
 
-  // const [showTabs, setShowTabs] = useState(false);
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+        setMenuOpen(false); // Close the menu if clicked outside
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <>
-      <div className={`navbar ${menuOpen ? "expanded" : ""}`}>
+      <div className={`navbar ${menuOpen ? "expanded" : ""}`} ref={navbarRef}>
         <div className="navbar-container">
           <div className="logo-container">
             <div className="filta-logo">
               {/* <p className="filta-logo-text">
                 f<span className="i-green">i</span>lta
               </p> */}
+              <Link href= "/">
+
+               
               <img src={filta} alt="filta_logo" className="filta-logo-size" />
+              </Link>
             </div>
 
             <div className="navbar-tabs hide-nav">

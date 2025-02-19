@@ -6,6 +6,9 @@
   margin-top: 100px;
  
 }
+.foot-icon-color{
+  color: white;
+}
 .footer-content{
   max-width: 1380px;
   min-width: 200px;
@@ -156,6 +159,11 @@
   font-weight: 600;
   line-height: 24px;
   text-align: left;
+  color: white;
+}
+.footer-link-f{
+  color: white;
+  text-decoration: none;
 }
 
 /* Facebook Icon Specific Styling */
@@ -170,7 +178,12 @@
   min-width: 50px;
   width: 100%;
 }
-
+.foot-icon-a{
+  color: white;
+}
+.foot-icon-a:hover svg path{
+  fill: #5aba47;
+}
 @media screen and (max-width: 1220px) and (min-width:1024px){
   .hr-rotate {
     margin: 0 34px;
