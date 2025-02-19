@@ -91,6 +91,12 @@
 .choose-template,
 .information,
 .customize {
+  will-change: transform;
+}
+
+.choose-template,
+.information,
+.customize {
   position: relative;
   /* max-width: 400px;
   min-width: 200px;

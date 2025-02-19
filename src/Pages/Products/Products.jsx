@@ -342,10 +342,10 @@ const Products = () => {
             </div>
           </div>
         </div>
-        <div className="product-section-testimonials">
+        {/* <div className="product-section-testimonials">
           <p className="product-testimonials-title">Testimonials</p>
-        </div>
-        <div className="testimonial-slider">
+        </div> */}
+        {/* <div className="testimonial-slider">
           <div className="testimonial-card">
             <p className="testimonial-text">
               {testimonials[currentIndex].text}
@@ -377,7 +377,7 @@ const Products = () => {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="unlock-exclusive">
           <p className="unclock-exclusive-p">
             Unlock Exclusive Benefits with Bulk Orders!{" "}

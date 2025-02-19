@@ -7,7 +7,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 import { TfiEmail } from "react-icons/tfi";
 import { FaInstagram } from "react-icons/fa";
 import { SlSocialLinkedin } from "react-icons/sl";
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 
 function Footer() {
@@ -23,9 +23,12 @@ function Footer() {
       <div className="footer-container">
         <div className="footer-content">
           <div className="footer-filta">
-            <div className="footer-section-one">
+          <div className="footer-section-one">
               <div className="footer-logo">
+              <Link href= "/">
+
                 <img src={filta} alt="filta_logo" />
+              </Link>
               </div>
               <p className="footer-desc">
                 Empower your networking with Filta innovative digital business
@@ -35,11 +38,17 @@ function Footer() {
               </p>
               <div className="social-icon-footer">
                 <div className="icons-f">
-                  <TfiEmail />
-                </div>
-                <div className="icons-f">
-                  <FaWhatsapp />
-                </div>
+  <a href="mailto:filta.india@gmail.com" className="foot-icon-a">
+    <TfiEmail />
+  </a>
+</div>
+
+<div className="icons-f">
+  <a href="https://wa.me/918511024422" target="_blank" rel="noopener noreferrer" className="foot-icon-a">
+    <FaWhatsapp />
+  </a>
+</div>
+
                 <div className="fbi">
                   <div className="icons-f ">
                     <svg
@@ -60,12 +69,24 @@ function Footer() {
                   </div>
                 </div>
                 <div className="icons-f">
+                <a href="https://www.instagram.com/filta.in/"  target="_blank" 
+    rel="noopener noreferrer" className="foot-icon-a">
+
                   <FaInstagram />
+    </a>
                 </div>
                 <div className="icons-f">
+                <a 
+    href="https://www.linkedin.com/company/filtanetworking/posts/?feedView=all" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="in-icon foot-icon-a"
+    
+  >
                   <span className="in-icon">
                     <SlSocialLinkedin />
                   </span>
+                  </a>
                 </div>
                 {/* <img src={whatsapp} alt="whatsapp" /> */}
                 {/* <img src={facebook} alt="facebook" />
@@ -165,8 +186,12 @@ function Footer() {
             Copyrights © 2024 filta All rights reserved.
           </p>
           <p className="copyright">
-            Design & Developed By: FLOURISH CREATIONS PVT. LTD.
-          </p>
+  Design & Developed By: 
+  <a href="https://teamflourish.co/" target="_blank" rel="noopener noreferrer" className="footer-link-f">
+    FLOURISH CREATIONS PVT. LTD.
+  </a>
+</p>
+
         </div>
       </div>
     </>
